@@ -62,6 +62,14 @@ int main(int argc, char** argv) {
             if(windowManager.isKeyPressed(SDLK_s)) camera.moveFront(-0.05);
             if(windowManager.isKeyPressed(SDLK_q)) camera.moveLatteral(0.05);
             if(windowManager.isKeyPressed(SDLK_d)) camera.moveLatteral(-0.05);
+
+            glm::ivec2 MousePosition = glm::ivec2(0.0, 0.0);
+            MousePosition = windowManager.getMousePosition();
+            float MousePositionX = MousePosition.x/600.0f-0.5;
+            float MousePositionY = MousePosition.y/600.0f-0.5;
+            camera.rotateLeft(-2*MousePositionX);
+            camera.rotateUp(-2*MousePositionY);
+
         }
 
         /*********************************
