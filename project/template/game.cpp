@@ -3,9 +3,6 @@
 #include <GL/glew.h>
 #include <iostream>
 
-#include <glimac/glm.hpp>
-#include <glimac/TrackballCamera.hpp>
-
 #include <include/assimp/Importer.hpp>
 #include <include/assimp/scene.h>
 
@@ -43,10 +40,13 @@ int main(int argc, char** argv) {
 
     // Load models
     Model model("assets/models/nanosuit/nanosuit.obj");
+    Model test("assets/models/house/fw43_lowpoly_n1.3ds");
 
     /*********************************
      * HERE SHOULD COME THE INITIALIZATION CODE
      *********************************/
+
+     Camera camera; //Initialisation camera
 
     // Application loop:
     bool done = false;
@@ -58,6 +58,10 @@ int main(int argc, char** argv) {
             if(e.type == SDL_QUIT) {
                 done = true; // Leave the loop after this iteration
             }
+            if(windowManager.isKeyPressed(SDLK_z)) camera.moveFront(0.05);
+            if(windowManager.isKeyPressed(SDLK_s)) camera.moveFront(-0.05);
+            if(windowManager.isKeyPressed(SDLK_q)) camera.moveLatteral(0.05);
+            if(windowManager.isKeyPressed(SDLK_d)) camera.moveLatteral(-0.05);
         }
 
         /*********************************
@@ -71,18 +75,21 @@ int main(int argc, char** argv) {
         // Transformation matrices
         glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)screenWidth/(float)screenHeight, 0.1f, 100.0f);
 
-        glm::mat4 view = glm::mat4(1.0);
+        glm::mat4 view = camera.getViewMatrix();
+
         glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
         glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
 
         // Draw the loaded model
         glm::mat4 matModel;
+
         // Translate model to the center of the scene
         matModel = glm::translate(matModel, glm::vec3(0.0f, -1.75f, -5.0f));
         matModel = glm::scale(matModel, glm::vec3(0.2f, 0.2f, 0.2f));
         glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
 
         model.Draw(MyShader);
+        test.Draw(MyShader);
 
         // Update the display
         windowManager.swapBuffers();
