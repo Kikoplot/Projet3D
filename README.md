@@ -6,7 +6,7 @@ Engineering school project : OpenGL / C++ / 3D
 
 #### Make
 
-	cd iSeason/build
+	cd Projet3D/build
 	cmake ../project
 	make
 
