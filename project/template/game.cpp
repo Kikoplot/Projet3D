@@ -39,8 +39,9 @@ int main(int argc, char** argv) {
     Shader MyShader("template/shaders/model_loading.vs.glsl", "template/shaders/model_loading.fs.glsl");
 
     // Load models
-    Model model("assets/models/nanosuit/nanosuit.obj");
-    Model test("assets/models/house/fw43_lowpoly_n1.3ds");
+    Model crysis("assets/models/nanosuit/nanosuit.obj");
+    Model house("assets/models/house/fw43_lowpoly_n1.3ds");
+    Model landscape("assets/models/castle/eastern ancient casttle/eastern ancient casttle.obj");
 
     /*********************************
      * HERE SHOULD COME THE INITIALIZATION CODE
@@ -96,17 +97,23 @@ int main(int argc, char** argv) {
         matModel = glm::scale(matModel, glm::vec3(0.2f, 0.2f, 0.2f));
         glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
 
-        model.Draw(MyShader);
-
-        // Draw the loaded model
-        glm::mat4 mattest;
+        crysis.Draw(MyShader);
 
         // Translate model to the center of the scene
-        mattest = glm::translate(mattest, glm::vec3(0.0f, -1.75f, -5.0f));
-        mattest = glm::scale(mattest, glm::vec3(0.6f, 0.6f, 0.6f));
-        glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(mattest));
+        matModel = glm::rotate(matModel, glm::radians(-90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+        matModel = glm::translate(matModel, glm::vec3(0.0f, 2.0f, 0.0f));
+        matModel = glm::scale(matModel, glm::vec3(5.0f, 5.0f, 5.0f));
+        glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
 
-        test.Draw(MyShader);
+        house.Draw(MyShader);
+
+        // Translate model to the center of the scene
+        matModel = glm::rotate(matModel, glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+        matModel = glm::translate(matModel, glm::vec3(5.0f, -19.0f, 55.0f));
+        matModel = glm::scale(matModel, glm::vec3(0.2f, 0.2f, 0.2f));
+        glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
+
+        landscape.Draw(MyShader);
 
         // Update the display
         windowManager.swapBuffers();
