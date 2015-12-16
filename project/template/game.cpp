@@ -97,6 +97,15 @@ int main(int argc, char** argv) {
         glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
 
         model.Draw(MyShader);
+
+        // Draw the loaded model
+        glm::mat4 mattest;
+
+        // Translate model to the center of the scene
+        mattest = glm::translate(mattest, glm::vec3(0.0f, -1.75f, -5.0f));
+        mattest = glm::scale(mattest, glm::vec3(0.6f, 0.6f, 0.6f));
+        glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(mattest));
+
         test.Draw(MyShader);
 
         // Update the display
