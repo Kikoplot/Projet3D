@@ -59,6 +59,7 @@ int main(int argc, char** argv) {
             if(e.type == SDL_QUIT) {
                 done = true; // Leave the loop after this iteration
             }
+            if(windowManager.isKeyPressed(SDLK_ESCAPE)) done = true;
             if(windowManager.isKeyPressed(SDLK_z)) camera.moveFront(0.05);
             if(windowManager.isKeyPressed(SDLK_s)) camera.moveFront(-0.05);
             if(windowManager.isKeyPressed(SDLK_q)) camera.moveLatteral(0.05);
