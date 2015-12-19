@@ -37,6 +37,7 @@ int main(int argc, char** argv) {
 
     // Setup and compile our shaders
     Shader MyShader("template/shaders/model_loading.vs.glsl", "template/shaders/model_loading.fs.glsl");
+    Shader AmbientLighting("template/shaders/phong.vs.glsl", "template/shaders/phong.fs.glsl");
     Shader PointLighting("template/shaders/point_lighting.vs.glsl", "template/shaders/point_lighting.fs.glsl");
 
     // Load models
@@ -48,6 +49,10 @@ int main(int argc, char** argv) {
     glm::vec3 pointLightPositions[] {
       glm::vec3(2.3f, -1.6f, -3.0f),
       glm::vec3(-1.7f, 0.9f, 1.0f)
+    };
+
+    glm::vec3 ambiantLightPos {
+      glm::vec3(2.0f, 2.0f, 2.0f)
     };
 
     /*********************************
@@ -87,7 +92,7 @@ int main(int argc, char** argv) {
         glClearColor(0.05f, 0.05f, 0.05f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        // Set the lighting uniforms
+        /* POINTLIGHT */
         PointLighting.Use();
         // Point light 1
         glUniform3f(glGetUniformLocation(PointLighting.Program, "pointLights[0].position"), pointLightPositions[0].x, pointLightPositions[0].y, pointLightPositions[0].z);
@@ -106,34 +111,58 @@ int main(int argc, char** argv) {
         glUniform1f(glGetUniformLocation(PointLighting.Program, "pointLights[1].linear"), 0.09);
         glUniform1f(glGetUniformLocation(PointLighting.Program, "pointLights[1].quadratic"), 0.032);
 
-        MyShader.Use();
+        /* AMBIANTLIGHT */
+        AmbientLighting.Use();
+        GLint objectColorLoc = glGetUniformLocation(AmbientLighting.Program, "objectColor");
+        GLint lightColorLoc  = glGetUniformLocation(AmbientLighting.Program, "lightColor");
+        GLint lightPosLoc    = glGetUniformLocation(AmbientLighting.Program, "ambiantLightPos");
+        GLint viewPosLoc     = glGetUniformLocation(AmbientLighting.Program, "viewPos");
+        glUniform3f(objectColorLoc, 1.0f, 0.5f, 0.31f);
+        glUniform3f(lightColorLoc,  1.0f, 1.0f, 1.0f);
+        glUniform3f(lightPosLoc,    ambiantLightPos.x, ambiantLightPos.y, ambiantLightPos.z);
+        glUniform3f(viewPosLoc,     ambiantLightPos.x, ambiantLightPos.y, ambiantLightPos.z);
+
         // Transformation matrices
         glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)screenWidth/(float)screenHeight, 0.1f, 100.0f);
         glm::mat4 view = camera.getViewMatrix();
+
+        // Get the uniform locations
+        GLint modelLoc = glGetUniformLocation(AmbientLighting.Program, "model");
+        GLint viewLoc  = glGetUniformLocation(AmbientLighting.Program,  "view");
+        GLint projLoc  = glGetUniformLocation(AmbientLighting.Program,  "projection");
+        // Pass the matrices to the shader
+        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+        glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+
+
+        /* MYSHADER
+        MyShader.Use();
         glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
         glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
+        */
 
         // Draw the loaded model
         glm::mat4 matModel;
         // Translate model to the center of the scene
         matModel = glm::translate(matModel, glm::vec3(0.0f, -1.75f, -5.0f));
         matModel = glm::scale(matModel, glm::vec3(0.2f, 0.2f, 0.2f));
-        glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
-        crysis.Draw(MyShader);
+        glUniformMatrix4fv(glGetUniformLocation(AmbientLighting.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
+        crysis.Draw(AmbientLighting);
 
         // Translate model to the center of the scene
         matModel = glm::rotate(matModel, glm::radians(-90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
         matModel = glm::translate(matModel, glm::vec3(0.0f, 2.0f, 0.0f));
         matModel = glm::scale(matModel, glm::vec3(5.0f, 5.0f, 5.0f));
-        glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
-        house.Draw(MyShader);
+        glUniformMatrix4fv(glGetUniformLocation(AmbientLighting.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
+        house.Draw(AmbientLighting);
 
         // Translate model to the center of the scene
         matModel = glm::rotate(matModel, glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
         matModel = glm::translate(matModel, glm::vec3(5.0f, -19.0f, 55.0f));
         matModel = glm::scale(matModel, glm::vec3(0.2f, 0.2f, 0.2f));
-        glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
-        landscape.Draw(MyShader);
+        glUniformMatrix4fv(glGetUniformLocation(AmbientLighting.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
+        landscape.Draw(AmbientLighting);
+
 
         // Update the display
         windowManager.swapBuffers();
