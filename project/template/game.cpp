@@ -12,6 +12,9 @@
 
 using namespace glimac;
 
+// Light attributes
+glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+
 int main(int argc, char** argv) {
     GLuint screenWidth = 800, screenHeight = 600;
     // Initialize SDL and open a window
@@ -37,7 +40,7 @@ int main(int argc, char** argv) {
 
     // Setup and compile our shaders
     Shader MyShader("template/shaders/model_loading.vs.glsl", "template/shaders/model_loading.fs.glsl");
-    Shader AmbientLighting("template/shaders/phong.vs.glsl", "template/shaders/phong.fs.glsl");
+    Shader AmbientLighting("template/shaders/ambiant_lighting.vs.glsl", "template/shaders/ambiant_lighting.fs.glsl");
     Shader PointLighting("template/shaders/point_lighting.vs.glsl", "template/shaders/point_lighting.fs.glsl");
 
     // Load models
@@ -51,13 +54,16 @@ int main(int argc, char** argv) {
       glm::vec3(-1.7f, 0.9f, 1.0f)
     };
 
-    glm::vec3 ambiantLightPos {
-      glm::vec3(2.0f, 2.0f, 2.0f)
-    };
+    glm::vec3 ambiantLightPos(0.0f, 0.0f, 0.0f);
 
     /*********************************
      * HERE SHOULD COME THE INITIALIZATION CODE
      *********************************/
+
+    // Set texture units
+    AmbientLighting.Use();
+    glUniform1i(glGetUniformLocation(AmbientLighting.Program, "material.diffuse"),  0);
+    glUniform1i(glGetUniformLocation(AmbientLighting.Program, "material.specular"), 1);
 
      Camera camera; //Initialisation camera
 
@@ -111,20 +117,32 @@ int main(int argc, char** argv) {
         glUniform1f(glGetUniformLocation(PointLighting.Program, "pointLights[1].linear"), 0.09);
         glUniform1f(glGetUniformLocation(PointLighting.Program, "pointLights[1].quadratic"), 0.032);
 
-        /* AMBIANTLIGHT */
-        AmbientLighting.Use();
-        GLint objectColorLoc = glGetUniformLocation(AmbientLighting.Program, "objectColor");
-        GLint lightColorLoc  = glGetUniformLocation(AmbientLighting.Program, "lightColor");
-        GLint lightPosLoc    = glGetUniformLocation(AmbientLighting.Program, "ambiantLightPos");
-        GLint viewPosLoc     = glGetUniformLocation(AmbientLighting.Program, "viewPos");
-        glUniform3f(objectColorLoc, 1.0f, 0.5f, 0.31f);
-        glUniform3f(lightColorLoc,  1.0f, 1.0f, 1.0f);
-        glUniform3f(lightPosLoc,    ambiantLightPos.x, ambiantLightPos.y, ambiantLightPos.z);
-        glUniform3f(viewPosLoc,     ambiantLightPos.x, ambiantLightPos.y, ambiantLightPos.z);
+
+
+                // Use cooresponding shader when setting uniforms/drawing objects
+                AmbientLighting.Use();
+                GLint lightPosLoc    = glGetUniformLocation(AmbientLighting.Program, "light.position");
+                GLint viewPosLoc     = glGetUniformLocation(AmbientLighting.Program, "viewPos");
+                glUniform3f(lightPosLoc, lightPos.x, lightPos.y, lightPos.z);
+                glUniform3f(viewPosLoc, lightPos.x, lightPos.y, lightPos.z);
+                // Set lights properties
+                glUniform3f(glGetUniformLocation(AmbientLighting.Program, "light.ambient"),  0.2f, 0.2f, 0.2f);
+                glUniform3f(glGetUniformLocation(AmbientLighting.Program, "light.diffuse"),  0.5f, 0.5f, 0.5f);
+                glUniform3f(glGetUniformLocation(AmbientLighting.Program, "light.specular"), 1.0f, 1.0f, 1.0f);
+                // Set material properties
+                glUniform1f(glGetUniformLocation(AmbientLighting.Program, "material.shininess"), 32.0f);
+
+
 
         // Transformation matrices
         glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)screenWidth/(float)screenHeight, 0.1f, 100.0f);
         glm::mat4 view = camera.getViewMatrix();
+
+        /* MYSHADER
+        MyShader.Use();
+        glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
+        glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
+        */
 
         // Get the uniform locations
         GLint modelLoc = glGetUniformLocation(AmbientLighting.Program, "model");
@@ -133,13 +151,6 @@ int main(int argc, char** argv) {
         // Pass the matrices to the shader
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
         glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
-
-
-        /* MYSHADER
-        MyShader.Use();
-        glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
-        glUniformMatrix4fv(glGetUniformLocation(MyShader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
-        */
 
         // Draw the loaded model
         glm::mat4 matModel;
