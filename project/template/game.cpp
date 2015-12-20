@@ -9,41 +9,13 @@
 #include "include/shader.hpp"
 #include "include/model.hpp"
 #include "include/camera.hpp"
+#include "include/skybox.hpp"
 
 using namespace glimac;
 using namespace std;
 
 // Light attributes
 glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
-
-GLuint loadCubemap(vector<const GLchar*> faces)
-{
-  GLuint textureID;
-  glGenTextures(1, &textureID);
-  glActiveTexture(GL_TEXTURE0);
-
-  int width,height;
-  std::unique_ptr<Image> image;
-
-  glBindTexture(GL_TEXTURE_CUBE_MAP, textureID);
-  for(GLuint i = 0; i < faces.size(); i++)
-  {
-      //image = SOIL_load_image(faces[i], &width, &height, 0, SOIL_LOAD_RGB);
-      image = loadImage(faces[i]);
-      //width = image->getWidth();
-      //height = image->getHeight();
-      glTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X + i,0,GL_RGBA,image->getWidth(),image->getHeight(),0,GL_RGBA,GL_FLOAT,image->getPixels());
-      //glTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X + i, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
-  }
-  glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-  glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-  glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-  glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-  glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
-  glBindTexture(GL_TEXTURE_CUBE_MAP, 0);
-
-  return textureID;
-}
 
 int main(int argc, char** argv) {
     GLuint screenWidth = 800, screenHeight = 600;
@@ -72,80 +44,11 @@ int main(int argc, char** argv) {
     Shader MyShader("template/shaders/model_loading.vs.glsl", "template/shaders/model_loading.fs.glsl");
     Shader AmbientLighting("template/shaders/ambiant_lighting.vs.glsl", "template/shaders/ambiant_lighting.fs.glsl");
     Shader PointLighting("template/shaders/point_lighting.vs.glsl", "template/shaders/point_lighting.fs.glsl");
-    Shader skyboxShader("template/shaders/skybox.vs.glsl", "template/shaders/skybox.fs.glsl");
 
     // Load models
     Model crysis("assets/models/nanosuit/nanosuit.obj");
     Model house("assets/models/house/fw43_lowpoly_n1.3ds");
     Model landscape("assets/models/castle/eastern ancient casttle/eastern ancient casttle.obj");
-
-    GLfloat skyboxVertices[] = {
-            // Positions
-            -50.0f,  50.0f, -50.0f,
-            -50.0f, -50.0f, -50.0f,
-             50.0f, -50.0f, -50.0f,
-             50.0f, -50.0f, -50.0f,
-             50.0f,  50.0f, -50.0f,
-            -50.0f,  50.0f, -50.0f,
-
-            -50.0f, -50.0f,  50.0f,
-            -50.0f, -50.0f, -50.0f,
-            -50.0f,  50.0f, -50.0f,
-            -50.0f,  50.0f, -50.0f,
-            -50.0f,  50.0f,  50.0f,
-            -50.0f, -50.0f,  50.0f,
-
-             50.0f, -50.0f, -50.0f,
-             50.0f, -50.0f,  50.0f,
-             50.0f,  50.0f,  50.0f,
-             50.0f,  50.0f,  50.0f,
-             50.0f,  50.0f, -50.0f,
-             50.0f, -50.0f, -50.0f,
-
-            -50.0f, -50.0f,  50.0f,
-            -50.0f,  50.0f,  50.0f,
-             50.0f,  50.0f,  50.0f,
-             50.0f,  50.0f,  50.0f,
-             50.0f, -50.0f,  50.0f,
-            -50.0f, -50.0f,  50.0f,
-
-            -50.0f,  50.0f, -50.0f,
-             50.0f,  50.0f, -50.0f,
-             50.0f,  50.0f,  50.0f,
-             50.0f,  50.0f,  50.0f,
-            -50.0f,  50.0f,  50.0f,
-            -50.0f,  50.0f, -50.0f,
-
-            -50.0f, -50.0f, -50.0f,
-            -50.0f, -50.0f,  50.0f,
-             50.0f, -50.0f, -50.0f,
-             50.0f, -50.0f, -50.0f,
-            -50.0f, -50.0f,  50.0f,
-             50.0f, -50.0f,  50.0f
-        };
-
-        // Setup skybox VAO
-        GLuint skyboxVAO, skyboxVBO;
-        glGenVertexArrays(1, &skyboxVAO);
-        glGenBuffers(1, &skyboxVBO);
-        glBindVertexArray(skyboxVAO);
-        glBindBuffer(GL_ARRAY_BUFFER, skyboxVBO);
-        glBufferData(GL_ARRAY_BUFFER, sizeof(skyboxVertices), &skyboxVertices, GL_STATIC_DRAW);
-        glEnableVertexAttribArray(0);
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)0);
-        glBindVertexArray(0);
-
-        // Cubemap (Skybox)
-        vector<const GLchar*> faces;
-        faces.push_back("assets/textures/right.jpg");
-        faces.push_back("assets/textures/left.jpg");
-        faces.push_back("assets/textures/top.jpg");
-        faces.push_back("assets/textures/bottom.jpg");
-        faces.push_back("assets/textures/back.jpg");
-        faces.push_back("assets/textures/front.jpg");
-        GLuint cubemapTexture = loadCubemap(faces);
-
-
 
     //Point light position
     glm::vec3 pointLightPositions[] {
@@ -165,6 +68,7 @@ int main(int argc, char** argv) {
     glUniform1i(glGetUniformLocation(AmbientLighting.Program, "material.specular"), 1);
 
      Camera camera; //Initialisation camera
+     Skybox skybox;
 
     // Application loop:
     bool done = false;
@@ -202,15 +106,15 @@ int main(int argc, char** argv) {
 
         // Draw skybox first
         glDepthMask(GL_FALSE);// Remember to turn depth writing off
-        skyboxShader.Use();
+        skybox.skyboxShader.Use();
 
-        glUniformMatrix4fv(glGetUniformLocation(skyboxShader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
-        glUniformMatrix4fv(glGetUniformLocation(skyboxShader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
+        glUniformMatrix4fv(glGetUniformLocation(skybox.skyboxShader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
+        glUniformMatrix4fv(glGetUniformLocation(skybox.skyboxShader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
         // skybox cube
-        glBindVertexArray(skyboxVAO);
+        glBindVertexArray(skybox.skyboxVAO);
         glActiveTexture(GL_TEXTURE0);
-        glUniform1i(glGetUniformLocation(skyboxShader.Program, "skybox"), 0);
-        glBindTexture(GL_TEXTURE_CUBE_MAP, cubemapTexture);
+        glUniform1i(glGetUniformLocation(skybox.skyboxShader.Program, "skybox"), 0);
+        glBindTexture(GL_TEXTURE_CUBE_MAP, skybox.SkyboxTexture);
         glDrawArrays(GL_TRIANGLES, 0, 36);
         glBindVertexArray(0);
         glDepthMask(GL_TRUE);
@@ -273,21 +177,23 @@ int main(int argc, char** argv) {
         glm::mat4 matModel;
         // Translate model to the center of the scene
         matModel = glm::translate(matModel, glm::vec3(0.0f, -1.75f, -5.0f));
-        matModel = glm::scale(matModel, glm::vec3(0.2f, 0.2f, 0.2f));
+        matModel = glm::scale(matModel, glm::vec3(0.1f, 0.1f, 0.1f));
         glUniformMatrix4fv(glGetUniformLocation(AmbientLighting.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
         crysis.Draw(AmbientLighting);
+
+        matModel = glm::scale(matModel, glm::vec3(2.0f, 2.0f, 2.0f));
 
         // Translate model to the center of the scene
         matModel = glm::rotate(matModel, glm::radians(-90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
         matModel = glm::translate(matModel, glm::vec3(0.0f, 2.0f, 0.0f));
-        matModel = glm::scale(matModel, glm::vec3(5.0f, 5.0f, 5.0f));
+        matModel = glm::scale(matModel, glm::vec3(2.5f, 2.5f, 2.5f));
         glUniformMatrix4fv(glGetUniformLocation(AmbientLighting.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
         house.Draw(AmbientLighting);
 
         // Translate model to the center of the scene
         matModel = glm::rotate(matModel, glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
         matModel = glm::translate(matModel, glm::vec3(5.0f, -19.0f, 55.0f));
-        matModel = glm::scale(matModel, glm::vec3(0.2f, 0.2f, 0.2f));
+        matModel = glm::scale(matModel, glm::vec3(0.1f, 0.1f, 0.1f));
         glUniformMatrix4fv(glGetUniformLocation(AmbientLighting.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
         landscape.Draw(AmbientLighting);
 
