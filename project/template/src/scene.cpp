@@ -14,34 +14,14 @@ void Scene::displayModels(float screenWidth, float screenHeight){
 
   // Draw the loaded model
   glm::mat4 matModel;
-  // Translate model to the center of the scene
-  matModel = glm::translate(matModel, glm::vec3(0.0f, -1.75f, -5.0f));
-  matModel = glm::scale(matModel, glm::vec3(0.05f, 0.05f, 0.05f));
-  glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
-  this->models["crysis"].Draw(this->shaders["AmbientLighting"]);
 
   // Translate model to the center of the scene
-  matModel = glm::rotate(matModel, glm::radians(-90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-  matModel = glm::translate(matModel, glm::vec3(0.0f, 2.0f, 0.0f));
-  matModel = glm::scale(matModel, glm::vec3(5.5f, 5.5f, 5.5f));
-  glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
-  this->models["house"].Draw(this->shaders["AmbientLighting"]);
-
-
-  // Translate model to the center of the scene
-  matModel = glm::rotate(matModel, glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-  matModel = glm::translate(matModel, glm::vec3(5.0f, -14.8f, 45.0f));
-  matModel = glm::scale(matModel, glm::vec3(0.15f, 0.15f, 0.15f));
+  matModel = glm::translate(matModel, glm::vec3(0.0f, -15.0f, 0.0f));
+  matModel = glm::scale(matModel, glm::vec3(0.12f, 0.12f, 0.12f));
   glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
   this->models["landscape"].Draw(this->shaders["AmbientLighting"]);
 
-  matModel = this->camera.getViewMatrix();
-
-  // Translate model to the center of the scene
-  matModel = glm::translate(matModel, glm::vec3(15.0f, -14.8f, 45.0f));
-  matModel = glm::scale(matModel, glm::vec3(0.15f, 0.15f, 0.15f));
-  glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
-  this->models["landscape"].Draw(this->shaders["AmbientLighting"]);
+  matModel = glm::mat4(1.0f);
 }
 
 
@@ -50,8 +30,8 @@ void Scene::loadScene(){
 
   this->models["crysis"] = Model("assets/models/nanosuit/nanosuit.obj");
   this->models["house"] = Model("assets/models/house/fw43_lowpoly_n1.3ds");
-  //this->models["landscape"] = Model("assets/models/castle/eastern ancient casttle/eastern ancient casttle.obj");
   this->models["landscape"] = Model("assets/models/tropical/Small Tropical Island.obj");
+  this->models["bridge"] = Model("assets/models/bridge/Bridge N070710.3DS");
 
   Camera camera;
   this->camera = camera;
