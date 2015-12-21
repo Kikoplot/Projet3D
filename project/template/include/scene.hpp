@@ -5,9 +5,12 @@
 #include <glimac/Image.hpp>
 #include <glimac/FilePath.hpp>
 
-#include <GL/glew.h>
+#include <map>
+#include <string>
+#include <fstream>
 #include <iostream>
-#include <vector>
+#include <cstdio>
+#include <GL/glew.h>
 
 #include <include/assimp/Importer.hpp>
 #include <include/assimp/scene.h>
@@ -26,9 +29,11 @@ class Scene {
     void loadScene();
 
   private:
+    map<string, Shader> shaders;
+    map<string, Model> models;
     Skybox skybox;
     Camera camera;
-    void displayModels();
+    void displayModels(float screenWidth, float screenHeight);
     void displaySkybox(float screenWidth, float screenHeight);
     void initLight(float screenWidth, float screenHeight);
     void moveCam(SDLWindowManager* windowManager);

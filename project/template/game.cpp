@@ -38,6 +38,7 @@ int main(int argc, char** argv) {
     cout << "GLEW Version : " << glewGetString(GLEW_VERSION) << endl;
 
      Scene scene;
+     scene.loadScene();
 
     // Application loop:
     bool done = false;

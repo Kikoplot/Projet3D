@@ -14,6 +14,7 @@ using namespace std;
 
 class Model {
   public:
+    Model();
     /*  Functions   */
     // Constructor, expects a filepath to a 3D model.
     Model(string path);
