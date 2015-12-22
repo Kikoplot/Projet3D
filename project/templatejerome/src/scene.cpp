@@ -55,7 +55,7 @@ int i,nbModel,nbShader;
     //Initialisation 
     getline(file, line);
     stringstream iss(line);
-    while(iss >> word >> nbShader >> word >> nbModel)
+    while(iss >> word >>nbModel  >> word >> nbShader )
     {
       cout << " Number of Models : " << nbModel << "And Number of Shaders : " << nbShader << endl; 
     }

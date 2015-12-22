@@ -6,28 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/templatejerome/game2.cpp
-glimac/SDLWindowManager.hpp
--
-GL/glew.h
--
-iostream
--
-include/assimp/Importer.hpp
--
-include/assimp/scene.h
--
-include/shader.hpp
-/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/templatejerome/include/shader.hpp
-include/model.hpp
-/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/templatejerome/include/model.hpp
-include/camera.hpp
-/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/templatejerome/include/camera.hpp
-include/skybox.hpp
-/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/templatejerome/include/skybox.hpp
-include/scene.hpp
-/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/templatejerome/include/scene.hpp
-
 /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/templatejerome/include/camera.hpp
 glimac/glm.hpp
 -
