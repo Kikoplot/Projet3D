@@ -56,12 +56,12 @@ Skybox::Skybox(){
 
       // Cubemap (Skybox)
       vector<const GLchar*> faces;
-      faces.push_back("assets/textures/island/right.jpg");
-      faces.push_back("assets/textures/island/left.jpg");
-      faces.push_back("assets/textures/island/top.jpg");
-      faces.push_back("assets/textures/island/bottom.jpg");
-      faces.push_back("assets/textures/island/back.jpg");
-      faces.push_back("assets/textures/island/front.jpg");
+      faces.push_back("assets/textures/sahara/right.tga");
+      faces.push_back("assets/textures/sahara/left.tga");
+      faces.push_back("assets/textures/sahara/up.tga");
+      faces.push_back("assets/textures/sahara/down.tga");
+      faces.push_back("assets/textures/sahara/back.tga");
+      faces.push_back("assets/textures/sahara/front.tga");
       GLuint cubemapTexture = loadCubemap(faces);
 
       this->SkyboxTexture = loadCubemap(faces);

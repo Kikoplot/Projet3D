@@ -33,7 +33,7 @@ class Scene {
     map<string, Model> models;
     Skybox skybox;
     Camera camera;
-    void displayModels(float screenWidth, float screenHeight);
+    void displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager);
     void displaySkybox(float screenWidth, float screenHeight);
     void initLight(float screenWidth, float screenHeight);
     void moveCam(SDLWindowManager* windowManager);
