@@ -227,7 +227,7 @@ templatejerome/game2: templatejerome/CMakeFiles/game2.dir/src/camera.cpp.o
 templatejerome/game2: templatejerome/CMakeFiles/game2.dir/src/skybox.cpp.o
 templatejerome/game2: templatejerome/CMakeFiles/game2.dir/src/scene.cpp.o
 templatejerome/game2: templatejerome/CMakeFiles/game2.dir/src/mesh.cpp.o
-templatejerome/game2: third-party/glimac/libglimac.so
+templatejerome/game2: third-party/glimac/libglimac.a
 templatejerome/game2: /usr/local/lib/libSDL2main.a
 templatejerome/game2: /usr/local/lib/libSDL2.so
 templatejerome/game2: /usr/lib/x86_64-linux-gnu/libGLU.so

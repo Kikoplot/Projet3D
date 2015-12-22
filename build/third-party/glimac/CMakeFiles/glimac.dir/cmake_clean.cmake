@@ -10,7 +10,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/glimac.dir/src/FreeflyCamera.cpp.o"
   "CMakeFiles/glimac.dir/src/Program.cpp.o"
   "libglimac.pdb"
-  "libglimac.so"
+  "libglimac.a"
 )
 
 # Per-language clean rules from dependency scanning.

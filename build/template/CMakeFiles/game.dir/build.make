@@ -227,7 +227,7 @@ template/game: template/CMakeFiles/game.dir/src/camera.cpp.o
 template/game: template/CMakeFiles/game.dir/src/skybox.cpp.o
 template/game: template/CMakeFiles/game.dir/src/scene.cpp.o
 template/game: template/CMakeFiles/game.dir/src/mesh.cpp.o
-template/game: third-party/glimac/libglimac.so
+template/game: third-party/glimac/libglimac.a
 template/game: /usr/local/lib/libSDL2main.a
 template/game: /usr/local/lib/libSDL2.so
 template/game: /usr/lib/x86_64-linux-gnu/libGLU.so

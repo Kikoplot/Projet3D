@@ -328,8 +328,8 @@ clean: third-party/assimp/test/CMakeFiles/gtest.dir/clean
 # Target rules for target third-party/assimp/test/CMakeFiles/unit.dir
 
 # All Build rule for target.
-third-party/assimp/test/CMakeFiles/unit.dir/all: third-party/assimp/code/CMakeFiles/assimp.dir/all
 third-party/assimp/test/CMakeFiles/unit.dir/all: third-party/assimp/test/CMakeFiles/gtest.dir/all
+third-party/assimp/test/CMakeFiles/unit.dir/all: third-party/assimp/code/CMakeFiles/assimp.dir/all
 	$(MAKE) -f third-party/assimp/test/CMakeFiles/unit.dir/build.make third-party/assimp/test/CMakeFiles/unit.dir/depend
 	$(MAKE) -f third-party/assimp/test/CMakeFiles/unit.dir/build.make third-party/assimp/test/CMakeFiles/unit.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles  88 89 90 91 92 93 94 95 96 97 98 99 100
