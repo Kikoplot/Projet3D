@@ -28,6 +28,18 @@ void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManage
   matModel = glm::scale(matModel, glm::vec3(0.01f, 0.01f, 0.01f));
   glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
   this->models["totem"].Draw(this->shaders["AmbientLighting"]);
+
+  matModel = glm::mat4(1.0f);
+
+  // Translate model to the center of the scene
+  matModel = glm::translate(matModel, glm::vec3(-27.0f, -10.0f, -10.0f));
+  matModel = glm::scale(matModel, glm::vec3(0.6f, 0.6f, 0.6f));
+  matModel = glm::rotate(matModel, glm::radians(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+  glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
+  this->models["cage"].Draw(this->shaders["AmbientLighting"]);
+
+  matModel = glm::mat4(1.0f);
+
 }
 
 
@@ -35,10 +47,9 @@ void Scene::loadScene(){
   this->shaders["AmbientLighting"] = Shader("template/shaders/ambiant_lighting.vs.glsl", "template/shaders/ambiant_lighting.fs.glsl");
   this->shaders["PointLight"] = Shader("template/shaders/point_lighting.vs.glsl", "template/shaders/point_lighting.fs.glsl");
 
-  this->models["crysis"] = Model("assets/models/nanosuit/nanosuit.obj");
-  this->models["house"] = Model("assets/models/house/fw43_lowpoly_n1.3ds");
   this->models["landscape"] = Model("assets/models/tropical/Small Tropical Island.obj");
   this->models["totem"] = Model("assets/models/column/column.obj");
+  this->models["cage"] = Model("assets/models/cage/Portal Refraction Cube.3ds");
 
   Camera camera;
   this->camera = camera;
