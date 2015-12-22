@@ -1,0 +1,5 @@
+nbModel: 2 nbShader: 1
+AmbientLighting template/shaders/ambiant_light.vs.glsl template/shaders/ambiant_light.fs.gls
+crysis assets/models/nanosuit/nanosuit.obj AmbientLighting
+house assets/models/house/fw43_lowpoly_n1.3ds AmbientLighting
+landscape assets/models/tropical/Small_Tropical_Island.obj
