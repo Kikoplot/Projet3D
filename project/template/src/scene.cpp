@@ -7,7 +7,7 @@ Scene::Scene(){
 
 }
 
-void Scene::displayModels(float screenWidth, float screenHeight){
+void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager){
 
   glm::mat4 view = this->camera.getViewMatrix();
   glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)screenWidth/(float)screenHeight, 0.1f, 100.0f);
@@ -22,16 +22,23 @@ void Scene::displayModels(float screenWidth, float screenHeight){
   this->models["landscape"].Draw(this->shaders["AmbientLighting"]);
 
   matModel = glm::mat4(1.0f);
+
+  // Translate model to the center of the scene
+  matModel = glm::translate(matModel, glm::vec3(-27.0f, -14.0f, -10.0f));
+  matModel = glm::scale(matModel, glm::vec3(0.01f, 0.01f, 0.01f));
+  glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
+  this->models["totem"].Draw(this->shaders["AmbientLighting"]);
 }
 
 
 void Scene::loadScene(){
   this->shaders["AmbientLighting"] = Shader("template/shaders/ambiant_lighting.vs.glsl", "template/shaders/ambiant_lighting.fs.glsl");
+  this->shaders["PointLight"] = Shader("template/shaders/point_lighting.vs.glsl", "template/shaders/point_lighting.fs.glsl");
 
   this->models["crysis"] = Model("assets/models/nanosuit/nanosuit.obj");
   this->models["house"] = Model("assets/models/house/fw43_lowpoly_n1.3ds");
   this->models["landscape"] = Model("assets/models/tropical/Small Tropical Island.obj");
-  this->models["bridge"] = Model("assets/models/bridge/Bridge N070710.3DS");
+  this->models["totem"] = Model("assets/models/column/column.obj");
 
   Camera camera;
   this->camera = camera;
@@ -55,12 +62,9 @@ void Scene::displaySkybox(float screenWidth, float screenHeight){
   glDrawArrays(GL_TRIANGLES, 0, 36);
   glBindVertexArray(0);
   glDepthMask(GL_TRUE);
-
 }
 
 void Scene::initLight(float screenWidth, float screenHeight){
-
-  //Shader AmbientLighting("template/shaders/ambiant_lighting.vs.glsl", "template/shaders/ambiant_lighting.fs.glsl");
   // Use cooresponding shader when setting uniforms/drawing objects
   this->shaders["AmbientLighting"].Use();
 
@@ -79,13 +83,13 @@ void Scene::initLight(float screenWidth, float screenHeight){
   GLint lightPosLoc = glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.position");
   GLint viewPosLoc = glGetUniformLocation(this->shaders["AmbientLighting"].Program, "viewPos");
 
-  glUniform3f(lightPosLoc, 1.2f, 1.0f, 2.0f);
-  glUniform3f(viewPosLoc, 1.2f, 1.0f, 2.0f);
+  glUniform3f(lightPosLoc, 0.0f, 12.0f, -38.0f);
+  glUniform3f(viewPosLoc, 0.0f, 12.0f, -38.0f);
 
   // Set lights properties
-  glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.ambient"),  0.2f, 0.2f, 0.2f);
-  glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.diffuse"),  0.5f, 0.5f, 0.5f);
-  glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.specular"), 1.0f, 1.0f, 1.0f);
+  glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.ambient"),  0.3f, 0.3f, 0.3f);
+  glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.diffuse"),  0.7f, 0.7f, 0.7f);
+  glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.specular"), 2.0f, 2.0f, 2.0f);
   // Set material properties
   glUniform1f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.shininess"), 32.0f);
 }
@@ -93,7 +97,7 @@ void Scene::initLight(float screenWidth, float screenHeight){
 void Scene::update(SDLWindowManager* windowManager, float screenWidth, float screenHeight){
   moveCam(windowManager);
   initLight(screenWidth, screenHeight);
-  displayModels(screenWidth, screenHeight);
+  displayModels(screenWidth, screenHeight, windowManager);
   displaySkybox(screenWidth, screenHeight);
 }
 
@@ -110,4 +114,6 @@ void Scene::moveCam(SDLWindowManager* windowManager){
   this->camera.rotateLeft(-1*MousePositionX);
   this->camera.rotateUp(-1*MousePositionY);
 
+  // Draw the loaded model
+  glm::mat4 matModel;
 }

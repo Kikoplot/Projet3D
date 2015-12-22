@@ -37,8 +37,8 @@ int main(int argc, char** argv) {
     cout << "OpenGL Version : " << glGetString(GL_VERSION) << endl;
     cout << "GLEW Version : " << glewGetString(GLEW_VERSION) << endl;
 
-     Scene scene;
-     scene.loadScene();
+    Scene scene;
+    scene.loadScene();
 
     // Application loop:
     bool done = false;
