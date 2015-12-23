@@ -58,7 +58,9 @@ int main(int argc, char** argv) {
         glClearColor(0.05f, 0.05f, 0.05f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        scene.update(&windowManager, screenWidth, screenHeight);
+        float rotation = rotation + 0.1f;
+
+        scene.update(&windowManager, screenWidth, screenHeight, rotation);
 
         // Update the display
         windowManager.swapBuffers();

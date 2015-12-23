@@ -7,7 +7,8 @@ Scene::Scene(){
 
 }
 
-void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager){
+void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager, float rotation){
+
 
   glm::mat4 view = this->camera.getViewMatrix();
   glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)screenWidth/(float)screenHeight, 0.1f, 100.0f);
@@ -34,7 +35,7 @@ void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManage
   // Translate model to the center of the scene
   matModel = glm::translate(matModel, glm::vec3(-27.0f, -10.0f, -10.0f));
   matModel = glm::scale(matModel, glm::vec3(0.6f, 0.6f, 0.6f));
-  matModel = glm::rotate(matModel, glm::radians(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+  matModel = glm::rotate(matModel, glm::radians(34.5f+rotation), glm::vec3(1.0f, 1.0f, 1.0f));
   glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
   this->models["cage"].Draw(this->shaders["AmbientLighting"]);
 
@@ -105,10 +106,10 @@ void Scene::initLight(float screenWidth, float screenHeight){
   glUniform1f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.shininess"), 32.0f);
 }
 
-void Scene::update(SDLWindowManager* windowManager, float screenWidth, float screenHeight){
+void Scene::update(SDLWindowManager* windowManager, float screenWidth, float screenHeight, float rotation){
   moveCam(windowManager);
   initLight(screenWidth, screenHeight);
-  displayModels(screenWidth, screenHeight, windowManager);
+  displayModels(screenWidth, screenHeight, windowManager, rotation);
   displaySkybox(screenWidth, screenHeight);
 }
 

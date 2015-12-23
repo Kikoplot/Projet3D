@@ -25,7 +25,7 @@ using namespace glimac;
 class Scene {
   public:
     Scene();
-    void update(SDLWindowManager* windowManager, float screenWidth, float screenHeight);
+    void update(SDLWindowManager* windowManager, float screenWidth, float screenHeight, float rotation);
     void loadScene();
 
   private:
@@ -33,7 +33,7 @@ class Scene {
     map<string, Model> models;
     Skybox skybox;
     Camera camera;
-    void displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager);
+    void displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager, float rotation);
     void displaySkybox(float screenWidth, float screenHeight);
     void initLight(float screenWidth, float screenHeight);
     void moveCam(SDLWindowManager* windowManager);
