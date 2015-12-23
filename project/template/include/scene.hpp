@@ -27,6 +27,7 @@ class Scene {
     Scene();
     void update(SDLWindowManager* windowManager, float screenWidth, float screenHeight, float rotation);
     void loadScene();
+    glm::vec3 totemPosition[];
 
   private:
     map<string, Shader> shaders;
