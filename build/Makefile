@@ -35,11 +35,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project
+CMAKE_SOURCE_DIR = /home/jeremie/Documents/IMAC2/Projet3D/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build
+CMAKE_BINARY_DIR = /home/jeremie/Documents/IMAC2/Projet3D/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -107,9 +110,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -227,19 +230,6 @@ game/fast:
 	$(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/build
 .PHONY : game/fast
 
-#=============================================================================
-# Target rules for targets named game2
-
-# Build rule for target.
-game2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 game2
-.PHONY : game2
-
-# fast build rule for target.
-game2/fast:
-	$(MAKE) -f templatejerome/CMakeFiles/game2.dir/build.make templatejerome/CMakeFiles/game2.dir/build
-.PHONY : game2/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -259,7 +249,6 @@ help:
 	@echo "... gtest"
 	@echo "... unit"
 	@echo "... game"
-	@echo "... game2"
 .PHONY : help
 
 

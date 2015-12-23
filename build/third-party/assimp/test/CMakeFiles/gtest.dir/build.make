@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project
+CMAKE_SOURCE_DIR = /home/jeremie/Documents/IMAC2/Projet3D/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build
+CMAKE_BINARY_DIR = /home/jeremie/Documents/IMAC2/Projet3D/build
 
 # Utility rule file for gtest.
 
@@ -52,60 +55,58 @@ third-party/assimp/test/CMakeFiles/gtest-complete: third-party/assimp/test/gtest
 third-party/assimp/test/CMakeFiles/gtest-complete: third-party/assimp/test/gtest/src/gtest-stamp/gtest-configure
 third-party/assimp/test/CMakeFiles/gtest-complete: third-party/assimp/test/gtest/src/gtest-stamp/gtest-build
 third-party/assimp/test/CMakeFiles/gtest-complete: third-party/assimp/test/gtest/src/gtest-stamp/gtest-install
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Completed 'gtest'"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/CMakeFiles
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E touch /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/CMakeFiles/gtest-complete
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E touch /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-done
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/CMakeFiles
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E touch /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/CMakeFiles/gtest-complete
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E touch /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-done
 
 third-party/assimp/test/gtest/src/gtest-stamp/gtest-install: third-party/assimp/test/gtest/src/gtest-stamp/gtest-build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "No install step for 'gtest'"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build && /usr/bin/cmake -E touch /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-install
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build && /usr/bin/cmake -E touch /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-install
 
 third-party/assimp/test/gtest/src/gtest-stamp/gtest-mkdir:
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Creating directories for 'gtest'"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/tmp
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E touch /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-mkdir
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/tmp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E make_directory /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E touch /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-mkdir
 
 third-party/assimp/test/gtest/src/gtest-stamp/gtest-download: third-party/assimp/test/gtest/src/gtest-stamp/gtest-gitinfo.txt
 third-party/assimp/test/gtest/src/gtest-stamp/gtest-download: third-party/assimp/test/gtest/src/gtest-stamp/gtest-mkdir
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Performing download step (git clone) for 'gtest'"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src && /usr/bin/cmake -P /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-download.cmake
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src && /usr/bin/cmake -E touch /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-download
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src && /usr/bin/cmake -P /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-download.cmake
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src && /usr/bin/cmake -E touch /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-download
 
 third-party/assimp/test/gtest/src/gtest-stamp/gtest-update: third-party/assimp/test/gtest/src/gtest-stamp/gtest-download
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Performing update step (git fetch) for 'gtest'"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest && /usr/bin/git fetch
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest && /usr/bin/git checkout master
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest && /usr/bin/git submodule update --recursive
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Performing update step for 'gtest'"
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest && /usr/bin/cmake -P /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/tmp/gtest-gitupdate.cmake
 
 third-party/assimp/test/gtest/src/gtest-stamp/gtest-patch: third-party/assimp/test/gtest/src/gtest-stamp/gtest-download
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "No patch step for 'gtest'"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E touch /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-patch
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test && /usr/bin/cmake -E touch /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-patch
 
 third-party/assimp/test/gtest/src/gtest-stamp/gtest-configure: third-party/assimp/test/gtest/tmp/gtest-cfgcmd.txt
 third-party/assimp/test/gtest/src/gtest-stamp/gtest-configure: third-party/assimp/test/gtest/src/gtest-stamp/gtest-update
 third-party/assimp/test/gtest/src/gtest-stamp/gtest-configure: third-party/assimp/test/gtest/src/gtest-stamp/gtest-patch
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Performing configure step for 'gtest'"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build && /usr/bin/cmake -P /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-configure.cmake
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build && /usr/bin/cmake -E touch /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-configure
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build && /usr/bin/cmake -P /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-configure.cmake
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build && /usr/bin/cmake -E touch /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-configure
 
 third-party/assimp/test/gtest/src/gtest-stamp/gtest-build: third-party/assimp/test/gtest/src/gtest-stamp/gtest-configure
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Performing build step for 'gtest'"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build && /usr/bin/cmake -Dmake=$(MAKE) -P /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-build.cmake
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build && /usr/bin/cmake -E touch /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-build
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build && /usr/bin/cmake -Dmake=$(MAKE) -P /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-build.cmake
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build && /usr/bin/cmake -E touch /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-stamp/gtest-build
 
 gtest: third-party/assimp/test/CMakeFiles/gtest
 gtest: third-party/assimp/test/CMakeFiles/gtest-complete
@@ -124,10 +125,10 @@ third-party/assimp/test/CMakeFiles/gtest.dir/build: gtest
 .PHONY : third-party/assimp/test/CMakeFiles/gtest.dir/build
 
 third-party/assimp/test/CMakeFiles/gtest.dir/clean:
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean.cmake
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean.cmake
 .PHONY : third-party/assimp/test/CMakeFiles/gtest.dir/clean
 
 third-party/assimp/test/CMakeFiles/gtest.dir/depend:
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/test /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jeremie/Documents/IMAC2/Projet3D/project /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/test /home/jeremie/Documents/IMAC2/Projet3D/build /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : third-party/assimp/test/CMakeFiles/gtest.dir/depend
 

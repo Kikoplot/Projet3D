@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project
+CMAKE_SOURCE_DIR = /home/jeremie/Documents/IMAC2/Projet3D/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build
+CMAKE_BINARY_DIR = /home/jeremie/Documents/IMAC2/Projet3D/build
 
 # Include any dependencies generated for this target.
 include third-party/assimp/code/CMakeFiles/assimp.dir/depend.make
@@ -47,18 +50,18 @@ include third-party/assimp/code/CMakeFiles/assimp.dir/progress.make
 include third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Assimp.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/Assimp.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Assimp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_1)
+third-party/assimp/code/CMakeFiles/assimp.dir/Assimp.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Assimp.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/Assimp.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Assimp.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Assimp.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Assimp.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Assimp.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Assimp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/Assimp.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Assimp.cpp > CMakeFiles/assimp.dir/Assimp.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Assimp.cpp > CMakeFiles/assimp.dir/Assimp.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Assimp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/Assimp.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Assimp.cpp -o CMakeFiles/assimp.dir/Assimp.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Assimp.cpp -o CMakeFiles/assimp.dir/Assimp.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Assimp.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/Assimp.cpp.o.requires
@@ -70,18 +73,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/Assimp.cpp.o.provides: third-party
 third-party/assimp/code/CMakeFiles/assimp.dir/Assimp.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/Assimp.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BaseImporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/BaseImporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BaseImporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_2)
+third-party/assimp/code/CMakeFiles/assimp.dir/BaseImporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BaseImporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/BaseImporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BaseImporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BaseImporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BaseImporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BaseImporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BaseImporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/BaseImporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BaseImporter.cpp > CMakeFiles/assimp.dir/BaseImporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BaseImporter.cpp > CMakeFiles/assimp.dir/BaseImporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BaseImporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/BaseImporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BaseImporter.cpp -o CMakeFiles/assimp.dir/BaseImporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BaseImporter.cpp -o CMakeFiles/assimp.dir/BaseImporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BaseImporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/BaseImporter.cpp.o.requires
@@ -93,18 +96,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/BaseImporter.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/BaseImporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/BaseImporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BaseProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/BaseProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BaseProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_3)
+third-party/assimp/code/CMakeFiles/assimp.dir/BaseProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BaseProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/BaseProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BaseProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BaseProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BaseProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BaseProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BaseProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/BaseProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BaseProcess.cpp > CMakeFiles/assimp.dir/BaseProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BaseProcess.cpp > CMakeFiles/assimp.dir/BaseProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BaseProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/BaseProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BaseProcess.cpp -o CMakeFiles/assimp.dir/BaseProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BaseProcess.cpp -o CMakeFiles/assimp.dir/BaseProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BaseProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/BaseProcess.cpp.o.requires
@@ -116,18 +119,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/BaseProcess.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/BaseProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/BaseProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PostStepRegistry.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/PostStepRegistry.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PostStepRegistry.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_4)
+third-party/assimp/code/CMakeFiles/assimp.dir/PostStepRegistry.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PostStepRegistry.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/PostStepRegistry.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/PostStepRegistry.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PostStepRegistry.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/PostStepRegistry.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PostStepRegistry.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PostStepRegistry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/PostStepRegistry.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PostStepRegistry.cpp > CMakeFiles/assimp.dir/PostStepRegistry.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PostStepRegistry.cpp > CMakeFiles/assimp.dir/PostStepRegistry.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PostStepRegistry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/PostStepRegistry.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PostStepRegistry.cpp -o CMakeFiles/assimp.dir/PostStepRegistry.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PostStepRegistry.cpp -o CMakeFiles/assimp.dir/PostStepRegistry.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PostStepRegistry.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/PostStepRegistry.cpp.o.requires
@@ -139,18 +142,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/PostStepRegistry.cpp.o.provides: t
 third-party/assimp/code/CMakeFiles/assimp.dir/PostStepRegistry.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/PostStepRegistry.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ImporterRegistry.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ImporterRegistry.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ImporterRegistry.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_5)
+third-party/assimp/code/CMakeFiles/assimp.dir/ImporterRegistry.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ImporterRegistry.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ImporterRegistry.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ImporterRegistry.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ImporterRegistry.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ImporterRegistry.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ImporterRegistry.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ImporterRegistry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ImporterRegistry.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ImporterRegistry.cpp > CMakeFiles/assimp.dir/ImporterRegistry.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ImporterRegistry.cpp > CMakeFiles/assimp.dir/ImporterRegistry.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ImporterRegistry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ImporterRegistry.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ImporterRegistry.cpp -o CMakeFiles/assimp.dir/ImporterRegistry.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ImporterRegistry.cpp -o CMakeFiles/assimp.dir/ImporterRegistry.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ImporterRegistry.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ImporterRegistry.cpp.o.requires
@@ -162,18 +165,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ImporterRegistry.cpp.o.provides: t
 third-party/assimp/code/CMakeFiles/assimp.dir/ImporterRegistry.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ImporterRegistry.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOStream.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOStream.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DefaultIOStream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_6)
+third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOStream.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DefaultIOStream.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOStream.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/DefaultIOStream.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DefaultIOStream.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/DefaultIOStream.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DefaultIOStream.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/DefaultIOStream.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DefaultIOStream.cpp > CMakeFiles/assimp.dir/DefaultIOStream.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DefaultIOStream.cpp > CMakeFiles/assimp.dir/DefaultIOStream.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/DefaultIOStream.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DefaultIOStream.cpp -o CMakeFiles/assimp.dir/DefaultIOStream.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DefaultIOStream.cpp -o CMakeFiles/assimp.dir/DefaultIOStream.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOStream.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOStream.cpp.o.requires
@@ -185,18 +188,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOStream.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOStream.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOStream.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOSystem.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOSystem.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DefaultIOSystem.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_7)
+third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOSystem.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DefaultIOSystem.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOSystem.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/DefaultIOSystem.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DefaultIOSystem.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/DefaultIOSystem.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DefaultIOSystem.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/DefaultIOSystem.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DefaultIOSystem.cpp > CMakeFiles/assimp.dir/DefaultIOSystem.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DefaultIOSystem.cpp > CMakeFiles/assimp.dir/DefaultIOSystem.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/DefaultIOSystem.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DefaultIOSystem.cpp -o CMakeFiles/assimp.dir/DefaultIOSystem.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DefaultIOSystem.cpp -o CMakeFiles/assimp.dir/DefaultIOSystem.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOSystem.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOSystem.cpp.o.requires
@@ -208,18 +211,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOSystem.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOSystem.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/DefaultIOSystem.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Importer.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/Importer.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Importer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_8)
+third-party/assimp/code/CMakeFiles/assimp.dir/Importer.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Importer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/Importer.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Importer.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Importer.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Importer.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Importer.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Importer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/Importer.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Importer.cpp > CMakeFiles/assimp.dir/Importer.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Importer.cpp > CMakeFiles/assimp.dir/Importer.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Importer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/Importer.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Importer.cpp -o CMakeFiles/assimp.dir/Importer.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Importer.cpp -o CMakeFiles/assimp.dir/Importer.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Importer.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/Importer.cpp.o.requires
@@ -231,18 +234,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/Importer.cpp.o.provides: third-par
 third-party/assimp/code/CMakeFiles/assimp.dir/Importer.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/Importer.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SGSpatialSort.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/SGSpatialSort.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SGSpatialSort.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_9)
+third-party/assimp/code/CMakeFiles/assimp.dir/SGSpatialSort.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SGSpatialSort.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/SGSpatialSort.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SGSpatialSort.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SGSpatialSort.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SGSpatialSort.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SGSpatialSort.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SGSpatialSort.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/SGSpatialSort.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SGSpatialSort.cpp > CMakeFiles/assimp.dir/SGSpatialSort.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SGSpatialSort.cpp > CMakeFiles/assimp.dir/SGSpatialSort.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SGSpatialSort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/SGSpatialSort.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SGSpatialSort.cpp -o CMakeFiles/assimp.dir/SGSpatialSort.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SGSpatialSort.cpp -o CMakeFiles/assimp.dir/SGSpatialSort.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SGSpatialSort.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/SGSpatialSort.cpp.o.requires
@@ -254,18 +257,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/SGSpatialSort.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/SGSpatialSort.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/SGSpatialSort.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/VertexTriangleAdjacency.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_10)
+third-party/assimp/code/CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/VertexTriangleAdjacency.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/VertexTriangleAdjacency.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/VertexTriangleAdjacency.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/VertexTriangleAdjacency.cpp > CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/VertexTriangleAdjacency.cpp > CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/VertexTriangleAdjacency.cpp -o CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/VertexTriangleAdjacency.cpp -o CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.o.requires
@@ -277,18 +280,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.o.prov
 third-party/assimp/code/CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/VertexTriangleAdjacency.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SpatialSort.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/SpatialSort.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SpatialSort.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_11)
+third-party/assimp/code/CMakeFiles/assimp.dir/SpatialSort.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SpatialSort.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/SpatialSort.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SpatialSort.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SpatialSort.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SpatialSort.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SpatialSort.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SpatialSort.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/SpatialSort.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SpatialSort.cpp > CMakeFiles/assimp.dir/SpatialSort.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SpatialSort.cpp > CMakeFiles/assimp.dir/SpatialSort.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SpatialSort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/SpatialSort.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SpatialSort.cpp -o CMakeFiles/assimp.dir/SpatialSort.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SpatialSort.cpp -o CMakeFiles/assimp.dir/SpatialSort.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SpatialSort.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/SpatialSort.cpp.o.requires
@@ -300,18 +303,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/SpatialSort.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/SpatialSort.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/SpatialSort.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SceneCombiner.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/SceneCombiner.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SceneCombiner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_12)
+third-party/assimp/code/CMakeFiles/assimp.dir/SceneCombiner.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SceneCombiner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/SceneCombiner.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SceneCombiner.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SceneCombiner.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SceneCombiner.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SceneCombiner.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SceneCombiner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/SceneCombiner.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SceneCombiner.cpp > CMakeFiles/assimp.dir/SceneCombiner.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SceneCombiner.cpp > CMakeFiles/assimp.dir/SceneCombiner.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SceneCombiner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/SceneCombiner.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SceneCombiner.cpp -o CMakeFiles/assimp.dir/SceneCombiner.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SceneCombiner.cpp -o CMakeFiles/assimp.dir/SceneCombiner.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SceneCombiner.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/SceneCombiner.cpp.o.requires
@@ -323,18 +326,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/SceneCombiner.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/SceneCombiner.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/SceneCombiner.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ScenePreprocessor.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ScenePreprocessor.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ScenePreprocessor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_13)
+third-party/assimp/code/CMakeFiles/assimp.dir/ScenePreprocessor.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ScenePreprocessor.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ScenePreprocessor.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ScenePreprocessor.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ScenePreprocessor.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ScenePreprocessor.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ScenePreprocessor.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ScenePreprocessor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ScenePreprocessor.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ScenePreprocessor.cpp > CMakeFiles/assimp.dir/ScenePreprocessor.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ScenePreprocessor.cpp > CMakeFiles/assimp.dir/ScenePreprocessor.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ScenePreprocessor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ScenePreprocessor.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ScenePreprocessor.cpp -o CMakeFiles/assimp.dir/ScenePreprocessor.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ScenePreprocessor.cpp -o CMakeFiles/assimp.dir/ScenePreprocessor.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ScenePreprocessor.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ScenePreprocessor.cpp.o.requires
@@ -346,18 +349,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ScenePreprocessor.cpp.o.provides: 
 third-party/assimp/code/CMakeFiles/assimp.dir/ScenePreprocessor.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ScenePreprocessor.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SkeletonMeshBuilder.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_14)
+third-party/assimp/code/CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SkeletonMeshBuilder.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SkeletonMeshBuilder.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SkeletonMeshBuilder.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SkeletonMeshBuilder.cpp > CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SkeletonMeshBuilder.cpp > CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SkeletonMeshBuilder.cpp -o CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SkeletonMeshBuilder.cpp -o CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.o.requires
@@ -369,18 +372,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.o.provides
 third-party/assimp/code/CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/SkeletonMeshBuilder.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SplitByBoneCountProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_15)
+third-party/assimp/code/CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SplitByBoneCountProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SplitByBoneCountProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SplitByBoneCountProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SplitByBoneCountProcess.cpp > CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SplitByBoneCountProcess.cpp > CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SplitByBoneCountProcess.cpp -o CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SplitByBoneCountProcess.cpp -o CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.o.requires
@@ -392,18 +395,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.o.prov
 third-party/assimp/code/CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/SplitByBoneCountProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/StandardShapes.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/StandardShapes.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/StandardShapes.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_16)
+third-party/assimp/code/CMakeFiles/assimp.dir/StandardShapes.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/StandardShapes.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/StandardShapes.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/StandardShapes.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/StandardShapes.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/StandardShapes.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/StandardShapes.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/StandardShapes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/StandardShapes.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/StandardShapes.cpp > CMakeFiles/assimp.dir/StandardShapes.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/StandardShapes.cpp > CMakeFiles/assimp.dir/StandardShapes.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/StandardShapes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/StandardShapes.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/StandardShapes.cpp -o CMakeFiles/assimp.dir/StandardShapes.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/StandardShapes.cpp -o CMakeFiles/assimp.dir/StandardShapes.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/StandardShapes.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/StandardShapes.cpp.o.requires
@@ -415,18 +418,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/StandardShapes.cpp.o.provides: thi
 third-party/assimp/code/CMakeFiles/assimp.dir/StandardShapes.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/StandardShapes.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TargetAnimation.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/TargetAnimation.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TargetAnimation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_17)
+third-party/assimp/code/CMakeFiles/assimp.dir/TargetAnimation.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TargetAnimation.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/TargetAnimation.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/TargetAnimation.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TargetAnimation.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/TargetAnimation.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TargetAnimation.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TargetAnimation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/TargetAnimation.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TargetAnimation.cpp > CMakeFiles/assimp.dir/TargetAnimation.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TargetAnimation.cpp > CMakeFiles/assimp.dir/TargetAnimation.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TargetAnimation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/TargetAnimation.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TargetAnimation.cpp -o CMakeFiles/assimp.dir/TargetAnimation.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TargetAnimation.cpp -o CMakeFiles/assimp.dir/TargetAnimation.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TargetAnimation.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/TargetAnimation.cpp.o.requires
@@ -438,18 +441,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/TargetAnimation.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/TargetAnimation.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/TargetAnimation.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveComments.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/RemoveComments.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RemoveComments.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_18)
+third-party/assimp/code/CMakeFiles/assimp.dir/RemoveComments.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RemoveComments.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/RemoveComments.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/RemoveComments.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RemoveComments.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/RemoveComments.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RemoveComments.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveComments.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/RemoveComments.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RemoveComments.cpp > CMakeFiles/assimp.dir/RemoveComments.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RemoveComments.cpp > CMakeFiles/assimp.dir/RemoveComments.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveComments.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/RemoveComments.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RemoveComments.cpp -o CMakeFiles/assimp.dir/RemoveComments.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RemoveComments.cpp -o CMakeFiles/assimp.dir/RemoveComments.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveComments.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/RemoveComments.cpp.o.requires
@@ -461,18 +464,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/RemoveComments.cpp.o.provides: thi
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveComments.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/RemoveComments.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Subdivision.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/Subdivision.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Subdivision.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_19)
+third-party/assimp/code/CMakeFiles/assimp.dir/Subdivision.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Subdivision.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/Subdivision.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Subdivision.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Subdivision.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Subdivision.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Subdivision.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Subdivision.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/Subdivision.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Subdivision.cpp > CMakeFiles/assimp.dir/Subdivision.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Subdivision.cpp > CMakeFiles/assimp.dir/Subdivision.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Subdivision.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/Subdivision.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Subdivision.cpp -o CMakeFiles/assimp.dir/Subdivision.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Subdivision.cpp -o CMakeFiles/assimp.dir/Subdivision.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Subdivision.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/Subdivision.cpp.o.requires
@@ -484,18 +487,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/Subdivision.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/Subdivision.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/Subdivision.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Bitmap.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/Bitmap.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Bitmap.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_20)
+third-party/assimp/code/CMakeFiles/assimp.dir/Bitmap.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Bitmap.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/Bitmap.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Bitmap.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Bitmap.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Bitmap.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Bitmap.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Bitmap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/Bitmap.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Bitmap.cpp > CMakeFiles/assimp.dir/Bitmap.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Bitmap.cpp > CMakeFiles/assimp.dir/Bitmap.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Bitmap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/Bitmap.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Bitmap.cpp -o CMakeFiles/assimp.dir/Bitmap.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Bitmap.cpp -o CMakeFiles/assimp.dir/Bitmap.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Bitmap.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/Bitmap.cpp.o.requires
@@ -507,18 +510,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/Bitmap.cpp.o.provides: third-party
 third-party/assimp/code/CMakeFiles/assimp.dir/Bitmap.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/Bitmap.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Version.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/Version.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Version.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_21)
+third-party/assimp/code/CMakeFiles/assimp.dir/Version.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Version.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/Version.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Version.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Version.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Version.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Version.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Version.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/Version.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Version.cpp > CMakeFiles/assimp.dir/Version.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Version.cpp > CMakeFiles/assimp.dir/Version.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Version.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/Version.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Version.cpp -o CMakeFiles/assimp.dir/Version.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Version.cpp -o CMakeFiles/assimp.dir/Version.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Version.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/Version.cpp.o.requires
@@ -530,18 +533,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/Version.cpp.o.provides: third-part
 third-party/assimp/code/CMakeFiles/assimp.dir/Version.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/Version.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultLogger.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/DefaultLogger.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DefaultLogger.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_22)
+third-party/assimp/code/CMakeFiles/assimp.dir/DefaultLogger.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DefaultLogger.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/DefaultLogger.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/DefaultLogger.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DefaultLogger.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/DefaultLogger.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DefaultLogger.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultLogger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/DefaultLogger.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DefaultLogger.cpp > CMakeFiles/assimp.dir/DefaultLogger.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DefaultLogger.cpp > CMakeFiles/assimp.dir/DefaultLogger.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultLogger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/DefaultLogger.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DefaultLogger.cpp -o CMakeFiles/assimp.dir/DefaultLogger.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DefaultLogger.cpp -o CMakeFiles/assimp.dir/DefaultLogger.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultLogger.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/DefaultLogger.cpp.o.requires
@@ -553,18 +556,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/DefaultLogger.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/DefaultLogger.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/DefaultLogger.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Exporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/Exporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Exporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_23)
+third-party/assimp/code/CMakeFiles/assimp.dir/Exporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Exporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/Exporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Exporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Exporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Exporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Exporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Exporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/Exporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Exporter.cpp > CMakeFiles/assimp.dir/Exporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Exporter.cpp > CMakeFiles/assimp.dir/Exporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Exporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/Exporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Exporter.cpp -o CMakeFiles/assimp.dir/Exporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Exporter.cpp -o CMakeFiles/assimp.dir/Exporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Exporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/Exporter.cpp.o.requires
@@ -576,18 +579,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/Exporter.cpp.o.provides: third-par
 third-party/assimp/code/CMakeFiles/assimp.dir/Exporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/Exporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssimpCExport.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/AssimpCExport.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssimpCExport.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_24)
+third-party/assimp/code/CMakeFiles/assimp.dir/AssimpCExport.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssimpCExport.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/AssimpCExport.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/AssimpCExport.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssimpCExport.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/AssimpCExport.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssimpCExport.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssimpCExport.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/AssimpCExport.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssimpCExport.cpp > CMakeFiles/assimp.dir/AssimpCExport.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssimpCExport.cpp > CMakeFiles/assimp.dir/AssimpCExport.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssimpCExport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/AssimpCExport.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssimpCExport.cpp -o CMakeFiles/assimp.dir/AssimpCExport.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssimpCExport.cpp -o CMakeFiles/assimp.dir/AssimpCExport.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssimpCExport.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/AssimpCExport.cpp.o.requires
@@ -599,18 +602,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/AssimpCExport.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/AssimpCExport.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/AssimpCExport.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/CalcTangentsProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_25)
+third-party/assimp/code/CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/CalcTangentsProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/CalcTangentsProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/CalcTangentsProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/CalcTangentsProcess.cpp > CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/CalcTangentsProcess.cpp > CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/CalcTangentsProcess.cpp -o CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/CalcTangentsProcess.cpp -o CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.o.requires
@@ -622,18 +625,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.o.provides
 third-party/assimp/code/CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/CalcTangentsProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ComputeUVMappingProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_26)
+third-party/assimp/code/CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ComputeUVMappingProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ComputeUVMappingProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ComputeUVMappingProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ComputeUVMappingProcess.cpp > CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ComputeUVMappingProcess.cpp > CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ComputeUVMappingProcess.cpp -o CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ComputeUVMappingProcess.cpp -o CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.o.requires
@@ -645,18 +648,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.o.prov
 third-party/assimp/code/CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ComputeUVMappingProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ConvertToLHProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_27)
+third-party/assimp/code/CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ConvertToLHProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ConvertToLHProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ConvertToLHProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ConvertToLHProcess.cpp > CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ConvertToLHProcess.cpp > CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ConvertToLHProcess.cpp -o CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ConvertToLHProcess.cpp -o CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.o.requires
@@ -668,18 +671,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.o.provides:
 third-party/assimp/code/CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ConvertToLHProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FindDegenerates.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FindDegenerates.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FindDegenerates.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_28)
+third-party/assimp/code/CMakeFiles/assimp.dir/FindDegenerates.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FindDegenerates.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FindDegenerates.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FindDegenerates.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FindDegenerates.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FindDegenerates.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FindDegenerates.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FindDegenerates.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FindDegenerates.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FindDegenerates.cpp > CMakeFiles/assimp.dir/FindDegenerates.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FindDegenerates.cpp > CMakeFiles/assimp.dir/FindDegenerates.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FindDegenerates.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FindDegenerates.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FindDegenerates.cpp -o CMakeFiles/assimp.dir/FindDegenerates.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FindDegenerates.cpp -o CMakeFiles/assimp.dir/FindDegenerates.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FindDegenerates.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FindDegenerates.cpp.o.requires
@@ -691,18 +694,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FindDegenerates.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/FindDegenerates.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FindDegenerates.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FindInstancesProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FindInstancesProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FindInstancesProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_29)
+third-party/assimp/code/CMakeFiles/assimp.dir/FindInstancesProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FindInstancesProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FindInstancesProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FindInstancesProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FindInstancesProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FindInstancesProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FindInstancesProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FindInstancesProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FindInstancesProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FindInstancesProcess.cpp > CMakeFiles/assimp.dir/FindInstancesProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FindInstancesProcess.cpp > CMakeFiles/assimp.dir/FindInstancesProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FindInstancesProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FindInstancesProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FindInstancesProcess.cpp -o CMakeFiles/assimp.dir/FindInstancesProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FindInstancesProcess.cpp -o CMakeFiles/assimp.dir/FindInstancesProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FindInstancesProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FindInstancesProcess.cpp.o.requires
@@ -714,18 +717,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FindInstancesProcess.cpp.o.provide
 third-party/assimp/code/CMakeFiles/assimp.dir/FindInstancesProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FindInstancesProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FindInvalidDataProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_30)
+third-party/assimp/code/CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FindInvalidDataProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FindInvalidDataProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FindInvalidDataProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FindInvalidDataProcess.cpp > CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FindInvalidDataProcess.cpp > CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FindInvalidDataProcess.cpp -o CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FindInvalidDataProcess.cpp -o CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.o.requires
@@ -737,18 +740,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.o.provi
 third-party/assimp/code/CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FindInvalidDataProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FixNormalsStep.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FixNormalsStep.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FixNormalsStep.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_31)
+third-party/assimp/code/CMakeFiles/assimp.dir/FixNormalsStep.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FixNormalsStep.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FixNormalsStep.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FixNormalsStep.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FixNormalsStep.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FixNormalsStep.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FixNormalsStep.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FixNormalsStep.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FixNormalsStep.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FixNormalsStep.cpp > CMakeFiles/assimp.dir/FixNormalsStep.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FixNormalsStep.cpp > CMakeFiles/assimp.dir/FixNormalsStep.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FixNormalsStep.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FixNormalsStep.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FixNormalsStep.cpp -o CMakeFiles/assimp.dir/FixNormalsStep.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FixNormalsStep.cpp -o CMakeFiles/assimp.dir/FixNormalsStep.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FixNormalsStep.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FixNormalsStep.cpp.o.requires
@@ -760,18 +763,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FixNormalsStep.cpp.o.provides: thi
 third-party/assimp/code/CMakeFiles/assimp.dir/FixNormalsStep.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FixNormalsStep.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/GenFaceNormalsProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_32)
+third-party/assimp/code/CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/GenFaceNormalsProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/GenFaceNormalsProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/GenFaceNormalsProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/GenFaceNormalsProcess.cpp > CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/GenFaceNormalsProcess.cpp > CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/GenFaceNormalsProcess.cpp -o CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/GenFaceNormalsProcess.cpp -o CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.o.requires
@@ -783,18 +786,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.o.provid
 third-party/assimp/code/CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/GenFaceNormalsProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/GenVertexNormalsProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_33)
+third-party/assimp/code/CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/GenVertexNormalsProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/GenVertexNormalsProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/GenVertexNormalsProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/GenVertexNormalsProcess.cpp > CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/GenVertexNormalsProcess.cpp > CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/GenVertexNormalsProcess.cpp -o CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/GenVertexNormalsProcess.cpp -o CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.o.requires
@@ -806,18 +809,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.o.prov
 third-party/assimp/code/CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/GenVertexNormalsProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PretransformVertices.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/PretransformVertices.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PretransformVertices.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_34)
+third-party/assimp/code/CMakeFiles/assimp.dir/PretransformVertices.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PretransformVertices.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/PretransformVertices.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/PretransformVertices.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PretransformVertices.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/PretransformVertices.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PretransformVertices.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PretransformVertices.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/PretransformVertices.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PretransformVertices.cpp > CMakeFiles/assimp.dir/PretransformVertices.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PretransformVertices.cpp > CMakeFiles/assimp.dir/PretransformVertices.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PretransformVertices.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/PretransformVertices.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PretransformVertices.cpp -o CMakeFiles/assimp.dir/PretransformVertices.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PretransformVertices.cpp -o CMakeFiles/assimp.dir/PretransformVertices.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PretransformVertices.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/PretransformVertices.cpp.o.requires
@@ -829,18 +832,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/PretransformVertices.cpp.o.provide
 third-party/assimp/code/CMakeFiles/assimp.dir/PretransformVertices.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/PretransformVertices.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ImproveCacheLocality.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_35)
+third-party/assimp/code/CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ImproveCacheLocality.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ImproveCacheLocality.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ImproveCacheLocality.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ImproveCacheLocality.cpp > CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ImproveCacheLocality.cpp > CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ImproveCacheLocality.cpp -o CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ImproveCacheLocality.cpp -o CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.o.requires
@@ -852,18 +855,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.o.provide
 third-party/assimp/code/CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ImproveCacheLocality.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/JoinVerticesProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_36)
+third-party/assimp/code/CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/JoinVerticesProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/JoinVerticesProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/JoinVerticesProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/JoinVerticesProcess.cpp > CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/JoinVerticesProcess.cpp > CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/JoinVerticesProcess.cpp -o CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/JoinVerticesProcess.cpp -o CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.o.requires
@@ -875,18 +878,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.o.provides
 third-party/assimp/code/CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/JoinVerticesProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LimitBoneWeightsProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_37)
+third-party/assimp/code/CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LimitBoneWeightsProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LimitBoneWeightsProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LimitBoneWeightsProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LimitBoneWeightsProcess.cpp > CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LimitBoneWeightsProcess.cpp > CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LimitBoneWeightsProcess.cpp -o CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LimitBoneWeightsProcess.cpp -o CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.o.requires
@@ -898,18 +901,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.o.prov
 third-party/assimp/code/CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/LimitBoneWeightsProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RemoveRedundantMaterials.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_38)
+third-party/assimp/code/CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RemoveRedundantMaterials.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RemoveRedundantMaterials.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RemoveRedundantMaterials.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RemoveRedundantMaterials.cpp > CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RemoveRedundantMaterials.cpp > CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RemoveRedundantMaterials.cpp -o CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RemoveRedundantMaterials.cpp -o CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.o.requires
@@ -921,18 +924,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.o.pro
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/RemoveRedundantMaterials.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveVCProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/RemoveVCProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RemoveVCProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_39)
+third-party/assimp/code/CMakeFiles/assimp.dir/RemoveVCProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RemoveVCProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/RemoveVCProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/RemoveVCProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RemoveVCProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/RemoveVCProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RemoveVCProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveVCProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/RemoveVCProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RemoveVCProcess.cpp > CMakeFiles/assimp.dir/RemoveVCProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RemoveVCProcess.cpp > CMakeFiles/assimp.dir/RemoveVCProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveVCProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/RemoveVCProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RemoveVCProcess.cpp -o CMakeFiles/assimp.dir/RemoveVCProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RemoveVCProcess.cpp -o CMakeFiles/assimp.dir/RemoveVCProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveVCProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/RemoveVCProcess.cpp.o.requires
@@ -944,18 +947,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/RemoveVCProcess.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/RemoveVCProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/RemoveVCProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SortByPTypeProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_40)
+third-party/assimp/code/CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SortByPTypeProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SortByPTypeProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SortByPTypeProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SortByPTypeProcess.cpp > CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SortByPTypeProcess.cpp > CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SortByPTypeProcess.cpp -o CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SortByPTypeProcess.cpp -o CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.o.requires
@@ -967,18 +970,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.o.provides:
 third-party/assimp/code/CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/SortByPTypeProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SplitLargeMeshes.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_41)
+third-party/assimp/code/CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SplitLargeMeshes.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SplitLargeMeshes.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SplitLargeMeshes.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SplitLargeMeshes.cpp > CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SplitLargeMeshes.cpp > CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SplitLargeMeshes.cpp -o CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SplitLargeMeshes.cpp -o CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.o.requires
@@ -990,18 +993,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.o.provides: t
 third-party/assimp/code/CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/SplitLargeMeshes.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TextureTransform.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/TextureTransform.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TextureTransform.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_42)
+third-party/assimp/code/CMakeFiles/assimp.dir/TextureTransform.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TextureTransform.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/TextureTransform.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/TextureTransform.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TextureTransform.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/TextureTransform.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TextureTransform.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TextureTransform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/TextureTransform.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TextureTransform.cpp > CMakeFiles/assimp.dir/TextureTransform.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TextureTransform.cpp > CMakeFiles/assimp.dir/TextureTransform.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TextureTransform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/TextureTransform.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TextureTransform.cpp -o CMakeFiles/assimp.dir/TextureTransform.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TextureTransform.cpp -o CMakeFiles/assimp.dir/TextureTransform.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TextureTransform.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/TextureTransform.cpp.o.requires
@@ -1013,18 +1016,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/TextureTransform.cpp.o.provides: t
 third-party/assimp/code/CMakeFiles/assimp.dir/TextureTransform.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/TextureTransform.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TriangulateProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/TriangulateProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TriangulateProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_43)
+third-party/assimp/code/CMakeFiles/assimp.dir/TriangulateProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TriangulateProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/TriangulateProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/TriangulateProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TriangulateProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/TriangulateProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TriangulateProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TriangulateProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/TriangulateProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TriangulateProcess.cpp > CMakeFiles/assimp.dir/TriangulateProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TriangulateProcess.cpp > CMakeFiles/assimp.dir/TriangulateProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TriangulateProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/TriangulateProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TriangulateProcess.cpp -o CMakeFiles/assimp.dir/TriangulateProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TriangulateProcess.cpp -o CMakeFiles/assimp.dir/TriangulateProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TriangulateProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/TriangulateProcess.cpp.o.requires
@@ -1036,18 +1039,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/TriangulateProcess.cpp.o.provides:
 third-party/assimp/code/CMakeFiles/assimp.dir/TriangulateProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/TriangulateProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ValidateDataStructure.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ValidateDataStructure.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ValidateDataStructure.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_44)
+third-party/assimp/code/CMakeFiles/assimp.dir/ValidateDataStructure.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ValidateDataStructure.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ValidateDataStructure.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ValidateDataStructure.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ValidateDataStructure.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ValidateDataStructure.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ValidateDataStructure.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ValidateDataStructure.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ValidateDataStructure.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ValidateDataStructure.cpp > CMakeFiles/assimp.dir/ValidateDataStructure.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ValidateDataStructure.cpp > CMakeFiles/assimp.dir/ValidateDataStructure.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ValidateDataStructure.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ValidateDataStructure.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ValidateDataStructure.cpp -o CMakeFiles/assimp.dir/ValidateDataStructure.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ValidateDataStructure.cpp -o CMakeFiles/assimp.dir/ValidateDataStructure.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ValidateDataStructure.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ValidateDataStructure.cpp.o.requires
@@ -1059,18 +1062,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ValidateDataStructure.cpp.o.provid
 third-party/assimp/code/CMakeFiles/assimp.dir/ValidateDataStructure.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ValidateDataStructure.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeGraph.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeGraph.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OptimizeGraph.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_45)
+third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeGraph.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OptimizeGraph.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeGraph.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OptimizeGraph.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OptimizeGraph.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OptimizeGraph.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OptimizeGraph.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeGraph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/OptimizeGraph.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OptimizeGraph.cpp > CMakeFiles/assimp.dir/OptimizeGraph.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OptimizeGraph.cpp > CMakeFiles/assimp.dir/OptimizeGraph.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeGraph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/OptimizeGraph.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OptimizeGraph.cpp -o CMakeFiles/assimp.dir/OptimizeGraph.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OptimizeGraph.cpp -o CMakeFiles/assimp.dir/OptimizeGraph.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeGraph.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeGraph.cpp.o.requires
@@ -1082,18 +1085,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeGraph.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeGraph.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeGraph.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeMeshes.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeMeshes.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OptimizeMeshes.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_46)
+third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeMeshes.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OptimizeMeshes.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeMeshes.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OptimizeMeshes.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OptimizeMeshes.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OptimizeMeshes.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OptimizeMeshes.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeMeshes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/OptimizeMeshes.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OptimizeMeshes.cpp > CMakeFiles/assimp.dir/OptimizeMeshes.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OptimizeMeshes.cpp > CMakeFiles/assimp.dir/OptimizeMeshes.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeMeshes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/OptimizeMeshes.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OptimizeMeshes.cpp -o CMakeFiles/assimp.dir/OptimizeMeshes.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OptimizeMeshes.cpp -o CMakeFiles/assimp.dir/OptimizeMeshes.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeMeshes.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeMeshes.cpp.o.requires
@@ -1105,18 +1108,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeMeshes.cpp.o.provides: thi
 third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeMeshes.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/OptimizeMeshes.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DeboneProcess.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/DeboneProcess.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DeboneProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_47)
+third-party/assimp/code/CMakeFiles/assimp.dir/DeboneProcess.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DeboneProcess.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/DeboneProcess.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/DeboneProcess.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DeboneProcess.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/DeboneProcess.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DeboneProcess.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DeboneProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/DeboneProcess.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DeboneProcess.cpp > CMakeFiles/assimp.dir/DeboneProcess.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DeboneProcess.cpp > CMakeFiles/assimp.dir/DeboneProcess.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DeboneProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/DeboneProcess.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DeboneProcess.cpp -o CMakeFiles/assimp.dir/DeboneProcess.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DeboneProcess.cpp -o CMakeFiles/assimp.dir/DeboneProcess.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DeboneProcess.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/DeboneProcess.cpp.o.requires
@@ -1128,18 +1131,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/DeboneProcess.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/DeboneProcess.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/DeboneProcess.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ProcessHelper.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ProcessHelper.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ProcessHelper.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_48)
+third-party/assimp/code/CMakeFiles/assimp.dir/ProcessHelper.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ProcessHelper.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ProcessHelper.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ProcessHelper.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ProcessHelper.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ProcessHelper.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ProcessHelper.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ProcessHelper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ProcessHelper.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ProcessHelper.cpp > CMakeFiles/assimp.dir/ProcessHelper.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ProcessHelper.cpp > CMakeFiles/assimp.dir/ProcessHelper.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ProcessHelper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ProcessHelper.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ProcessHelper.cpp -o CMakeFiles/assimp.dir/ProcessHelper.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ProcessHelper.cpp -o CMakeFiles/assimp.dir/ProcessHelper.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ProcessHelper.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ProcessHelper.cpp.o.requires
@@ -1151,18 +1154,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ProcessHelper.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/ProcessHelper.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ProcessHelper.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MakeVerboseFormat.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_49)
+third-party/assimp/code/CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MakeVerboseFormat.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MakeVerboseFormat.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MakeVerboseFormat.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MakeVerboseFormat.cpp > CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MakeVerboseFormat.cpp > CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MakeVerboseFormat.cpp -o CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MakeVerboseFormat.cpp -o CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.o.requires
@@ -1174,18 +1177,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.o.provides: 
 third-party/assimp/code/CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/MakeVerboseFormat.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MaterialSystem.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/MaterialSystem.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MaterialSystem.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_50)
+third-party/assimp/code/CMakeFiles/assimp.dir/MaterialSystem.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MaterialSystem.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/MaterialSystem.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MaterialSystem.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MaterialSystem.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MaterialSystem.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MaterialSystem.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MaterialSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/MaterialSystem.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MaterialSystem.cpp > CMakeFiles/assimp.dir/MaterialSystem.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MaterialSystem.cpp > CMakeFiles/assimp.dir/MaterialSystem.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MaterialSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/MaterialSystem.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MaterialSystem.cpp -o CMakeFiles/assimp.dir/MaterialSystem.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MaterialSystem.cpp -o CMakeFiles/assimp.dir/MaterialSystem.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MaterialSystem.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/MaterialSystem.cpp.o.requires
@@ -1197,18 +1200,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/MaterialSystem.cpp.o.provides: thi
 third-party/assimp/code/CMakeFiles/assimp.dir/MaterialSystem.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/MaterialSystem.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/StepExporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/StepExporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/StepExporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_51)
+third-party/assimp/code/CMakeFiles/assimp.dir/StepExporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/StepExporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/StepExporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/StepExporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/StepExporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/StepExporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/StepExporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/StepExporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/StepExporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/StepExporter.cpp > CMakeFiles/assimp.dir/StepExporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/StepExporter.cpp > CMakeFiles/assimp.dir/StepExporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/StepExporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/StepExporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/StepExporter.cpp -o CMakeFiles/assimp.dir/StepExporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/StepExporter.cpp -o CMakeFiles/assimp.dir/StepExporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/StepExporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/StepExporter.cpp.o.requires
@@ -1220,18 +1223,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/StepExporter.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/StepExporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/StepExporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSConverter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/3DSConverter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/3DSConverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_52)
+third-party/assimp/code/CMakeFiles/assimp.dir/3DSConverter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/3DSConverter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/3DSConverter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/3DSConverter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/3DSConverter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/3DSConverter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/3DSConverter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSConverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/3DSConverter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/3DSConverter.cpp > CMakeFiles/assimp.dir/3DSConverter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/3DSConverter.cpp > CMakeFiles/assimp.dir/3DSConverter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSConverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/3DSConverter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/3DSConverter.cpp -o CMakeFiles/assimp.dir/3DSConverter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/3DSConverter.cpp -o CMakeFiles/assimp.dir/3DSConverter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSConverter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/3DSConverter.cpp.o.requires
@@ -1243,18 +1246,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/3DSConverter.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSConverter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/3DSConverter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/3DSLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/3DSLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_53)
+third-party/assimp/code/CMakeFiles/assimp.dir/3DSLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/3DSLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/3DSLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/3DSLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/3DSLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/3DSLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/3DSLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/3DSLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/3DSLoader.cpp > CMakeFiles/assimp.dir/3DSLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/3DSLoader.cpp > CMakeFiles/assimp.dir/3DSLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/3DSLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/3DSLoader.cpp -o CMakeFiles/assimp.dir/3DSLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/3DSLoader.cpp -o CMakeFiles/assimp.dir/3DSLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/3DSLoader.cpp.o.requires
@@ -1266,18 +1269,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/3DSLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/3DSLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSExporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/3DSExporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/3DSExporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_54)
+third-party/assimp/code/CMakeFiles/assimp.dir/3DSExporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/3DSExporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/3DSExporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/3DSExporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/3DSExporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/3DSExporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/3DSExporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSExporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/3DSExporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/3DSExporter.cpp > CMakeFiles/assimp.dir/3DSExporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/3DSExporter.cpp > CMakeFiles/assimp.dir/3DSExporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSExporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/3DSExporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/3DSExporter.cpp -o CMakeFiles/assimp.dir/3DSExporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/3DSExporter.cpp -o CMakeFiles/assimp.dir/3DSExporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSExporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/3DSExporter.cpp.o.requires
@@ -1289,18 +1292,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/3DSExporter.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/3DSExporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/3DSExporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ACLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ACLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ACLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_55)
+third-party/assimp/code/CMakeFiles/assimp.dir/ACLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ACLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ACLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ACLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ACLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ACLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ACLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ACLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ACLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ACLoader.cpp > CMakeFiles/assimp.dir/ACLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ACLoader.cpp > CMakeFiles/assimp.dir/ACLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ACLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ACLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ACLoader.cpp -o CMakeFiles/assimp.dir/ACLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ACLoader.cpp -o CMakeFiles/assimp.dir/ACLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ACLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ACLoader.cpp.o.requires
@@ -1312,18 +1315,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ACLoader.cpp.o.provides: third-par
 third-party/assimp/code/CMakeFiles/assimp.dir/ACLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ACLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ASELoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ASELoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ASELoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_56)
+third-party/assimp/code/CMakeFiles/assimp.dir/ASELoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ASELoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ASELoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ASELoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ASELoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ASELoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ASELoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ASELoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ASELoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ASELoader.cpp > CMakeFiles/assimp.dir/ASELoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ASELoader.cpp > CMakeFiles/assimp.dir/ASELoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ASELoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ASELoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ASELoader.cpp -o CMakeFiles/assimp.dir/ASELoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ASELoader.cpp -o CMakeFiles/assimp.dir/ASELoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ASELoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ASELoader.cpp.o.requires
@@ -1335,18 +1338,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ASELoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/ASELoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ASELoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ASEParser.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ASEParser.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ASEParser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_57)
+third-party/assimp/code/CMakeFiles/assimp.dir/ASEParser.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ASEParser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ASEParser.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ASEParser.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ASEParser.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ASEParser.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ASEParser.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ASEParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ASEParser.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ASEParser.cpp > CMakeFiles/assimp.dir/ASEParser.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ASEParser.cpp > CMakeFiles/assimp.dir/ASEParser.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ASEParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ASEParser.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ASEParser.cpp -o CMakeFiles/assimp.dir/ASEParser.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ASEParser.cpp -o CMakeFiles/assimp.dir/ASEParser.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ASEParser.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ASEParser.cpp.o.requires
@@ -1358,18 +1361,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ASEParser.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/ASEParser.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ASEParser.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssbinExporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/AssbinExporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssbinExporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_58)
+third-party/assimp/code/CMakeFiles/assimp.dir/AssbinExporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssbinExporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/AssbinExporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/AssbinExporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssbinExporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/AssbinExporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssbinExporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssbinExporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/AssbinExporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssbinExporter.cpp > CMakeFiles/assimp.dir/AssbinExporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssbinExporter.cpp > CMakeFiles/assimp.dir/AssbinExporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssbinExporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/AssbinExporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssbinExporter.cpp -o CMakeFiles/assimp.dir/AssbinExporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssbinExporter.cpp -o CMakeFiles/assimp.dir/AssbinExporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssbinExporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/AssbinExporter.cpp.o.requires
@@ -1381,18 +1384,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/AssbinExporter.cpp.o.provides: thi
 third-party/assimp/code/CMakeFiles/assimp.dir/AssbinExporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/AssbinExporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssbinLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/AssbinLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssbinLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_59)
+third-party/assimp/code/CMakeFiles/assimp.dir/AssbinLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssbinLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/AssbinLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/AssbinLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssbinLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/AssbinLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssbinLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssbinLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/AssbinLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssbinLoader.cpp > CMakeFiles/assimp.dir/AssbinLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssbinLoader.cpp > CMakeFiles/assimp.dir/AssbinLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssbinLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/AssbinLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssbinLoader.cpp -o CMakeFiles/assimp.dir/AssbinLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssbinLoader.cpp -o CMakeFiles/assimp.dir/AssbinLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssbinLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/AssbinLoader.cpp.o.requires
@@ -1404,18 +1407,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/AssbinLoader.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/AssbinLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/AssbinLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssxmlExporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/AssxmlExporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssxmlExporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_60)
+third-party/assimp/code/CMakeFiles/assimp.dir/AssxmlExporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssxmlExporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/AssxmlExporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/AssxmlExporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssxmlExporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/AssxmlExporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssxmlExporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssxmlExporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/AssxmlExporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssxmlExporter.cpp > CMakeFiles/assimp.dir/AssxmlExporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssxmlExporter.cpp > CMakeFiles/assimp.dir/AssxmlExporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssxmlExporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/AssxmlExporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/AssxmlExporter.cpp -o CMakeFiles/assimp.dir/AssxmlExporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/AssxmlExporter.cpp -o CMakeFiles/assimp.dir/AssxmlExporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/AssxmlExporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/AssxmlExporter.cpp.o.requires
@@ -1427,18 +1430,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/AssxmlExporter.cpp.o.provides: thi
 third-party/assimp/code/CMakeFiles/assimp.dir/AssxmlExporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/AssxmlExporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/B3DImporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/B3DImporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/B3DImporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_61)
+third-party/assimp/code/CMakeFiles/assimp.dir/B3DImporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/B3DImporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_61)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/B3DImporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/B3DImporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/B3DImporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/B3DImporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/B3DImporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/B3DImporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/B3DImporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/B3DImporter.cpp > CMakeFiles/assimp.dir/B3DImporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/B3DImporter.cpp > CMakeFiles/assimp.dir/B3DImporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/B3DImporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/B3DImporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/B3DImporter.cpp -o CMakeFiles/assimp.dir/B3DImporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/B3DImporter.cpp -o CMakeFiles/assimp.dir/B3DImporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/B3DImporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/B3DImporter.cpp.o.requires
@@ -1450,18 +1453,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/B3DImporter.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/B3DImporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/B3DImporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BVHLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/BVHLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BVHLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_62)
+third-party/assimp/code/CMakeFiles/assimp.dir/BVHLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BVHLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_62)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/BVHLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BVHLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BVHLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BVHLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BVHLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BVHLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/BVHLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BVHLoader.cpp > CMakeFiles/assimp.dir/BVHLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BVHLoader.cpp > CMakeFiles/assimp.dir/BVHLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BVHLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/BVHLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BVHLoader.cpp -o CMakeFiles/assimp.dir/BVHLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BVHLoader.cpp -o CMakeFiles/assimp.dir/BVHLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BVHLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/BVHLoader.cpp.o.requires
@@ -1473,18 +1476,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/BVHLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/BVHLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/BVHLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ColladaLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ColladaLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_63)
+third-party/assimp/code/CMakeFiles/assimp.dir/ColladaLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ColladaLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_63)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ColladaLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ColladaLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ColladaLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ColladaLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ColladaLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ColladaLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ColladaLoader.cpp > CMakeFiles/assimp.dir/ColladaLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ColladaLoader.cpp > CMakeFiles/assimp.dir/ColladaLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ColladaLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ColladaLoader.cpp -o CMakeFiles/assimp.dir/ColladaLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ColladaLoader.cpp -o CMakeFiles/assimp.dir/ColladaLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ColladaLoader.cpp.o.requires
@@ -1496,18 +1499,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ColladaLoader.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ColladaLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaParser.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ColladaParser.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ColladaParser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_64)
+third-party/assimp/code/CMakeFiles/assimp.dir/ColladaParser.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ColladaParser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_64)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ColladaParser.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ColladaParser.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ColladaParser.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ColladaParser.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ColladaParser.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ColladaParser.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ColladaParser.cpp > CMakeFiles/assimp.dir/ColladaParser.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ColladaParser.cpp > CMakeFiles/assimp.dir/ColladaParser.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ColladaParser.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ColladaParser.cpp -o CMakeFiles/assimp.dir/ColladaParser.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ColladaParser.cpp -o CMakeFiles/assimp.dir/ColladaParser.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaParser.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ColladaParser.cpp.o.requires
@@ -1519,18 +1522,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ColladaParser.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaParser.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ColladaParser.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaExporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ColladaExporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ColladaExporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_65)
+third-party/assimp/code/CMakeFiles/assimp.dir/ColladaExporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ColladaExporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ColladaExporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ColladaExporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ColladaExporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ColladaExporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ColladaExporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaExporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ColladaExporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ColladaExporter.cpp > CMakeFiles/assimp.dir/ColladaExporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ColladaExporter.cpp > CMakeFiles/assimp.dir/ColladaExporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaExporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ColladaExporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ColladaExporter.cpp -o CMakeFiles/assimp.dir/ColladaExporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ColladaExporter.cpp -o CMakeFiles/assimp.dir/ColladaExporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaExporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ColladaExporter.cpp.o.requires
@@ -1542,18 +1545,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ColladaExporter.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/ColladaExporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ColladaExporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DXFLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/DXFLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DXFLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_66)
+third-party/assimp/code/CMakeFiles/assimp.dir/DXFLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DXFLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_66)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/DXFLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/DXFLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DXFLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/DXFLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DXFLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DXFLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/DXFLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DXFLoader.cpp > CMakeFiles/assimp.dir/DXFLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DXFLoader.cpp > CMakeFiles/assimp.dir/DXFLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DXFLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/DXFLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/DXFLoader.cpp -o CMakeFiles/assimp.dir/DXFLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/DXFLoader.cpp -o CMakeFiles/assimp.dir/DXFLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/DXFLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/DXFLoader.cpp.o.requires
@@ -1565,18 +1568,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/DXFLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/DXFLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/DXFLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/CSMLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/CSMLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/CSMLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_67)
+third-party/assimp/code/CMakeFiles/assimp.dir/CSMLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/CSMLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_67)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/CSMLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/CSMLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/CSMLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/CSMLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/CSMLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/CSMLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/CSMLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/CSMLoader.cpp > CMakeFiles/assimp.dir/CSMLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/CSMLoader.cpp > CMakeFiles/assimp.dir/CSMLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/CSMLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/CSMLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/CSMLoader.cpp -o CMakeFiles/assimp.dir/CSMLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/CSMLoader.cpp -o CMakeFiles/assimp.dir/CSMLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/CSMLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/CSMLoader.cpp.o.requires
@@ -1588,18 +1591,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/CSMLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/CSMLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/CSMLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/HMPLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/HMPLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/HMPLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_68)
+third-party/assimp/code/CMakeFiles/assimp.dir/HMPLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/HMPLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_68)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/HMPLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/HMPLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/HMPLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/HMPLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/HMPLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/HMPLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/HMPLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/HMPLoader.cpp > CMakeFiles/assimp.dir/HMPLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/HMPLoader.cpp > CMakeFiles/assimp.dir/HMPLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/HMPLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/HMPLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/HMPLoader.cpp -o CMakeFiles/assimp.dir/HMPLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/HMPLoader.cpp -o CMakeFiles/assimp.dir/HMPLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/HMPLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/HMPLoader.cpp.o.requires
@@ -1611,18 +1614,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/HMPLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/HMPLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/HMPLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/IRRLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IRRLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_69)
+third-party/assimp/code/CMakeFiles/assimp.dir/IRRLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IRRLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_69)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/IRRLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IRRLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IRRLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IRRLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IRRLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/IRRLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IRRLoader.cpp > CMakeFiles/assimp.dir/IRRLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IRRLoader.cpp > CMakeFiles/assimp.dir/IRRLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/IRRLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IRRLoader.cpp -o CMakeFiles/assimp.dir/IRRLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IRRLoader.cpp -o CMakeFiles/assimp.dir/IRRLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/IRRLoader.cpp.o.requires
@@ -1634,18 +1637,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/IRRLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/IRRLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRMeshLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/IRRMeshLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IRRMeshLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_70)
+third-party/assimp/code/CMakeFiles/assimp.dir/IRRMeshLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IRRMeshLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_70)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/IRRMeshLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IRRMeshLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IRRMeshLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IRRMeshLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IRRMeshLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRMeshLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/IRRMeshLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IRRMeshLoader.cpp > CMakeFiles/assimp.dir/IRRMeshLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IRRMeshLoader.cpp > CMakeFiles/assimp.dir/IRRMeshLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRMeshLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/IRRMeshLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IRRMeshLoader.cpp -o CMakeFiles/assimp.dir/IRRMeshLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IRRMeshLoader.cpp -o CMakeFiles/assimp.dir/IRRMeshLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRMeshLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/IRRMeshLoader.cpp.o.requires
@@ -1657,18 +1660,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/IRRMeshLoader.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRMeshLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/IRRMeshLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRShared.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/IRRShared.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IRRShared.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_71)
+third-party/assimp/code/CMakeFiles/assimp.dir/IRRShared.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IRRShared.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_71)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/IRRShared.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IRRShared.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IRRShared.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IRRShared.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IRRShared.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRShared.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/IRRShared.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IRRShared.cpp > CMakeFiles/assimp.dir/IRRShared.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IRRShared.cpp > CMakeFiles/assimp.dir/IRRShared.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRShared.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/IRRShared.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IRRShared.cpp -o CMakeFiles/assimp.dir/IRRShared.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IRRShared.cpp -o CMakeFiles/assimp.dir/IRRShared.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRShared.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/IRRShared.cpp.o.requires
@@ -1680,18 +1683,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/IRRShared.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/IRRShared.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/IRRShared.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOAnimation.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/LWOAnimation.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOAnimation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_72)
+third-party/assimp/code/CMakeFiles/assimp.dir/LWOAnimation.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOAnimation.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_72)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/LWOAnimation.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/LWOAnimation.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOAnimation.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/LWOAnimation.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOAnimation.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOAnimation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/LWOAnimation.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOAnimation.cpp > CMakeFiles/assimp.dir/LWOAnimation.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOAnimation.cpp > CMakeFiles/assimp.dir/LWOAnimation.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOAnimation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/LWOAnimation.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOAnimation.cpp -o CMakeFiles/assimp.dir/LWOAnimation.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOAnimation.cpp -o CMakeFiles/assimp.dir/LWOAnimation.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOAnimation.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/LWOAnimation.cpp.o.requires
@@ -1703,18 +1706,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/LWOAnimation.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOAnimation.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/LWOAnimation.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOBLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/LWOBLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOBLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_73)
+third-party/assimp/code/CMakeFiles/assimp.dir/LWOBLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOBLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_73)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/LWOBLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/LWOBLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOBLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/LWOBLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOBLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOBLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/LWOBLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOBLoader.cpp > CMakeFiles/assimp.dir/LWOBLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOBLoader.cpp > CMakeFiles/assimp.dir/LWOBLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOBLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/LWOBLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOBLoader.cpp -o CMakeFiles/assimp.dir/LWOBLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOBLoader.cpp -o CMakeFiles/assimp.dir/LWOBLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOBLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/LWOBLoader.cpp.o.requires
@@ -1726,18 +1729,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/LWOBLoader.cpp.o.provides: third-p
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOBLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/LWOBLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/LWOLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_74)
+third-party/assimp/code/CMakeFiles/assimp.dir/LWOLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_74)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/LWOLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/LWOLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/LWOLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/LWOLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOLoader.cpp > CMakeFiles/assimp.dir/LWOLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOLoader.cpp > CMakeFiles/assimp.dir/LWOLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/LWOLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOLoader.cpp -o CMakeFiles/assimp.dir/LWOLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOLoader.cpp -o CMakeFiles/assimp.dir/LWOLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/LWOLoader.cpp.o.requires
@@ -1749,18 +1752,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/LWOLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/LWOLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOMaterial.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/LWOMaterial.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOMaterial.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_75)
+third-party/assimp/code/CMakeFiles/assimp.dir/LWOMaterial.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOMaterial.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_75)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/LWOMaterial.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/LWOMaterial.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOMaterial.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/LWOMaterial.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOMaterial.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOMaterial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/LWOMaterial.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOMaterial.cpp > CMakeFiles/assimp.dir/LWOMaterial.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOMaterial.cpp > CMakeFiles/assimp.dir/LWOMaterial.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOMaterial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/LWOMaterial.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWOMaterial.cpp -o CMakeFiles/assimp.dir/LWOMaterial.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWOMaterial.cpp -o CMakeFiles/assimp.dir/LWOMaterial.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOMaterial.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/LWOMaterial.cpp.o.requires
@@ -1772,18 +1775,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/LWOMaterial.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/LWOMaterial.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/LWOMaterial.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWSLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/LWSLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWSLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_76)
+third-party/assimp/code/CMakeFiles/assimp.dir/LWSLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWSLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_76)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/LWSLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/LWSLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWSLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/LWSLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWSLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWSLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/LWSLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWSLoader.cpp > CMakeFiles/assimp.dir/LWSLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWSLoader.cpp > CMakeFiles/assimp.dir/LWSLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWSLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/LWSLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/LWSLoader.cpp -o CMakeFiles/assimp.dir/LWSLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/LWSLoader.cpp -o CMakeFiles/assimp.dir/LWSLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/LWSLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/LWSLoader.cpp.o.requires
@@ -1795,18 +1798,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/LWSLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/LWSLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/LWSLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD2Loader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/MD2Loader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD2Loader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_77)
+third-party/assimp/code/CMakeFiles/assimp.dir/MD2Loader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD2Loader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_77)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/MD2Loader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MD2Loader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD2Loader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MD2Loader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD2Loader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD2Loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/MD2Loader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD2Loader.cpp > CMakeFiles/assimp.dir/MD2Loader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD2Loader.cpp > CMakeFiles/assimp.dir/MD2Loader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD2Loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/MD2Loader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD2Loader.cpp -o CMakeFiles/assimp.dir/MD2Loader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD2Loader.cpp -o CMakeFiles/assimp.dir/MD2Loader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD2Loader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/MD2Loader.cpp.o.requires
@@ -1818,18 +1821,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/MD2Loader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/MD2Loader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/MD2Loader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD3Loader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/MD3Loader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD3Loader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_78)
+third-party/assimp/code/CMakeFiles/assimp.dir/MD3Loader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD3Loader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_78)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/MD3Loader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MD3Loader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD3Loader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MD3Loader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD3Loader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD3Loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/MD3Loader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD3Loader.cpp > CMakeFiles/assimp.dir/MD3Loader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD3Loader.cpp > CMakeFiles/assimp.dir/MD3Loader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD3Loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/MD3Loader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD3Loader.cpp -o CMakeFiles/assimp.dir/MD3Loader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD3Loader.cpp -o CMakeFiles/assimp.dir/MD3Loader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD3Loader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/MD3Loader.cpp.o.requires
@@ -1841,18 +1844,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/MD3Loader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/MD3Loader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/MD3Loader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD5Loader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/MD5Loader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD5Loader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_79)
+third-party/assimp/code/CMakeFiles/assimp.dir/MD5Loader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD5Loader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_79)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/MD5Loader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MD5Loader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD5Loader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MD5Loader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD5Loader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD5Loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/MD5Loader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD5Loader.cpp > CMakeFiles/assimp.dir/MD5Loader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD5Loader.cpp > CMakeFiles/assimp.dir/MD5Loader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD5Loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/MD5Loader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD5Loader.cpp -o CMakeFiles/assimp.dir/MD5Loader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD5Loader.cpp -o CMakeFiles/assimp.dir/MD5Loader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD5Loader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/MD5Loader.cpp.o.requires
@@ -1864,18 +1867,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/MD5Loader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/MD5Loader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/MD5Loader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD5Parser.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/MD5Parser.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD5Parser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_80)
+third-party/assimp/code/CMakeFiles/assimp.dir/MD5Parser.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD5Parser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_80)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/MD5Parser.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MD5Parser.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD5Parser.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MD5Parser.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD5Parser.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD5Parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/MD5Parser.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD5Parser.cpp > CMakeFiles/assimp.dir/MD5Parser.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD5Parser.cpp > CMakeFiles/assimp.dir/MD5Parser.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD5Parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/MD5Parser.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MD5Parser.cpp -o CMakeFiles/assimp.dir/MD5Parser.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MD5Parser.cpp -o CMakeFiles/assimp.dir/MD5Parser.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MD5Parser.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/MD5Parser.cpp.o.requires
@@ -1887,18 +1890,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/MD5Parser.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/MD5Parser.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/MD5Parser.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MDCLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/MDCLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MDCLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_81)
+third-party/assimp/code/CMakeFiles/assimp.dir/MDCLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MDCLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_81)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/MDCLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MDCLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MDCLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MDCLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MDCLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MDCLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/MDCLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MDCLoader.cpp > CMakeFiles/assimp.dir/MDCLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MDCLoader.cpp > CMakeFiles/assimp.dir/MDCLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MDCLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/MDCLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MDCLoader.cpp -o CMakeFiles/assimp.dir/MDCLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MDCLoader.cpp -o CMakeFiles/assimp.dir/MDCLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MDCLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/MDCLoader.cpp.o.requires
@@ -1910,18 +1913,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/MDCLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/MDCLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/MDCLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MDLLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/MDLLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MDLLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_82)
+third-party/assimp/code/CMakeFiles/assimp.dir/MDLLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MDLLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_82)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/MDLLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MDLLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MDLLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MDLLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MDLLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MDLLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/MDLLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MDLLoader.cpp > CMakeFiles/assimp.dir/MDLLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MDLLoader.cpp > CMakeFiles/assimp.dir/MDLLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MDLLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/MDLLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MDLLoader.cpp -o CMakeFiles/assimp.dir/MDLLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MDLLoader.cpp -o CMakeFiles/assimp.dir/MDLLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MDLLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/MDLLoader.cpp.o.requires
@@ -1933,18 +1936,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/MDLLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/MDLLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/MDLLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MDLMaterialLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_83)
+third-party/assimp/code/CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MDLMaterialLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_83)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MDLMaterialLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MDLMaterialLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MDLMaterialLoader.cpp > CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MDLMaterialLoader.cpp > CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MDLMaterialLoader.cpp -o CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MDLMaterialLoader.cpp -o CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.o.requires
@@ -1956,18 +1959,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.o.provides: 
 third-party/assimp/code/CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/MDLMaterialLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/NFFLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/NFFLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/NFFLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_84)
+third-party/assimp/code/CMakeFiles/assimp.dir/NFFLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/NFFLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_84)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/NFFLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/NFFLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/NFFLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/NFFLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/NFFLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/NFFLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/NFFLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/NFFLoader.cpp > CMakeFiles/assimp.dir/NFFLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/NFFLoader.cpp > CMakeFiles/assimp.dir/NFFLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/NFFLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/NFFLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/NFFLoader.cpp -o CMakeFiles/assimp.dir/NFFLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/NFFLoader.cpp -o CMakeFiles/assimp.dir/NFFLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/NFFLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/NFFLoader.cpp.o.requires
@@ -1979,18 +1982,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/NFFLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/NFFLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/NFFLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/NDOLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/NDOLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/NDOLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_85)
+third-party/assimp/code/CMakeFiles/assimp.dir/NDOLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/NDOLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_85)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/NDOLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/NDOLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/NDOLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/NDOLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/NDOLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/NDOLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/NDOLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/NDOLoader.cpp > CMakeFiles/assimp.dir/NDOLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/NDOLoader.cpp > CMakeFiles/assimp.dir/NDOLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/NDOLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/NDOLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/NDOLoader.cpp -o CMakeFiles/assimp.dir/NDOLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/NDOLoader.cpp -o CMakeFiles/assimp.dir/NDOLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/NDOLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/NDOLoader.cpp.o.requires
@@ -2002,18 +2005,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/NDOLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/NDOLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/NDOLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OFFLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/OFFLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OFFLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_86)
+third-party/assimp/code/CMakeFiles/assimp.dir/OFFLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OFFLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_86)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/OFFLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OFFLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OFFLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OFFLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OFFLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OFFLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/OFFLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OFFLoader.cpp > CMakeFiles/assimp.dir/OFFLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OFFLoader.cpp > CMakeFiles/assimp.dir/OFFLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OFFLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/OFFLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OFFLoader.cpp -o CMakeFiles/assimp.dir/OFFLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OFFLoader.cpp -o CMakeFiles/assimp.dir/OFFLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OFFLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/OFFLoader.cpp.o.requires
@@ -2025,18 +2028,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/OFFLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/OFFLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/OFFLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileImporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileImporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjFileImporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_87)
+third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileImporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjFileImporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_87)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileImporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ObjFileImporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjFileImporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ObjFileImporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjFileImporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileImporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ObjFileImporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjFileImporter.cpp > CMakeFiles/assimp.dir/ObjFileImporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjFileImporter.cpp > CMakeFiles/assimp.dir/ObjFileImporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileImporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ObjFileImporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjFileImporter.cpp -o CMakeFiles/assimp.dir/ObjFileImporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjFileImporter.cpp -o CMakeFiles/assimp.dir/ObjFileImporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileImporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileImporter.cpp.o.requires
@@ -2048,18 +2051,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileImporter.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileImporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileImporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjFileMtlImporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_88)
+third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjFileMtlImporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_88)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjFileMtlImporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjFileMtlImporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjFileMtlImporter.cpp > CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjFileMtlImporter.cpp > CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjFileMtlImporter.cpp -o CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjFileMtlImporter.cpp -o CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.o.requires
@@ -2071,18 +2074,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.o.provides:
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileMtlImporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileParser.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileParser.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjFileParser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_89)
+third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileParser.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjFileParser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_89)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileParser.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ObjFileParser.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjFileParser.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ObjFileParser.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjFileParser.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ObjFileParser.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjFileParser.cpp > CMakeFiles/assimp.dir/ObjFileParser.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjFileParser.cpp > CMakeFiles/assimp.dir/ObjFileParser.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ObjFileParser.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjFileParser.cpp -o CMakeFiles/assimp.dir/ObjFileParser.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjFileParser.cpp -o CMakeFiles/assimp.dir/ObjFileParser.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileParser.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileParser.cpp.o.requires
@@ -2094,18 +2097,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileParser.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileParser.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ObjFileParser.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjExporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/ObjExporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjExporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_90)
+third-party/assimp/code/CMakeFiles/assimp.dir/ObjExporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjExporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_90)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/ObjExporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ObjExporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjExporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/ObjExporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjExporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjExporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/ObjExporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjExporter.cpp > CMakeFiles/assimp.dir/ObjExporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjExporter.cpp > CMakeFiles/assimp.dir/ObjExporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjExporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/ObjExporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/ObjExporter.cpp -o CMakeFiles/assimp.dir/ObjExporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/ObjExporter.cpp -o CMakeFiles/assimp.dir/ObjExporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjExporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/ObjExporter.cpp.o.requires
@@ -2117,18 +2120,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/ObjExporter.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/ObjExporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/ObjExporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreImporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/OgreImporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreImporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_91)
+third-party/assimp/code/CMakeFiles/assimp.dir/OgreImporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreImporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_91)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/OgreImporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OgreImporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreImporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OgreImporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreImporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreImporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/OgreImporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreImporter.cpp > CMakeFiles/assimp.dir/OgreImporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreImporter.cpp > CMakeFiles/assimp.dir/OgreImporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreImporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/OgreImporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreImporter.cpp -o CMakeFiles/assimp.dir/OgreImporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreImporter.cpp -o CMakeFiles/assimp.dir/OgreImporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreImporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/OgreImporter.cpp.o.requires
@@ -2140,18 +2143,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/OgreImporter.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreImporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/OgreImporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreStructs.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/OgreStructs.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreStructs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_92)
+third-party/assimp/code/CMakeFiles/assimp.dir/OgreStructs.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreStructs.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_92)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/OgreStructs.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OgreStructs.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreStructs.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OgreStructs.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreStructs.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreStructs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/OgreStructs.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreStructs.cpp > CMakeFiles/assimp.dir/OgreStructs.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreStructs.cpp > CMakeFiles/assimp.dir/OgreStructs.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreStructs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/OgreStructs.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreStructs.cpp -o CMakeFiles/assimp.dir/OgreStructs.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreStructs.cpp -o CMakeFiles/assimp.dir/OgreStructs.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreStructs.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/OgreStructs.cpp.o.requires
@@ -2163,18 +2166,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/OgreStructs.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreStructs.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/OgreStructs.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreBinarySerializer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_93)
+third-party/assimp/code/CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreBinarySerializer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_93)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreBinarySerializer.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreBinarySerializer.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreBinarySerializer.cpp > CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreBinarySerializer.cpp > CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreBinarySerializer.cpp -o CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreBinarySerializer.cpp -o CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.o.requires
@@ -2186,18 +2189,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.o.provide
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/OgreBinarySerializer.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreXmlSerializer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_94)
+third-party/assimp/code/CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreXmlSerializer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_94)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreXmlSerializer.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreXmlSerializer.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreXmlSerializer.cpp > CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreXmlSerializer.cpp > CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreXmlSerializer.cpp -o CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreXmlSerializer.cpp -o CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.o.requires
@@ -2209,18 +2212,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.o.provides: 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/OgreXmlSerializer.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreMaterial.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/OgreMaterial.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreMaterial.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_95)
+third-party/assimp/code/CMakeFiles/assimp.dir/OgreMaterial.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreMaterial.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_95)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/OgreMaterial.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OgreMaterial.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreMaterial.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OgreMaterial.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreMaterial.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreMaterial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/OgreMaterial.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreMaterial.cpp > CMakeFiles/assimp.dir/OgreMaterial.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreMaterial.cpp > CMakeFiles/assimp.dir/OgreMaterial.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreMaterial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/OgreMaterial.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OgreMaterial.cpp -o CMakeFiles/assimp.dir/OgreMaterial.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OgreMaterial.cpp -o CMakeFiles/assimp.dir/OgreMaterial.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreMaterial.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/OgreMaterial.cpp.o.requires
@@ -2232,18 +2235,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/OgreMaterial.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/OgreMaterial.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/OgreMaterial.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXExporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXExporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OpenGEXExporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_96)
+third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXExporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OpenGEXExporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_96)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXExporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OpenGEXExporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OpenGEXExporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OpenGEXExporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OpenGEXExporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXExporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/OpenGEXExporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OpenGEXExporter.cpp > CMakeFiles/assimp.dir/OpenGEXExporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OpenGEXExporter.cpp > CMakeFiles/assimp.dir/OpenGEXExporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXExporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/OpenGEXExporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OpenGEXExporter.cpp -o CMakeFiles/assimp.dir/OpenGEXExporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OpenGEXExporter.cpp -o CMakeFiles/assimp.dir/OpenGEXExporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXExporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXExporter.cpp.o.requires
@@ -2255,18 +2258,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXExporter.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXExporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXExporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXImporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXImporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OpenGEXImporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_97)
+third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXImporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OpenGEXImporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_97)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXImporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OpenGEXImporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OpenGEXImporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/OpenGEXImporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OpenGEXImporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXImporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/OpenGEXImporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OpenGEXImporter.cpp > CMakeFiles/assimp.dir/OpenGEXImporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OpenGEXImporter.cpp > CMakeFiles/assimp.dir/OpenGEXImporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXImporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/OpenGEXImporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/OpenGEXImporter.cpp -o CMakeFiles/assimp.dir/OpenGEXImporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/OpenGEXImporter.cpp -o CMakeFiles/assimp.dir/OpenGEXImporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXImporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXImporter.cpp.o.requires
@@ -2278,18 +2281,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXImporter.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXImporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/OpenGEXImporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/PlyLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PlyLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_98)
+third-party/assimp/code/CMakeFiles/assimp.dir/PlyLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PlyLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_98)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/PlyLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/PlyLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PlyLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/PlyLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PlyLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/PlyLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PlyLoader.cpp > CMakeFiles/assimp.dir/PlyLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PlyLoader.cpp > CMakeFiles/assimp.dir/PlyLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/PlyLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PlyLoader.cpp -o CMakeFiles/assimp.dir/PlyLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PlyLoader.cpp -o CMakeFiles/assimp.dir/PlyLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/PlyLoader.cpp.o.requires
@@ -2301,18 +2304,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/PlyLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/PlyLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyParser.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/PlyParser.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PlyParser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_99)
+third-party/assimp/code/CMakeFiles/assimp.dir/PlyParser.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PlyParser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_99)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/PlyParser.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/PlyParser.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PlyParser.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/PlyParser.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PlyParser.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/PlyParser.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PlyParser.cpp > CMakeFiles/assimp.dir/PlyParser.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PlyParser.cpp > CMakeFiles/assimp.dir/PlyParser.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/PlyParser.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PlyParser.cpp -o CMakeFiles/assimp.dir/PlyParser.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PlyParser.cpp -o CMakeFiles/assimp.dir/PlyParser.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyParser.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/PlyParser.cpp.o.requires
@@ -2324,18 +2327,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/PlyParser.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyParser.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/PlyParser.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyExporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/PlyExporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PlyExporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_100)
+third-party/assimp/code/CMakeFiles/assimp.dir/PlyExporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PlyExporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_100)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/PlyExporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/PlyExporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PlyExporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/PlyExporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PlyExporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyExporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/PlyExporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PlyExporter.cpp > CMakeFiles/assimp.dir/PlyExporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PlyExporter.cpp > CMakeFiles/assimp.dir/PlyExporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyExporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/PlyExporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/PlyExporter.cpp -o CMakeFiles/assimp.dir/PlyExporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/PlyExporter.cpp -o CMakeFiles/assimp.dir/PlyExporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyExporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/PlyExporter.cpp.o.requires
@@ -2347,18 +2350,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/PlyExporter.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/PlyExporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/PlyExporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MS3DLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/MS3DLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MS3DLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_101)
+third-party/assimp/code/CMakeFiles/assimp.dir/MS3DLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MS3DLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_101)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/MS3DLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MS3DLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MS3DLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/MS3DLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MS3DLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MS3DLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/MS3DLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MS3DLoader.cpp > CMakeFiles/assimp.dir/MS3DLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MS3DLoader.cpp > CMakeFiles/assimp.dir/MS3DLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MS3DLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/MS3DLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/MS3DLoader.cpp -o CMakeFiles/assimp.dir/MS3DLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/MS3DLoader.cpp -o CMakeFiles/assimp.dir/MS3DLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/MS3DLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/MS3DLoader.cpp.o.requires
@@ -2370,18 +2373,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/MS3DLoader.cpp.o.provides: third-p
 third-party/assimp/code/CMakeFiles/assimp.dir/MS3DLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/MS3DLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/COBLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/COBLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/COBLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_102)
+third-party/assimp/code/CMakeFiles/assimp.dir/COBLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/COBLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_102)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/COBLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/COBLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/COBLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/COBLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/COBLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/COBLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/COBLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/COBLoader.cpp > CMakeFiles/assimp.dir/COBLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/COBLoader.cpp > CMakeFiles/assimp.dir/COBLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/COBLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/COBLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/COBLoader.cpp -o CMakeFiles/assimp.dir/COBLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/COBLoader.cpp -o CMakeFiles/assimp.dir/COBLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/COBLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/COBLoader.cpp.o.requires
@@ -2393,18 +2396,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/COBLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/COBLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/COBLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/BlenderLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_103)
+third-party/assimp/code/CMakeFiles/assimp.dir/BlenderLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_103)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/BlenderLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BlenderLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BlenderLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/BlenderLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderLoader.cpp > CMakeFiles/assimp.dir/BlenderLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderLoader.cpp > CMakeFiles/assimp.dir/BlenderLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/BlenderLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderLoader.cpp -o CMakeFiles/assimp.dir/BlenderLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderLoader.cpp -o CMakeFiles/assimp.dir/BlenderLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/BlenderLoader.cpp.o.requires
@@ -2416,18 +2419,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/BlenderLoader.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/BlenderLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderDNA.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/BlenderDNA.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderDNA.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_104)
+third-party/assimp/code/CMakeFiles/assimp.dir/BlenderDNA.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderDNA.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_104)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/BlenderDNA.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BlenderDNA.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderDNA.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BlenderDNA.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderDNA.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderDNA.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/BlenderDNA.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderDNA.cpp > CMakeFiles/assimp.dir/BlenderDNA.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderDNA.cpp > CMakeFiles/assimp.dir/BlenderDNA.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderDNA.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/BlenderDNA.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderDNA.cpp -o CMakeFiles/assimp.dir/BlenderDNA.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderDNA.cpp -o CMakeFiles/assimp.dir/BlenderDNA.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderDNA.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/BlenderDNA.cpp.o.requires
@@ -2439,18 +2442,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/BlenderDNA.cpp.o.provides: third-p
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderDNA.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/BlenderDNA.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderScene.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/BlenderScene.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderScene.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_105)
+third-party/assimp/code/CMakeFiles/assimp.dir/BlenderScene.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderScene.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_105)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/BlenderScene.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BlenderScene.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderScene.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BlenderScene.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderScene.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/BlenderScene.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderScene.cpp > CMakeFiles/assimp.dir/BlenderScene.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderScene.cpp > CMakeFiles/assimp.dir/BlenderScene.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/BlenderScene.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderScene.cpp -o CMakeFiles/assimp.dir/BlenderScene.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderScene.cpp -o CMakeFiles/assimp.dir/BlenderScene.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderScene.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/BlenderScene.cpp.o.requires
@@ -2462,18 +2465,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/BlenderScene.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderScene.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/BlenderScene.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderModifier.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/BlenderModifier.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderModifier.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_106)
+third-party/assimp/code/CMakeFiles/assimp.dir/BlenderModifier.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderModifier.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_106)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/BlenderModifier.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BlenderModifier.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderModifier.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BlenderModifier.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderModifier.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderModifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/BlenderModifier.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderModifier.cpp > CMakeFiles/assimp.dir/BlenderModifier.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderModifier.cpp > CMakeFiles/assimp.dir/BlenderModifier.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderModifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/BlenderModifier.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderModifier.cpp -o CMakeFiles/assimp.dir/BlenderModifier.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderModifier.cpp -o CMakeFiles/assimp.dir/BlenderModifier.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderModifier.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/BlenderModifier.cpp.o.requires
@@ -2485,18 +2488,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/BlenderModifier.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderModifier.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/BlenderModifier.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderBMesh.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/BlenderBMesh.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderBMesh.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_107)
+third-party/assimp/code/CMakeFiles/assimp.dir/BlenderBMesh.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderBMesh.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_107)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/BlenderBMesh.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BlenderBMesh.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderBMesh.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BlenderBMesh.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderBMesh.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderBMesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/BlenderBMesh.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderBMesh.cpp > CMakeFiles/assimp.dir/BlenderBMesh.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderBMesh.cpp > CMakeFiles/assimp.dir/BlenderBMesh.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderBMesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/BlenderBMesh.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderBMesh.cpp -o CMakeFiles/assimp.dir/BlenderBMesh.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderBMesh.cpp -o CMakeFiles/assimp.dir/BlenderBMesh.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderBMesh.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/BlenderBMesh.cpp.o.requires
@@ -2508,18 +2511,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/BlenderBMesh.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderBMesh.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/BlenderBMesh.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderTessellator.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/BlenderTessellator.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderTessellator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_108)
+third-party/assimp/code/CMakeFiles/assimp.dir/BlenderTessellator.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderTessellator.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_108)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/BlenderTessellator.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BlenderTessellator.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderTessellator.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/BlenderTessellator.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderTessellator.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderTessellator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/BlenderTessellator.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderTessellator.cpp > CMakeFiles/assimp.dir/BlenderTessellator.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderTessellator.cpp > CMakeFiles/assimp.dir/BlenderTessellator.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderTessellator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/BlenderTessellator.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/BlenderTessellator.cpp -o CMakeFiles/assimp.dir/BlenderTessellator.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/BlenderTessellator.cpp -o CMakeFiles/assimp.dir/BlenderTessellator.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderTessellator.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/BlenderTessellator.cpp.o.requires
@@ -2531,18 +2534,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/BlenderTessellator.cpp.o.provides:
 third-party/assimp/code/CMakeFiles/assimp.dir/BlenderTessellator.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/BlenderTessellator.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/IFCLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_109)
+third-party/assimp/code/CMakeFiles/assimp.dir/IFCLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_109)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/IFCLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/IFCLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCLoader.cpp > CMakeFiles/assimp.dir/IFCLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCLoader.cpp > CMakeFiles/assimp.dir/IFCLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/IFCLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCLoader.cpp -o CMakeFiles/assimp.dir/IFCLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCLoader.cpp -o CMakeFiles/assimp.dir/IFCLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/IFCLoader.cpp.o.requires
@@ -2554,18 +2557,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/IFCLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/IFCLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCReaderGen.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/IFCReaderGen.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCReaderGen.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_110)
+third-party/assimp/code/CMakeFiles/assimp.dir/IFCReaderGen.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCReaderGen.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_110)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/IFCReaderGen.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCReaderGen.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCReaderGen.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCReaderGen.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCReaderGen.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCReaderGen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/IFCReaderGen.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCReaderGen.cpp > CMakeFiles/assimp.dir/IFCReaderGen.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCReaderGen.cpp > CMakeFiles/assimp.dir/IFCReaderGen.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCReaderGen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/IFCReaderGen.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCReaderGen.cpp -o CMakeFiles/assimp.dir/IFCReaderGen.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCReaderGen.cpp -o CMakeFiles/assimp.dir/IFCReaderGen.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCReaderGen.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/IFCReaderGen.cpp.o.requires
@@ -2577,18 +2580,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/IFCReaderGen.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCReaderGen.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/IFCReaderGen.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCUtil.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/IFCUtil.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCUtil.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_111)
+third-party/assimp/code/CMakeFiles/assimp.dir/IFCUtil.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCUtil.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_111)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/IFCUtil.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCUtil.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCUtil.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCUtil.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCUtil.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCUtil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/IFCUtil.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCUtil.cpp > CMakeFiles/assimp.dir/IFCUtil.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCUtil.cpp > CMakeFiles/assimp.dir/IFCUtil.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCUtil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/IFCUtil.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCUtil.cpp -o CMakeFiles/assimp.dir/IFCUtil.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCUtil.cpp -o CMakeFiles/assimp.dir/IFCUtil.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCUtil.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/IFCUtil.cpp.o.requires
@@ -2600,18 +2603,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/IFCUtil.cpp.o.provides: third-part
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCUtil.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/IFCUtil.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCGeometry.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/IFCGeometry.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCGeometry.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_112)
+third-party/assimp/code/CMakeFiles/assimp.dir/IFCGeometry.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCGeometry.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_112)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/IFCGeometry.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCGeometry.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCGeometry.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCGeometry.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCGeometry.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCGeometry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/IFCGeometry.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCGeometry.cpp > CMakeFiles/assimp.dir/IFCGeometry.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCGeometry.cpp > CMakeFiles/assimp.dir/IFCGeometry.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCGeometry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/IFCGeometry.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCGeometry.cpp -o CMakeFiles/assimp.dir/IFCGeometry.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCGeometry.cpp -o CMakeFiles/assimp.dir/IFCGeometry.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCGeometry.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/IFCGeometry.cpp.o.requires
@@ -2623,18 +2626,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/IFCGeometry.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCGeometry.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/IFCGeometry.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCMaterial.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/IFCMaterial.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCMaterial.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_113)
+third-party/assimp/code/CMakeFiles/assimp.dir/IFCMaterial.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCMaterial.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_113)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/IFCMaterial.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCMaterial.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCMaterial.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCMaterial.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCMaterial.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCMaterial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/IFCMaterial.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCMaterial.cpp > CMakeFiles/assimp.dir/IFCMaterial.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCMaterial.cpp > CMakeFiles/assimp.dir/IFCMaterial.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCMaterial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/IFCMaterial.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCMaterial.cpp -o CMakeFiles/assimp.dir/IFCMaterial.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCMaterial.cpp -o CMakeFiles/assimp.dir/IFCMaterial.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCMaterial.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/IFCMaterial.cpp.o.requires
@@ -2646,18 +2649,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/IFCMaterial.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCMaterial.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/IFCMaterial.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCProfile.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/IFCProfile.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCProfile.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_114)
+third-party/assimp/code/CMakeFiles/assimp.dir/IFCProfile.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCProfile.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_114)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/IFCProfile.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCProfile.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCProfile.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCProfile.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCProfile.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCProfile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/IFCProfile.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCProfile.cpp > CMakeFiles/assimp.dir/IFCProfile.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCProfile.cpp > CMakeFiles/assimp.dir/IFCProfile.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCProfile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/IFCProfile.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCProfile.cpp -o CMakeFiles/assimp.dir/IFCProfile.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCProfile.cpp -o CMakeFiles/assimp.dir/IFCProfile.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCProfile.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/IFCProfile.cpp.o.requires
@@ -2669,18 +2672,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/IFCProfile.cpp.o.provides: third-p
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCProfile.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/IFCProfile.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCCurve.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/IFCCurve.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCCurve.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_115)
+third-party/assimp/code/CMakeFiles/assimp.dir/IFCCurve.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCCurve.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_115)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/IFCCurve.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCCurve.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCCurve.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCCurve.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCCurve.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCCurve.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/IFCCurve.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCCurve.cpp > CMakeFiles/assimp.dir/IFCCurve.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCCurve.cpp > CMakeFiles/assimp.dir/IFCCurve.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCCurve.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/IFCCurve.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCCurve.cpp -o CMakeFiles/assimp.dir/IFCCurve.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCCurve.cpp -o CMakeFiles/assimp.dir/IFCCurve.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCCurve.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/IFCCurve.cpp.o.requires
@@ -2692,18 +2695,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/IFCCurve.cpp.o.provides: third-par
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCCurve.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/IFCCurve.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCBoolean.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/IFCBoolean.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCBoolean.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_116)
+third-party/assimp/code/CMakeFiles/assimp.dir/IFCBoolean.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCBoolean.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_116)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/IFCBoolean.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCBoolean.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCBoolean.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCBoolean.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCBoolean.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCBoolean.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/IFCBoolean.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCBoolean.cpp > CMakeFiles/assimp.dir/IFCBoolean.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCBoolean.cpp > CMakeFiles/assimp.dir/IFCBoolean.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCBoolean.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/IFCBoolean.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCBoolean.cpp -o CMakeFiles/assimp.dir/IFCBoolean.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCBoolean.cpp -o CMakeFiles/assimp.dir/IFCBoolean.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCBoolean.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/IFCBoolean.cpp.o.requires
@@ -2715,18 +2718,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/IFCBoolean.cpp.o.provides: third-p
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCBoolean.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/IFCBoolean.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCOpenings.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/IFCOpenings.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCOpenings.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_117)
+third-party/assimp/code/CMakeFiles/assimp.dir/IFCOpenings.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCOpenings.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_117)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/IFCOpenings.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCOpenings.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCOpenings.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/IFCOpenings.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCOpenings.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCOpenings.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/IFCOpenings.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCOpenings.cpp > CMakeFiles/assimp.dir/IFCOpenings.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCOpenings.cpp > CMakeFiles/assimp.dir/IFCOpenings.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCOpenings.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/IFCOpenings.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/IFCOpenings.cpp -o CMakeFiles/assimp.dir/IFCOpenings.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/IFCOpenings.cpp -o CMakeFiles/assimp.dir/IFCOpenings.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCOpenings.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/IFCOpenings.cpp.o.requires
@@ -2738,18 +2741,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/IFCOpenings.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/IFCOpenings.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/IFCOpenings.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileReader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileReader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STEPFileReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_118)
+third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileReader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STEPFileReader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_118)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileReader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/STEPFileReader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STEPFileReader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/STEPFileReader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STEPFileReader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileReader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/STEPFileReader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STEPFileReader.cpp > CMakeFiles/assimp.dir/STEPFileReader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STEPFileReader.cpp > CMakeFiles/assimp.dir/STEPFileReader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileReader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/STEPFileReader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STEPFileReader.cpp -o CMakeFiles/assimp.dir/STEPFileReader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STEPFileReader.cpp -o CMakeFiles/assimp.dir/STEPFileReader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileReader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileReader.cpp.o.requires
@@ -2761,18 +2764,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileReader.cpp.o.provides: thi
 third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileReader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileReader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileEncoding.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileEncoding.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STEPFileEncoding.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_119)
+third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileEncoding.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STEPFileEncoding.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_119)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileEncoding.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/STEPFileEncoding.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STEPFileEncoding.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/STEPFileEncoding.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STEPFileEncoding.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileEncoding.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/STEPFileEncoding.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STEPFileEncoding.cpp > CMakeFiles/assimp.dir/STEPFileEncoding.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STEPFileEncoding.cpp > CMakeFiles/assimp.dir/STEPFileEncoding.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileEncoding.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/STEPFileEncoding.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STEPFileEncoding.cpp -o CMakeFiles/assimp.dir/STEPFileEncoding.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STEPFileEncoding.cpp -o CMakeFiles/assimp.dir/STEPFileEncoding.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileEncoding.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileEncoding.cpp.o.requires
@@ -2784,18 +2787,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileEncoding.cpp.o.provides: t
 third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileEncoding.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/STEPFileEncoding.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XGLLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/XGLLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XGLLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_120)
+third-party/assimp/code/CMakeFiles/assimp.dir/XGLLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XGLLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_120)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/XGLLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/XGLLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XGLLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/XGLLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XGLLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XGLLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/XGLLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XGLLoader.cpp > CMakeFiles/assimp.dir/XGLLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XGLLoader.cpp > CMakeFiles/assimp.dir/XGLLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XGLLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/XGLLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XGLLoader.cpp -o CMakeFiles/assimp.dir/XGLLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XGLLoader.cpp -o CMakeFiles/assimp.dir/XGLLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XGLLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/XGLLoader.cpp.o.requires
@@ -2807,18 +2810,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/XGLLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/XGLLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/XGLLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXImporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXImporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXImporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_121)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXImporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXImporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_121)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXImporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXImporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXImporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXImporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXImporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXImporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXImporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXImporter.cpp > CMakeFiles/assimp.dir/FBXImporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXImporter.cpp > CMakeFiles/assimp.dir/FBXImporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXImporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXImporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXImporter.cpp -o CMakeFiles/assimp.dir/FBXImporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXImporter.cpp -o CMakeFiles/assimp.dir/FBXImporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXImporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXImporter.cpp.o.requires
@@ -2830,18 +2833,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXImporter.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXImporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXImporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXParser.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXParser.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXParser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_122)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXParser.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXParser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_122)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXParser.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXParser.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXParser.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXParser.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXParser.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXParser.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXParser.cpp > CMakeFiles/assimp.dir/FBXParser.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXParser.cpp > CMakeFiles/assimp.dir/FBXParser.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXParser.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXParser.cpp -o CMakeFiles/assimp.dir/FBXParser.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXParser.cpp -o CMakeFiles/assimp.dir/FBXParser.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXParser.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXParser.cpp.o.requires
@@ -2853,18 +2856,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXParser.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXParser.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXParser.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXTokenizer.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXTokenizer.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXTokenizer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_123)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXTokenizer.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXTokenizer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_123)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXTokenizer.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXTokenizer.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXTokenizer.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXTokenizer.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXTokenizer.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXTokenizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXTokenizer.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXTokenizer.cpp > CMakeFiles/assimp.dir/FBXTokenizer.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXTokenizer.cpp > CMakeFiles/assimp.dir/FBXTokenizer.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXTokenizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXTokenizer.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXTokenizer.cpp -o CMakeFiles/assimp.dir/FBXTokenizer.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXTokenizer.cpp -o CMakeFiles/assimp.dir/FBXTokenizer.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXTokenizer.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXTokenizer.cpp.o.requires
@@ -2876,18 +2879,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXTokenizer.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXTokenizer.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXTokenizer.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXConverter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXConverter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXConverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_124)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXConverter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXConverter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_124)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXConverter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXConverter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXConverter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXConverter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXConverter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXConverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXConverter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXConverter.cpp > CMakeFiles/assimp.dir/FBXConverter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXConverter.cpp > CMakeFiles/assimp.dir/FBXConverter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXConverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXConverter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXConverter.cpp -o CMakeFiles/assimp.dir/FBXConverter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXConverter.cpp -o CMakeFiles/assimp.dir/FBXConverter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXConverter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXConverter.cpp.o.requires
@@ -2899,18 +2902,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXConverter.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXConverter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXConverter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXUtil.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXUtil.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXUtil.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_125)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXUtil.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXUtil.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_125)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXUtil.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXUtil.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXUtil.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXUtil.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXUtil.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXUtil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXUtil.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXUtil.cpp > CMakeFiles/assimp.dir/FBXUtil.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXUtil.cpp > CMakeFiles/assimp.dir/FBXUtil.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXUtil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXUtil.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXUtil.cpp -o CMakeFiles/assimp.dir/FBXUtil.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXUtil.cpp -o CMakeFiles/assimp.dir/FBXUtil.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXUtil.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXUtil.cpp.o.requires
@@ -2922,18 +2925,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXUtil.cpp.o.provides: third-part
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXUtil.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXUtil.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocument.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocument.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXDocument.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_126)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocument.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXDocument.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_126)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocument.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXDocument.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXDocument.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXDocument.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXDocument.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocument.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXDocument.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXDocument.cpp > CMakeFiles/assimp.dir/FBXDocument.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXDocument.cpp > CMakeFiles/assimp.dir/FBXDocument.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocument.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXDocument.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXDocument.cpp -o CMakeFiles/assimp.dir/FBXDocument.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXDocument.cpp -o CMakeFiles/assimp.dir/FBXDocument.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocument.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocument.cpp.o.requires
@@ -2945,18 +2948,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocument.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocument.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocument.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXProperties.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXProperties.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXProperties.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_127)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXProperties.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXProperties.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_127)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXProperties.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXProperties.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXProperties.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXProperties.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXProperties.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXProperties.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXProperties.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXProperties.cpp > CMakeFiles/assimp.dir/FBXProperties.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXProperties.cpp > CMakeFiles/assimp.dir/FBXProperties.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXProperties.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXProperties.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXProperties.cpp -o CMakeFiles/assimp.dir/FBXProperties.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXProperties.cpp -o CMakeFiles/assimp.dir/FBXProperties.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXProperties.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXProperties.cpp.o.requires
@@ -2968,18 +2971,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXProperties.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXProperties.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXProperties.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXMeshGeometry.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_128)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXMeshGeometry.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_128)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXMeshGeometry.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXMeshGeometry.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXMeshGeometry.cpp > CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXMeshGeometry.cpp > CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXMeshGeometry.cpp -o CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXMeshGeometry.cpp -o CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.o.requires
@@ -2991,18 +2994,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXMeshGeometry.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXMaterial.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXMaterial.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXMaterial.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_129)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXMaterial.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXMaterial.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_129)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXMaterial.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXMaterial.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXMaterial.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXMaterial.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXMaterial.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXMaterial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXMaterial.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXMaterial.cpp > CMakeFiles/assimp.dir/FBXMaterial.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXMaterial.cpp > CMakeFiles/assimp.dir/FBXMaterial.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXMaterial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXMaterial.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXMaterial.cpp -o CMakeFiles/assimp.dir/FBXMaterial.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXMaterial.cpp -o CMakeFiles/assimp.dir/FBXMaterial.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXMaterial.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXMaterial.cpp.o.requires
@@ -3014,18 +3017,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXMaterial.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXMaterial.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXMaterial.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXModel.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXModel.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXModel.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_130)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXModel.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXModel.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_130)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXModel.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXModel.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXModel.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXModel.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXModel.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXModel.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXModel.cpp > CMakeFiles/assimp.dir/FBXModel.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXModel.cpp > CMakeFiles/assimp.dir/FBXModel.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXModel.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXModel.cpp -o CMakeFiles/assimp.dir/FBXModel.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXModel.cpp -o CMakeFiles/assimp.dir/FBXModel.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXModel.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXModel.cpp.o.requires
@@ -3037,18 +3040,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXModel.cpp.o.provides: third-par
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXModel.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXModel.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXAnimation.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXAnimation.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXAnimation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_131)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXAnimation.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXAnimation.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_131)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXAnimation.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXAnimation.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXAnimation.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXAnimation.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXAnimation.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXAnimation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXAnimation.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXAnimation.cpp > CMakeFiles/assimp.dir/FBXAnimation.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXAnimation.cpp > CMakeFiles/assimp.dir/FBXAnimation.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXAnimation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXAnimation.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXAnimation.cpp -o CMakeFiles/assimp.dir/FBXAnimation.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXAnimation.cpp -o CMakeFiles/assimp.dir/FBXAnimation.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXAnimation.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXAnimation.cpp.o.requires
@@ -3060,18 +3063,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXAnimation.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXAnimation.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXAnimation.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXNodeAttribute.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_132)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXNodeAttribute.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_132)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXNodeAttribute.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXNodeAttribute.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXNodeAttribute.cpp > CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXNodeAttribute.cpp > CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXNodeAttribute.cpp -o CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXNodeAttribute.cpp -o CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.o.requires
@@ -3083,18 +3086,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.o.provides: t
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXNodeAttribute.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDeformer.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXDeformer.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXDeformer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_133)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXDeformer.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXDeformer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_133)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXDeformer.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXDeformer.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXDeformer.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXDeformer.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXDeformer.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDeformer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXDeformer.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXDeformer.cpp > CMakeFiles/assimp.dir/FBXDeformer.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXDeformer.cpp > CMakeFiles/assimp.dir/FBXDeformer.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDeformer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXDeformer.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXDeformer.cpp -o CMakeFiles/assimp.dir/FBXDeformer.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXDeformer.cpp -o CMakeFiles/assimp.dir/FBXDeformer.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDeformer.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXDeformer.cpp.o.requires
@@ -3106,18 +3109,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXDeformer.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDeformer.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXDeformer.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXBinaryTokenizer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_134)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXBinaryTokenizer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_134)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXBinaryTokenizer.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXBinaryTokenizer.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXBinaryTokenizer.cpp > CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXBinaryTokenizer.cpp > CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXBinaryTokenizer.cpp -o CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXBinaryTokenizer.cpp -o CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.o.requires
@@ -3129,18 +3132,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.o.provides:
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXBinaryTokenizer.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXDocumentUtil.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_135)
+third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXDocumentUtil.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_135)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXDocumentUtil.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXDocumentUtil.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXDocumentUtil.cpp > CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXDocumentUtil.cpp > CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/FBXDocumentUtil.cpp -o CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/FBXDocumentUtil.cpp -o CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.o.requires
@@ -3152,18 +3155,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/FBXDocumentUtil.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3DLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/Q3DLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3DLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_136)
+third-party/assimp/code/CMakeFiles/assimp.dir/Q3DLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3DLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_136)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/Q3DLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Q3DLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3DLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Q3DLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3DLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3DLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/Q3DLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3DLoader.cpp > CMakeFiles/assimp.dir/Q3DLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3DLoader.cpp > CMakeFiles/assimp.dir/Q3DLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3DLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/Q3DLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3DLoader.cpp -o CMakeFiles/assimp.dir/Q3DLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3DLoader.cpp -o CMakeFiles/assimp.dir/Q3DLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3DLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/Q3DLoader.cpp.o.requires
@@ -3175,18 +3178,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/Q3DLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3DLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/Q3DLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3BSPFileParser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_137)
+third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3BSPFileParser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_137)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3BSPFileParser.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3BSPFileParser.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3BSPFileParser.cpp > CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3BSPFileParser.cpp > CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3BSPFileParser.cpp -o CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3BSPFileParser.cpp -o CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.o.requires
@@ -3198,18 +3201,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileParser.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3BSPFileImporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_138)
+third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3BSPFileImporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_138)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3BSPFileImporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3BSPFileImporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3BSPFileImporter.cpp > CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3BSPFileImporter.cpp > CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3BSPFileImporter.cpp -o CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3BSPFileImporter.cpp -o CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.o.requires
@@ -3221,18 +3224,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.o.provides: 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPFileImporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3BSPZipArchive.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_139)
+third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3BSPZipArchive.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_139)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3BSPZipArchive.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3BSPZipArchive.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3BSPZipArchive.cpp > CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3BSPZipArchive.cpp > CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/Q3BSPZipArchive.cpp -o CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/Q3BSPZipArchive.cpp -o CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.o.requires
@@ -3244,18 +3247,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.o.provides: th
 third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/Q3BSPZipArchive.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RawLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/RawLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RawLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_140)
+third-party/assimp/code/CMakeFiles/assimp.dir/RawLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RawLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_140)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/RawLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/RawLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RawLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/RawLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RawLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RawLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/RawLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RawLoader.cpp > CMakeFiles/assimp.dir/RawLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RawLoader.cpp > CMakeFiles/assimp.dir/RawLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RawLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/RawLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/RawLoader.cpp -o CMakeFiles/assimp.dir/RawLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/RawLoader.cpp -o CMakeFiles/assimp.dir/RawLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/RawLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/RawLoader.cpp.o.requires
@@ -3267,18 +3270,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/RawLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/RawLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/RawLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SMDLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/SMDLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SMDLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_141)
+third-party/assimp/code/CMakeFiles/assimp.dir/SMDLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SMDLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_141)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/SMDLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SMDLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SMDLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/SMDLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SMDLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SMDLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/SMDLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SMDLoader.cpp > CMakeFiles/assimp.dir/SMDLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SMDLoader.cpp > CMakeFiles/assimp.dir/SMDLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SMDLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/SMDLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/SMDLoader.cpp -o CMakeFiles/assimp.dir/SMDLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/SMDLoader.cpp -o CMakeFiles/assimp.dir/SMDLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/SMDLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/SMDLoader.cpp.o.requires
@@ -3290,18 +3293,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/SMDLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/SMDLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/SMDLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STLLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/STLLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STLLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_142)
+third-party/assimp/code/CMakeFiles/assimp.dir/STLLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STLLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_142)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/STLLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/STLLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STLLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/STLLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STLLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STLLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/STLLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STLLoader.cpp > CMakeFiles/assimp.dir/STLLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STLLoader.cpp > CMakeFiles/assimp.dir/STLLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STLLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/STLLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STLLoader.cpp -o CMakeFiles/assimp.dir/STLLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STLLoader.cpp -o CMakeFiles/assimp.dir/STLLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STLLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/STLLoader.cpp.o.requires
@@ -3313,18 +3316,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/STLLoader.cpp.o.provides: third-pa
 third-party/assimp/code/CMakeFiles/assimp.dir/STLLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/STLLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STLExporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/STLExporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STLExporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_143)
+third-party/assimp/code/CMakeFiles/assimp.dir/STLExporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STLExporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_143)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/STLExporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/STLExporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STLExporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/STLExporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STLExporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STLExporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/STLExporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STLExporter.cpp > CMakeFiles/assimp.dir/STLExporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STLExporter.cpp > CMakeFiles/assimp.dir/STLExporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STLExporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/STLExporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/STLExporter.cpp -o CMakeFiles/assimp.dir/STLExporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/STLExporter.cpp -o CMakeFiles/assimp.dir/STLExporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/STLExporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/STLExporter.cpp.o.requires
@@ -3336,18 +3339,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/STLExporter.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/STLExporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/STLExporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TerragenLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/TerragenLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TerragenLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_144)
+third-party/assimp/code/CMakeFiles/assimp.dir/TerragenLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TerragenLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_144)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/TerragenLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/TerragenLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TerragenLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/TerragenLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TerragenLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TerragenLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/TerragenLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TerragenLoader.cpp > CMakeFiles/assimp.dir/TerragenLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TerragenLoader.cpp > CMakeFiles/assimp.dir/TerragenLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TerragenLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/TerragenLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/TerragenLoader.cpp -o CMakeFiles/assimp.dir/TerragenLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/TerragenLoader.cpp -o CMakeFiles/assimp.dir/TerragenLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/TerragenLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/TerragenLoader.cpp.o.requires
@@ -3359,18 +3362,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/TerragenLoader.cpp.o.provides: thi
 third-party/assimp/code/CMakeFiles/assimp.dir/TerragenLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/TerragenLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/UnrealLoader.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/UnrealLoader.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/UnrealLoader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_145)
+third-party/assimp/code/CMakeFiles/assimp.dir/UnrealLoader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/UnrealLoader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_145)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/UnrealLoader.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/UnrealLoader.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/UnrealLoader.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/UnrealLoader.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/UnrealLoader.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/UnrealLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/UnrealLoader.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/UnrealLoader.cpp > CMakeFiles/assimp.dir/UnrealLoader.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/UnrealLoader.cpp > CMakeFiles/assimp.dir/UnrealLoader.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/UnrealLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/UnrealLoader.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/UnrealLoader.cpp -o CMakeFiles/assimp.dir/UnrealLoader.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/UnrealLoader.cpp -o CMakeFiles/assimp.dir/UnrealLoader.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/UnrealLoader.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/UnrealLoader.cpp.o.requires
@@ -3382,18 +3385,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/UnrealLoader.cpp.o.provides: third
 third-party/assimp/code/CMakeFiles/assimp.dir/UnrealLoader.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/UnrealLoader.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileImporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/XFileImporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XFileImporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_146)
+third-party/assimp/code/CMakeFiles/assimp.dir/XFileImporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XFileImporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_146)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/XFileImporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/XFileImporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XFileImporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/XFileImporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XFileImporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileImporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/XFileImporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XFileImporter.cpp > CMakeFiles/assimp.dir/XFileImporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XFileImporter.cpp > CMakeFiles/assimp.dir/XFileImporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileImporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/XFileImporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XFileImporter.cpp -o CMakeFiles/assimp.dir/XFileImporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XFileImporter.cpp -o CMakeFiles/assimp.dir/XFileImporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileImporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/XFileImporter.cpp.o.requires
@@ -3405,18 +3408,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/XFileImporter.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileImporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/XFileImporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileParser.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/XFileParser.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XFileParser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_147)
+third-party/assimp/code/CMakeFiles/assimp.dir/XFileParser.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XFileParser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_147)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/XFileParser.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/XFileParser.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XFileParser.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/XFileParser.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XFileParser.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/XFileParser.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XFileParser.cpp > CMakeFiles/assimp.dir/XFileParser.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XFileParser.cpp > CMakeFiles/assimp.dir/XFileParser.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/XFileParser.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XFileParser.cpp -o CMakeFiles/assimp.dir/XFileParser.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XFileParser.cpp -o CMakeFiles/assimp.dir/XFileParser.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileParser.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/XFileParser.cpp.o.requires
@@ -3428,18 +3431,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/XFileParser.cpp.o.provides: third-
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileParser.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/XFileParser.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileExporter.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/XFileExporter.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XFileExporter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_148)
+third-party/assimp/code/CMakeFiles/assimp.dir/XFileExporter.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XFileExporter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_148)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/XFileExporter.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/XFileExporter.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XFileExporter.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/XFileExporter.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XFileExporter.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileExporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/XFileExporter.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XFileExporter.cpp > CMakeFiles/assimp.dir/XFileExporter.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XFileExporter.cpp > CMakeFiles/assimp.dir/XFileExporter.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileExporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/XFileExporter.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code/XFileExporter.cpp -o CMakeFiles/assimp.dir/XFileExporter.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/XFileExporter.cpp -o CMakeFiles/assimp.dir/XFileExporter.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileExporter.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/XFileExporter.cpp.o.requires
@@ -3451,18 +3454,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/XFileExporter.cpp.o.provides: thir
 third-party/assimp/code/CMakeFiles/assimp.dir/XFileExporter.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/XFileExporter.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/irrXML/irrXML.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_149)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/irrXML/irrXML.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_149)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/irrXML/irrXML.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/irrXML/irrXML.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/irrXML/irrXML.cpp > CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/irrXML/irrXML.cpp > CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/irrXML/irrXML.cpp -o CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/irrXML/irrXML.cpp -o CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.o.requires
@@ -3474,18 +3477,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.o.pro
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/irrXML/irrXML.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_150)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_150)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.o   -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.c
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.o   -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.c
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.c > CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.c > CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.c -o CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.c -o CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.o.requires
@@ -3497,18 +3500,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/ConvertUTF/ConvertUTF.c.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_151)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_151)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.o   -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.c
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.o   -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.c
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.c > CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.c > CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.c -o CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.c -o CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.o.requires
@@ -3520,18 +3523,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.o.provide
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/unzip.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_152)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/unzip.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_152)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.o   -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/unzip.c
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.o   -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/unzip.c
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/unzip.c > CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/unzip.c > CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/unzip.c -o CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/unzip.c -o CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.o.requires
@@ -3543,18 +3546,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.o.provide
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/common/shapes.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_153)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/common/shapes.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_153)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/common/shapes.cc
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/common/shapes.cc
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/common/shapes.cc > CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/common/shapes.cc > CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/common/shapes.cc -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/common/shapes.cc -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.o.requires
@@ -3566,18 +3569,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/commo
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/advancing_front.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_154)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/advancing_front.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_154)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/advancing_front.cc
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/advancing_front.cc
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/advancing_front.cc > CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/advancing_front.cc > CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/advancing_front.cc -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/advancing_front.cc -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o.requires
@@ -3589,18 +3592,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/cdt.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_155)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/cdt.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_155)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/cdt.cc
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/cdt.cc
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/cdt.cc > CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/cdt.cc > CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/cdt.cc -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/cdt.cc -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.o.requires
@@ -3612,18 +3615,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_156)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_156)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep.cc
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep.cc
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep.cc > CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep.cc > CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep.cc -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep.cc -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.o.requires
@@ -3635,18 +3638,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep_context.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_157)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep_context.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_157)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep_context.cc
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep_context.cc
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep_context.cc > CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep_context.cc > CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep_context.cc -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/poly2tri/poly2tri/sweep/sweep_context.cc -o CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o.requires
@@ -3658,18 +3661,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/clipper/clipper.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_158)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/clipper/clipper.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_158)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/clipper/clipper.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/clipper/clipper.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/clipper/clipper.cpp > CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/clipper/clipper.cpp > CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/clipper/clipper.cpp -o CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/clipper/clipper.cpp -o CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.o.requires
@@ -3681,18 +3684,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.o.p
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLParser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_159)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLParser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_159)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLParser.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLParser.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLParser.cpp > CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLParser.cpp > CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLParser.cpp -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLParser.cpp -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.o.requires
@@ -3704,18 +3707,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Open
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/DDLNode.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_160)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/DDLNode.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_160)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/DDLNode.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/DDLNode.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/DDLNode.cpp > CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/DDLNode.cpp > CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/DDLNode.cpp -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/DDLNode.cpp -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.o.requires
@@ -3727,18 +3730,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLN
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLCommon.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_161)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLCommon.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_161)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLCommon.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLCommon.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLCommon.cpp > CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLCommon.cpp > CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLCommon.cpp -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLCommon.cpp -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.o.requires
@@ -3750,18 +3753,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Open
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLExport.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_162)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLExport.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_162)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLExport.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLExport.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLExport.cpp > CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLExport.cpp > CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLExport.cpp -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/OpenDDLExport.cpp -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.o.requires
@@ -3773,18 +3776,18 @@ third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Open
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.o.provides.build: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.o
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.o: third-party/assimp/code/CMakeFiles/assimp.dir/flags.make
-third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.o: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/Value.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_163)
+third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/Value.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles $(CMAKE_PROGRESS_163)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.o"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.o -c /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/Value.cpp
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.o -c /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/Value.cpp
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.i"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/Value.cpp > CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.i
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/Value.cpp > CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.i
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.s"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/openddlparser/code/Value.cpp -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.s
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/openddlparser/code/Value.cpp -o CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.s
 
 third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.o.requires:
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.o.requires
@@ -4127,12 +4130,12 @@ third-party/assimp/code/libassimp.so.3.2.0: third-party/assimp/code/CMakeFiles/a
 third-party/assimp/code/libassimp.so.3.2.0: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.o
 third-party/assimp/code/libassimp.so.3.2.0: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.o
 third-party/assimp/code/libassimp.so.3.2.0: third-party/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.o
-third-party/assimp/code/libassimp.so.3.2.0: /usr/lib/x86_64-linux-gnu/libz.so
 third-party/assimp/code/libassimp.so.3.2.0: third-party/assimp/code/CMakeFiles/assimp.dir/build.make
+third-party/assimp/code/libassimp.so.3.2.0: /usr/lib/x86_64-linux-gnu/libz.so
 third-party/assimp/code/libassimp.so.3.2.0: third-party/assimp/code/CMakeFiles/assimp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libassimp.so"
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/assimp.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && $(CMAKE_COMMAND) -E cmake_symlink_library libassimp.so.3.2.0 libassimp.so.3 libassimp.so
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/assimp.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && $(CMAKE_COMMAND) -E cmake_symlink_library libassimp.so.3.2.0 libassimp.so.3 libassimp.so
 
 third-party/assimp/code/libassimp.so.3: third-party/assimp/code/libassimp.so.3.2.0
 
@@ -4308,10 +4311,10 @@ third-party/assimp/code/CMakeFiles/assimp.dir/requires: third-party/assimp/code/
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/requires
 
 third-party/assimp/code/CMakeFiles/assimp.dir/clean:
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code && $(CMAKE_COMMAND) -P CMakeFiles/assimp.dir/cmake_clean.cmake
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code && $(CMAKE_COMMAND) -P CMakeFiles/assimp.dir/cmake_clean.cmake
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/clean
 
 third-party/assimp/code/CMakeFiles/assimp.dir/depend:
-	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/code /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/code/CMakeFiles/assimp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jeremie/Documents/IMAC2/Projet3D/project /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code /home/jeremie/Documents/IMAC2/Projet3D/build /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/code/CMakeFiles/assimp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/depend
 

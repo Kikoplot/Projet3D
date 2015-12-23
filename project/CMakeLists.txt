@@ -29,6 +29,5 @@ endif()
 
 add_subdirectory(third-party)
 add_subdirectory(template)
-add_subdirectory(templatejerome)
 
 file(COPY assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})

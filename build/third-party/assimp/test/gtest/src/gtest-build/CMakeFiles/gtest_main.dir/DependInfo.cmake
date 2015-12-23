@@ -4,11 +4,20 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest/src/gtest_main.cc" "/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+  "/home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest/src/gtest_main.cc" "/home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest-build/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
+
+# The include file search paths:
+SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "/home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest/include"
+  "/home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/test/gtest/src/gtest"
+  )
+SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_ASM_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

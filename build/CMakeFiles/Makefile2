@@ -43,11 +43,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project
+CMAKE_SOURCE_DIR = /home/jeremie/Documents/IMAC2/Projet3D/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build
+CMAKE_BINARY_DIR = /home/jeremie/Documents/IMAC2/Projet3D/build
 
 #=============================================================================
 # Directory level rules for directory third-party
@@ -89,7 +92,7 @@ third-party/glimac/preinstall:
 third-party/glimac/CMakeFiles/glimac.dir/all:
 	$(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/depend
 	$(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles  80 81 82 83
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles  79 80 81 82 83
 	@echo "Built target glimac"
 .PHONY : third-party/glimac/CMakeFiles/glimac.dir/all
 
@@ -99,9 +102,9 @@ all: third-party/glimac/CMakeFiles/glimac.dir/all
 
 # Build rule for subdir invocation for target.
 third-party/glimac/CMakeFiles/glimac.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 third-party/glimac/CMakeFiles/glimac.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 0
 .PHONY : third-party/glimac/CMakeFiles/glimac.dir/rule
 
 # Convenience name for target.
@@ -146,15 +149,15 @@ third-party/assimp/preinstall: third-party/assimp/test/preinstall
 third-party/assimp/CMakeFiles/uninstall.dir/all:
 	$(MAKE) -f third-party/assimp/CMakeFiles/uninstall.dir/build.make third-party/assimp/CMakeFiles/uninstall.dir/depend
 	$(MAKE) -f third-party/assimp/CMakeFiles/uninstall.dir/build.make third-party/assimp/CMakeFiles/uninstall.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 
 	@echo "Built target uninstall"
 .PHONY : third-party/assimp/CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 third-party/assimp/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 0
 .PHONY : third-party/assimp/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -192,7 +195,7 @@ third-party/assimp/code/preinstall:
 third-party/assimp/code/CMakeFiles/assimp.dir/all:
 	$(MAKE) -f third-party/assimp/code/CMakeFiles/assimp.dir/build.make third-party/assimp/code/CMakeFiles/assimp.dir/depend
 	$(MAKE) -f third-party/assimp/code/CMakeFiles/assimp.dir/build.make third-party/assimp/code/CMakeFiles/assimp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72
 	@echo "Built target assimp"
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/all
 
@@ -202,9 +205,9 @@ all: third-party/assimp/code/CMakeFiles/assimp.dir/all
 
 # Build rule for subdir invocation for target.
 third-party/assimp/code/CMakeFiles/assimp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 70
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 72
 	$(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/code/CMakeFiles/assimp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 0
 .PHONY : third-party/assimp/code/CMakeFiles/assimp.dir/rule
 
 # Convenience name for target.
@@ -242,7 +245,7 @@ third-party/assimp/tools/assimp_cmd/preinstall:
 third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/all: third-party/assimp/code/CMakeFiles/assimp.dir/all
 	$(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/depend
 	$(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles  71 72 73
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles  73 74 75
 	@echo "Built target assimp_cmd"
 .PHONY : third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/all
 
@@ -252,9 +255,9 @@ all: third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/all
 
 # Build rule for subdir invocation for target.
 third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 73
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 75
 	$(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 0
 .PHONY : third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/rule
 
 # Convenience name for target.
@@ -296,7 +299,7 @@ third-party/assimp/test/preinstall: third-party/assimp/test/headercheck/preinsta
 third-party/assimp/test/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f third-party/assimp/test/CMakeFiles/gtest.dir/build.make third-party/assimp/test/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f third-party/assimp/test/CMakeFiles/gtest.dir/build.make third-party/assimp/test/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles  84 85 86 87
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles  84 85 86
 	@echo "Built target gtest"
 .PHONY : third-party/assimp/test/CMakeFiles/gtest.dir/all
 
@@ -306,9 +309,9 @@ all: third-party/assimp/test/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 third-party/assimp/test/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/test/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 0
 .PHONY : third-party/assimp/test/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -332,7 +335,7 @@ third-party/assimp/test/CMakeFiles/unit.dir/all: third-party/assimp/test/CMakeFi
 third-party/assimp/test/CMakeFiles/unit.dir/all: third-party/assimp/code/CMakeFiles/assimp.dir/all
 	$(MAKE) -f third-party/assimp/test/CMakeFiles/unit.dir/build.make third-party/assimp/test/CMakeFiles/unit.dir/depend
 	$(MAKE) -f third-party/assimp/test/CMakeFiles/unit.dir/build.make third-party/assimp/test/CMakeFiles/unit.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles  88 89 90 91 92 93 94 95 96 97 98 99 100
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles  87 88 89 90 91 92 93 94 95 96 97 98 99 100
 	@echo "Built target unit"
 .PHONY : third-party/assimp/test/CMakeFiles/unit.dir/all
 
@@ -342,9 +345,9 @@ all: third-party/assimp/test/CMakeFiles/unit.dir/all
 
 # Build rule for subdir invocation for target.
 third-party/assimp/test/CMakeFiles/unit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 87
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 89
 	$(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/test/CMakeFiles/unit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 0
 .PHONY : third-party/assimp/test/CMakeFiles/unit.dir/rule
 
 # Convenience name for target.
@@ -398,7 +401,7 @@ template/CMakeFiles/game.dir/all: third-party/glimac/CMakeFiles/glimac.dir/all
 template/CMakeFiles/game.dir/all: third-party/assimp/code/CMakeFiles/assimp.dir/all
 	$(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/depend
 	$(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles  74 75 76
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles  76 77 78
 	@echo "Built target game"
 .PHONY : template/CMakeFiles/game.dir/all
 
@@ -408,9 +411,9 @@ all: template/CMakeFiles/game.dir/all
 
 # Build rule for subdir invocation for target.
 template/CMakeFiles/game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 77
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 80
 	$(MAKE) -f CMakeFiles/Makefile2 template/CMakeFiles/game.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 0
 .PHONY : template/CMakeFiles/game.dir/rule
 
 # Convenience name for target.
@@ -424,57 +427,6 @@ template/CMakeFiles/game.dir/clean:
 
 # clean rule for target.
 clean: template/CMakeFiles/game.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory templatejerome
-
-# Convenience name for "all" pass in the directory.
-templatejerome/all: templatejerome/CMakeFiles/game2.dir/all
-.PHONY : templatejerome/all
-
-# Convenience name for "clean" pass in the directory.
-templatejerome/clean: templatejerome/CMakeFiles/game2.dir/clean
-.PHONY : templatejerome/clean
-
-# Convenience name for "preinstall" pass in the directory.
-templatejerome/preinstall:
-.PHONY : templatejerome/preinstall
-
-#=============================================================================
-# Target rules for target templatejerome/CMakeFiles/game2.dir
-
-# All Build rule for target.
-templatejerome/CMakeFiles/game2.dir/all: third-party/glimac/CMakeFiles/glimac.dir/all
-templatejerome/CMakeFiles/game2.dir/all: third-party/assimp/code/CMakeFiles/assimp.dir/all
-	$(MAKE) -f templatejerome/CMakeFiles/game2.dir/build.make templatejerome/CMakeFiles/game2.dir/depend
-	$(MAKE) -f templatejerome/CMakeFiles/game2.dir/build.make templatejerome/CMakeFiles/game2.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles  77 78 79
-	@echo "Built target game2"
-.PHONY : templatejerome/CMakeFiles/game2.dir/all
-
-# Include target in all.
-all: templatejerome/CMakeFiles/game2.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-templatejerome/CMakeFiles/game2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 77
-	$(MAKE) -f CMakeFiles/Makefile2 templatejerome/CMakeFiles/game2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
-.PHONY : templatejerome/CMakeFiles/game2.dir/rule
-
-# Convenience name for target.
-game2: templatejerome/CMakeFiles/game2.dir/rule
-.PHONY : game2
-
-# clean rule for target.
-templatejerome/CMakeFiles/game2.dir/clean:
-	$(MAKE) -f templatejerome/CMakeFiles/game2.dir/build.make templatejerome/CMakeFiles/game2.dir/clean
-.PHONY : templatejerome/CMakeFiles/game2.dir/clean
-
-# clean rule for target.
-clean: templatejerome/CMakeFiles/game2.dir/clean
 .PHONY : clean
 
 #=============================================================================
