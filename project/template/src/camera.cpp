@@ -39,3 +39,8 @@ glm::mat4 Camera::getViewMatrix() const{
   glm::mat4 GVM = glm::lookAt(m_Position, m_Position + m_FrontVector, m_UpVector);
   return GVM;
 }
+
+glm::vec3 Camera::move(glm::vec3 totemPosition[5], int position){
+  m_Position = glm::vec3(totemPosition[position].x, totemPosition[position].y, totemPosition[position].z);
+  return m_Position;
+}

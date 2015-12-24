@@ -11,6 +11,7 @@
 #include <iostream>
 #include <cstdio>
 #include <GL/glew.h>
+#include <algorithm>
 
 #include <include/assimp/Importer.hpp>
 #include <include/assimp/scene.h>
@@ -27,15 +28,17 @@ class Scene {
     Scene();
     void update(SDLWindowManager* windowManager, float screenWidth, float screenHeight, float rotation);
     void loadScene();
-    glm::vec3 totemPosition[];
 
   private:
+    glm::vec3 totemPosition[5];
     map<string, Shader> shaders;
     map<string, Model> models;
     Skybox skybox;
     Camera camera;
+    int position;
     void displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager, float rotation);
     void displaySkybox(float screenWidth, float screenHeight);
     void initLight(float screenWidth, float screenHeight);
     void moveCam(SDLWindowManager* windowManager);
+    //void moveNextTotem(glm::vec3 totemPosition[], int position);
 };

@@ -9,11 +9,6 @@ Scene::Scene(){
 
 void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager, float rotation){
 
-  glm::vec3 totemPosition[] = {
-    glm::vec3(-27.0f, -14.0f, -10.0f),
-    glm::vec3(-24.0f, -12.5f, 18.0f)
-  };
-
   glm::mat4 view = this->camera.getViewMatrix();
   glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)screenWidth/(float)screenHeight, 0.1f, 100.0f);
 
@@ -28,34 +23,32 @@ void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManage
 
   matModel = glm::mat4(1.0f);
 
-  for(int i=0; i<2; i++){
-    matModel = glm::translate(matModel, totemPosition[i]);
+  for(int i=0; i<5; i++){
+    matModel = glm::translate(matModel, glm::vec3(totemPosition[i]));
     matModel = glm::scale(matModel, glm::vec3(0.01f, 0.01f, 0.01f));
     glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
     this->models["totem"].Draw(this->shaders["AmbientLighting"]);
     matModel = glm::mat4(1.0f);
   }
 
-  // His cube
-  matModel = glm::translate(matModel, glm::vec3(-27.0f, -10.0f, -10.0f));
-  matModel = glm::scale(matModel, glm::vec3(0.6f, 0.6f, 0.6f));
-  matModel = glm::rotate(matModel, glm::radians(34.5f+rotation), glm::vec3(1.0f, 1.0f, 1.0f));
-  glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
-  this->models["cage"].Draw(this->shaders["AmbientLighting"]);
+  if(windowManager->isKeyPressed(SDLK_e)){
+    position++;
+    if(position > 5) {
+      position = 0;
+    }
+    this->camera.move(this->totemPosition, position);
+  }
 
-  matModel = glm::mat4(1.0f);
+  cout << position << endl;
 
-  // His cube2
-  matModel = glm::translate(matModel, glm::vec3(-24.0f, -8.5f, 18.0f));
-  matModel = glm::scale(matModel, glm::vec3(0.6f, 0.6f, 0.6f));
-  matModel = glm::rotate(matModel, glm::radians(34.5f+rotation), glm::vec3(1.0f, 1.0f, 1.0f));
-  glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
-  this->models["cage"].Draw(this->shaders["AmbientLighting"]);
-
-  matModel = glm::mat4(1.0f);
-
-
-
+  for(int i=0; i<5; i++){
+    matModel = glm::translate(matModel, glm::vec3(totemPosition[i].x, totemPosition[i].y + 4.0f, totemPosition[i].z));
+    matModel = glm::scale(matModel, glm::vec3(0.6f, 0.6f, 0.6f));
+    matModel = glm::rotate(matModel, glm::radians(34.5f+rotation), glm::vec3(1.0f, 1.0f, 1.0f));
+    glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
+    this->models["cage"].Draw(this->shaders["AmbientLighting"]);
+    matModel = glm::mat4(1.0f);
+  }
 }
 
 
@@ -66,6 +59,21 @@ void Scene::loadScene(){
   this->models["landscape"] = Model("assets/models/tropical/Small Tropical Island.obj");
   this->models["totem"] = Model("assets/models/column/column.obj");
   this->models["cage"] = Model("assets/models/cage/Portal Refraction Cube.3ds");
+
+  glm::vec3 totemPosition[] = {
+    glm::vec3(-24.0f, -12.5f, 18.0f),
+    glm::vec3(-27.0f, -14.0f, -10.0f),
+    glm::vec3(14.0f, -4.5f, -21.0f),
+    glm::vec3(16.0f, 0.8f, 0.0f),
+    glm::vec3(14.0f, -8.7f, 23.5f),
+  };
+
+  // Initialisation de la scène
+  for(int i=0; i<5; i++){
+    this->totemPosition[i] = totemPosition[i];
+  }
+
+  position = 0;
 
   Camera camera;
   this->camera = camera;
@@ -129,7 +137,6 @@ void Scene::update(SDLWindowManager* windowManager, float screenWidth, float scr
 }
 
 void Scene::moveCam(SDLWindowManager* windowManager){
-  //if(windowManager->isKeyPressed(SDLK_e)) this->camera.moveNextTotem();
   if(windowManager->isKeyPressed(SDLK_z)) this->camera.moveFront(0.02);
   if(windowManager->isKeyPressed(SDLK_s)) this->camera.moveFront(-0.02);
   if(windowManager->isKeyPressed(SDLK_q)) this->camera.moveLatteral(0.02);
@@ -146,3 +153,8 @@ void Scene::moveCam(SDLWindowManager* windowManager){
   // Draw the loaded model
   glm::mat4 matModel;
 }
+/*
+void Scene::moveNextTotem(glm::vec3 totemPosition[], int position){
+  this->camera.move(totemPosition, position);
+}
+*/

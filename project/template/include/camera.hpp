@@ -21,6 +21,7 @@ class Camera {
     void moveLatteral(float theta); //permettant de se déplacer lattéralement comme dans un fps
     void rotateLeft(float deg); //permettant de tourner latéralement autour du centre de vision.
     void rotateUp(float deg); //permettant de tourner verticalement autour du centre de vision.
+    glm::vec3 move(glm::vec3 totemPosition[5], int position);
 
     glm::mat4 getViewMatrix() const;
 };

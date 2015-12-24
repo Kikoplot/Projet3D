@@ -61,6 +61,8 @@ cstdio
 -
 GL/glew.h
 -
+algorithm
+-
 include/assimp/Importer.hpp
 -
 include/assimp/scene.h
