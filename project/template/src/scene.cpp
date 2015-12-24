@@ -168,8 +168,3 @@ void Scene::moveCam(SDLWindowManager* windowManager){
   // Draw the loaded model
   glm::mat4 matModel;
 }
-/*
-void Scene::moveNextTotem(glm::vec3 totemPosition[], int position){
-  this->camera.move(totemPosition, position);
-}
-*/

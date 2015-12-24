@@ -40,5 +40,4 @@ class Scene {
     void displaySkybox(float screenWidth, float screenHeight);
     void initLight(float screenWidth, float screenHeight);
     void moveCam(SDLWindowManager* windowManager);
-    //void moveNextTotem(glm::vec3 totemPosition[], int position);
 };
