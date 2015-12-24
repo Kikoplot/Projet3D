@@ -31,15 +31,30 @@ void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManage
     matModel = glm::mat4(1.0f);
   }
 
-  if(windowManager->isKeyPressed(SDLK_e)){
-    position++;
-    if(position > 5) {
-      position = 0;
-    }
+  if(windowManager->isKeyPressed(SDLK_w)){
+    position = 0;
     this->camera.move(this->totemPosition, position);
   }
 
-  cout << position << endl;
+  if(windowManager->isKeyPressed(SDLK_x)){
+    position = 1;
+    this->camera.move(this->totemPosition, position);
+  }
+
+  if(windowManager->isKeyPressed(SDLK_c)){
+    position = 2;
+    this->camera.move(this->totemPosition, position);
+  }
+
+  if(windowManager->isKeyPressed(SDLK_v)){
+    position = 3;
+    this->camera.move(this->totemPosition, position);
+  }
+
+  if(windowManager->isKeyPressed(SDLK_b)){
+    position = 4;
+    this->camera.move(this->totemPosition, position);
+  }
 
   for(int i=0; i<5; i++){
     matModel = glm::translate(matModel, glm::vec3(totemPosition[i].x, totemPosition[i].y + 4.0f, totemPosition[i].z));
