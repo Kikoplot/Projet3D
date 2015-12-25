@@ -29,7 +29,9 @@ class Scene {
     void update(SDLWindowManager* windowManager, float screenWidth, float screenHeight, float rotation);
     void loadScene();
     GLboolean shadows;
-    const GLuint SHADOW_WIDTH = 1024, SHADOW_HEIGHT = 1024;
+    GLuint planeVAO;
+    GLuint planeVBO;
+    const GLuint SHADOW_WIDTH = 800, SHADOW_HEIGHT = 600;
     GLuint depthMapFBO, depthMap;
     GLfloat borderColor[4] = {1.0f, 1.0f, 1.0f, 1.0f};
 

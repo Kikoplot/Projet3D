@@ -3,12 +3,9 @@
 using namespace std;
 using namespace glimac;
 
-Scene::Scene(){
-
-}
+Scene::Scene(){}
 
 void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager, float rotation){
-
   glm::vec3 lightPos(0.0f, 12.0f, -38.0f);
 
   // First rendering with shadow
@@ -29,7 +26,6 @@ void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManage
 
   glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
-
   // Second rendering with ambient light
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
   this->shaders["AmbientLighting"].Use();
@@ -46,8 +42,7 @@ void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManage
   RenderScene(this->shaders["AmbientLighting"], windowManager, rotation);
 }
 
-void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float rotation)
-{
+void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float rotation){
   // Draw the loaded model
   glm::mat4 matModel;
 
@@ -103,9 +98,7 @@ void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float 
 }
 
 void Scene::loadScene(){
-
   shadows = true;
-
 
   // Configure depth map FBO
   glGenFramebuffers(1, &depthMapFBO);
