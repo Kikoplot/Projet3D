@@ -28,6 +28,10 @@ class Scene {
     Scene();
     void update(SDLWindowManager* windowManager, float screenWidth, float screenHeight, float rotation);
     void loadScene();
+    GLboolean shadows;
+    const GLuint SHADOW_WIDTH = 1024, SHADOW_HEIGHT = 1024;
+    GLuint depthMapFBO, depthMap;
+    GLfloat borderColor[4] = {1.0f, 1.0f, 1.0f, 1.0f};
 
   private:
     glm::vec3 totemPosition[5];
@@ -40,4 +44,6 @@ class Scene {
     void displaySkybox(float screenWidth, float screenHeight);
     void initLight(float screenWidth, float screenHeight);
     void moveCam(SDLWindowManager* windowManager);
+    void RenderScene(Shader &shader,  SDLWindowManager* windowManager, float rotation);
+
 };

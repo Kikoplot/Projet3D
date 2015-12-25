@@ -9,25 +9,61 @@ Scene::Scene(){
 
 void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager, float rotation){
 
+  glm::vec3 lightPos(0.0f, 12.0f, -38.0f);
+
+  // First rendering with shadow
+  glm::mat4 lightProjection, lightView;
+  glm::mat4 lightSpaceMatrix;
+  GLfloat near_plane = 1.0f, far_plane = 7.5f;
+  lightProjection = glm::perspective(45.0f, (GLfloat)SHADOW_WIDTH / (GLfloat)SHADOW_HEIGHT, near_plane, far_plane); // Note that if you use a perspective projection matrix you'll have to change the light position as the current light position isn't enough to reflect the whole scene.
+  lightView = glm::lookAt(lightPos, glm::vec3(0.0f), glm::vec3(1.0));
+  lightSpaceMatrix = lightProjection * lightView;
+  this->shaders["Shadow"].Use();
+
+  glUniformMatrix4fv(glGetUniformLocation(this->shaders["Shadow"].Program, "lightSpaceMatrix"), 1, GL_FALSE, glm::value_ptr(lightSpaceMatrix));
+
+  glViewport(0, 0, SHADOW_WIDTH, SHADOW_HEIGHT);
+  glBindFramebuffer(GL_FRAMEBUFFER, depthMapFBO);
+  glClear(GL_DEPTH_BUFFER_BIT);
+  RenderScene(this->shaders["Shadow"], windowManager, rotation);
+
+  glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
+
+  // Second rendering with ambient light
+  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+  this->shaders["AmbientLighting"].Use();
+
   glm::mat4 view = this->camera.getViewMatrix();
   glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)screenWidth/(float)screenHeight, 0.1f, 100.0f);
 
+  glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
+  glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
+  // Set light uniforms
+  glUniform3fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "lightPos"), 1, &lightPos[0]);
+  glUniform3fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "viewPos"), 1, &lightPos[0]);
+  glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "lightSpaceMatrix"), 1, GL_FALSE, glm::value_ptr(lightSpaceMatrix));
+  RenderScene(this->shaders["AmbientLighting"], windowManager, rotation);
+}
+
+void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float rotation)
+{
   // Draw the loaded model
   glm::mat4 matModel;
 
   // Translate model to the center of the scene
   matModel = glm::translate(matModel, glm::vec3(0.0f, -15.0f, 0.0f));
   matModel = glm::scale(matModel, glm::vec3(0.12f, 0.12f, 0.12f));
-  glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
-  this->models["landscape"].Draw(this->shaders["AmbientLighting"]);
+  glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
+  this->models["landscape"].Draw(shader);
 
   matModel = glm::mat4(1.0f);
 
   for(int i=0; i<5; i++){
     matModel = glm::translate(matModel, glm::vec3(totemPosition[i]));
     matModel = glm::scale(matModel, glm::vec3(0.01f, 0.01f, 0.01f));
-    glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
-    this->models["totem"].Draw(this->shaders["AmbientLighting"]);
+    glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
+    this->models["totem"].Draw(shader);
     matModel = glm::mat4(1.0f);
   }
 
@@ -60,16 +96,39 @@ void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManage
     matModel = glm::translate(matModel, glm::vec3(totemPosition[i].x, totemPosition[i].y + 4.0f, totemPosition[i].z));
     matModel = glm::scale(matModel, glm::vec3(0.6f, 0.6f, 0.6f));
     matModel = glm::rotate(matModel, glm::radians(34.5f+rotation), glm::vec3(1.0f, 1.0f, 1.0f));
-    glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
-    this->models["cage"].Draw(this->shaders["AmbientLighting"]);
+    glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
+    this->models["cage"].Draw(shader);
     matModel = glm::mat4(1.0f);
   }
 }
 
-
 void Scene::loadScene(){
+
+  shadows = true;
+
+
+  // Configure depth map FBO
+  glGenFramebuffers(1, &depthMapFBO);
+
+  glGenTextures(1, &depthMap);
+  glBindTexture(GL_TEXTURE_2D, depthMap);
+
+  glTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT, SHADOW_WIDTH, SHADOW_HEIGHT, 0, GL_DEPTH_COMPONENT, GL_FLOAT, NULL);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
+  glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, borderColor);
+
+  glBindFramebuffer(GL_FRAMEBUFFER, depthMapFBO);
+  glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, depthMap, 0);
+  glDrawBuffer(GL_NONE);
+  glReadBuffer(GL_NONE);
+  glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
+
   this->shaders["AmbientLighting"] = Shader("template/shaders/ambiant_lighting.vs.glsl", "template/shaders/ambiant_lighting.fs.glsl");
-  this->shaders["PointLight"] = Shader("template/shaders/point_lighting.vs.glsl", "template/shaders/point_lighting.fs.glsl");
+  this->shaders["Shadow"] = Shader("template/shaders/phong.vs.glsl", "template/shaders/phong.fs.glsl");
 
   this->models["landscape"] = Model("assets/models/tropical/Small Tropical Island.obj");
   this->models["totem"] = Model("assets/models/column/column.obj");
