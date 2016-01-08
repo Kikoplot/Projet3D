@@ -35,14 +35,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jeremie/Documents/IMAC2/Projet3D/project
+CMAKE_SOURCE_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jeremie/Documents/IMAC2/Projet3D/build
+CMAKE_BINARY_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -110,14 +107,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles /home/jeremie/Documents/IMAC2/Projet3D/build/template/CMakeFiles/progress.marks
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 template/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 0
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/template/CMakeFiles/progress.marks
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 template/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 template/clean
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 template/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +123,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 template/preinstall
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 template/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 template/preinstall
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 template/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 template/CMakeFiles/game.dir/rule:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 template/CMakeFiles/game.dir/rule
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 template/CMakeFiles/game.dir/rule
 .PHONY : template/CMakeFiles/game.dir/rule
 
 # Convenience name for target.
@@ -150,7 +147,7 @@ game: template/CMakeFiles/game.dir/rule
 
 # fast build rule for target.
 game/fast:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/build
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/build
 .PHONY : game/fast
 
 game.o: game.cpp.o
@@ -158,7 +155,7 @@ game.o: game.cpp.o
 
 # target to build an object file
 game.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/game.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/game.cpp.o
 .PHONY : game.cpp.o
 
 game.i: game.cpp.i
@@ -166,7 +163,7 @@ game.i: game.cpp.i
 
 # target to preprocess a source file
 game.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/game.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/game.cpp.i
 .PHONY : game.cpp.i
 
 game.s: game.cpp.s
@@ -174,7 +171,7 @@ game.s: game.cpp.s
 
 # target to generate assembly for a file
 game.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/game.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/game.cpp.s
 .PHONY : game.cpp.s
 
 src/camera.o: src/camera.cpp.o
@@ -182,7 +179,7 @@ src/camera.o: src/camera.cpp.o
 
 # target to build an object file
 src/camera.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/camera.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/camera.cpp.o
 .PHONY : src/camera.cpp.o
 
 src/camera.i: src/camera.cpp.i
@@ -190,7 +187,7 @@ src/camera.i: src/camera.cpp.i
 
 # target to preprocess a source file
 src/camera.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/camera.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/camera.cpp.i
 .PHONY : src/camera.cpp.i
 
 src/camera.s: src/camera.cpp.s
@@ -198,7 +195,7 @@ src/camera.s: src/camera.cpp.s
 
 # target to generate assembly for a file
 src/camera.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/camera.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/camera.cpp.s
 .PHONY : src/camera.cpp.s
 
 src/mesh.o: src/mesh.cpp.o
@@ -206,7 +203,7 @@ src/mesh.o: src/mesh.cpp.o
 
 # target to build an object file
 src/mesh.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/mesh.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/mesh.cpp.o
 .PHONY : src/mesh.cpp.o
 
 src/mesh.i: src/mesh.cpp.i
@@ -214,7 +211,7 @@ src/mesh.i: src/mesh.cpp.i
 
 # target to preprocess a source file
 src/mesh.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/mesh.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/mesh.cpp.i
 .PHONY : src/mesh.cpp.i
 
 src/mesh.s: src/mesh.cpp.s
@@ -222,7 +219,7 @@ src/mesh.s: src/mesh.cpp.s
 
 # target to generate assembly for a file
 src/mesh.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/mesh.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/mesh.cpp.s
 .PHONY : src/mesh.cpp.s
 
 src/model.o: src/model.cpp.o
@@ -230,7 +227,7 @@ src/model.o: src/model.cpp.o
 
 # target to build an object file
 src/model.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/model.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/model.cpp.o
 .PHONY : src/model.cpp.o
 
 src/model.i: src/model.cpp.i
@@ -238,7 +235,7 @@ src/model.i: src/model.cpp.i
 
 # target to preprocess a source file
 src/model.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/model.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/model.cpp.i
 .PHONY : src/model.cpp.i
 
 src/model.s: src/model.cpp.s
@@ -246,7 +243,7 @@ src/model.s: src/model.cpp.s
 
 # target to generate assembly for a file
 src/model.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/model.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/model.cpp.s
 .PHONY : src/model.cpp.s
 
 src/scene.o: src/scene.cpp.o
@@ -254,7 +251,7 @@ src/scene.o: src/scene.cpp.o
 
 # target to build an object file
 src/scene.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/scene.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/scene.cpp.o
 .PHONY : src/scene.cpp.o
 
 src/scene.i: src/scene.cpp.i
@@ -262,7 +259,7 @@ src/scene.i: src/scene.cpp.i
 
 # target to preprocess a source file
 src/scene.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/scene.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/scene.cpp.i
 .PHONY : src/scene.cpp.i
 
 src/scene.s: src/scene.cpp.s
@@ -270,7 +267,7 @@ src/scene.s: src/scene.cpp.s
 
 # target to generate assembly for a file
 src/scene.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/scene.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/scene.cpp.s
 .PHONY : src/scene.cpp.s
 
 src/shader.o: src/shader.cpp.o
@@ -278,7 +275,7 @@ src/shader.o: src/shader.cpp.o
 
 # target to build an object file
 src/shader.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/shader.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/shader.cpp.o
 .PHONY : src/shader.cpp.o
 
 src/shader.i: src/shader.cpp.i
@@ -286,7 +283,7 @@ src/shader.i: src/shader.cpp.i
 
 # target to preprocess a source file
 src/shader.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/shader.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/shader.cpp.i
 .PHONY : src/shader.cpp.i
 
 src/shader.s: src/shader.cpp.s
@@ -294,7 +291,7 @@ src/shader.s: src/shader.cpp.s
 
 # target to generate assembly for a file
 src/shader.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/shader.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/shader.cpp.s
 .PHONY : src/shader.cpp.s
 
 src/skybox.o: src/skybox.cpp.o
@@ -302,7 +299,7 @@ src/skybox.o: src/skybox.cpp.o
 
 # target to build an object file
 src/skybox.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/skybox.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/skybox.cpp.o
 .PHONY : src/skybox.cpp.o
 
 src/skybox.i: src/skybox.cpp.i
@@ -310,7 +307,7 @@ src/skybox.i: src/skybox.cpp.i
 
 # target to preprocess a source file
 src/skybox.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/skybox.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/skybox.cpp.i
 .PHONY : src/skybox.cpp.i
 
 src/skybox.s: src/skybox.cpp.s
@@ -318,7 +315,7 @@ src/skybox.s: src/skybox.cpp.s
 
 # target to generate assembly for a file
 src/skybox.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/skybox.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f template/CMakeFiles/game.dir/build.make template/CMakeFiles/game.dir/src/skybox.cpp.s
 .PHONY : src/skybox.cpp.s
 
 # Help Target
@@ -366,6 +363,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

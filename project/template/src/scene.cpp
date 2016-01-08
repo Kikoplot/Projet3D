@@ -3,28 +3,14 @@
 using namespace std;
 using namespace glimac;
 
-Scene::Scene(){}
+Scene::Scene(string path_Txt){this->loadScene(path_Txt);}
 
 void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager, float rotation){
   glm::vec3 lightPos(0.0f, 12.0f, -38.0f);
-
-  // First rendering with shadow
+    // First rendering with shadow
   glm::mat4 lightProjection, lightView;
   glm::mat4 lightSpaceMatrix;
   GLfloat near_plane = 1.0f, far_plane = 7.5f;
-  lightProjection = glm::perspective(45.0f, (GLfloat)SHADOW_WIDTH / (GLfloat)SHADOW_HEIGHT, near_plane, far_plane); // Note that if you use a perspective projection matrix you'll have to change the light position as the current light position isn't enough to reflect the whole scene.
-  lightView = glm::lookAt(lightPos, glm::vec3(0.0f), glm::vec3(1.0));
-  lightSpaceMatrix = lightProjection * lightView;
-  this->shaders["Shadow"].Use();
-
-  glUniformMatrix4fv(glGetUniformLocation(this->shaders["Shadow"].Program, "lightSpaceMatrix"), 1, GL_FALSE, glm::value_ptr(lightSpaceMatrix));
-
-  glViewport(0, 0, SHADOW_WIDTH, SHADOW_HEIGHT);
-  glBindFramebuffer(GL_FRAMEBUFFER, depthMapFBO);
-  glClear(GL_DEPTH_BUFFER_BIT);
-  RenderScene(this->shaders["Shadow"], windowManager, rotation);
-
-  glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
   // Second rendering with ambient light
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -40,6 +26,24 @@ void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManage
   glUniform3fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "viewPos"), 1, &lightPos[0]);
   glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "lightSpaceMatrix"), 1, GL_FALSE, glm::value_ptr(lightSpaceMatrix));
   RenderScene(this->shaders["AmbientLighting"], windowManager, rotation);
+  
+
+
+  lightProjection = glm::perspective(45.0f, (GLfloat)SHADOW_WIDTH / (GLfloat)SHADOW_HEIGHT, near_plane, far_plane); // Note that if you use a perspective projection matrix you'll have to change the light position as the current light position isn't enough to reflect the whole scene.
+  lightView = glm::lookAt(lightPos, glm::vec3(0.0f), glm::vec3(1.0));
+  lightSpaceMatrix = lightProjection * lightView;
+  this->shaders["Shadow"].Use();
+
+  glUniformMatrix4fv(glGetUniformLocation(this->shaders["Shadow"].Program, "lightSpaceMatrix"), 1, GL_FALSE, glm::value_ptr(lightSpaceMatrix));
+
+  glViewport(0, 0, SHADOW_WIDTH, SHADOW_HEIGHT);
+  glBindFramebuffer(GL_FRAMEBUFFER, depthMapFBO);
+  glClear(GL_DEPTH_BUFFER_BIT);
+  RenderScene(this->shaders["Shadow"], windowManager, rotation);
+
+  glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
+
 }
 
 void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float rotation){
@@ -97,7 +101,9 @@ void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float 
   }
 }
 
-void Scene::loadScene(){
+void Scene::loadScene(string path_Txt){
+    
+
   shadows = true;
 
   // Configure depth map FBO
@@ -109,8 +115,8 @@ void Scene::loadScene(){
   glTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT, SHADOW_WIDTH, SHADOW_HEIGHT, 0, GL_DEPTH_COMPONENT, GL_FLOAT, NULL);
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
   glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, borderColor);
 
   glBindFramebuffer(GL_FRAMEBUFFER, depthMapFBO);
@@ -120,14 +126,57 @@ void Scene::loadScene(){
   glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
 
-  this->shaders["AmbientLighting"] = Shader("template/shaders/ambiant_lighting.vs.glsl", "template/shaders/ambiant_lighting.fs.glsl");
-  this->shaders["Shadow"] = Shader("template/shaders/phong.vs.glsl", "template/shaders/phong.fs.glsl");
+int i,nbModel,nbShader;
+  string line,word,shaderName, pathShaderVs, pathShaderFs,modelName, pathModel, modelShader; 
 
-  this->models["landscape"] = Model("assets/models/tropical/Small Tropical Island.obj");
-  this->models["totem"] = Model("assets/models/column/column.obj");
-  this->models["cage"] = Model("assets/models/cage/Portal Refraction Cube.3ds");
+  ifstream file(path_Txt, ios::in);
+  if(file){
+    
+    //Initialisation 
+    getline(file, line);
+    stringstream iss(line);
+    while(iss >> word >> nbModel  >> word >> nbShader )
+    {
+      cout << " Number of Models : " << nbModel << " And Number of Shaders : " << nbShader << endl; 
+    }
+    
+    //Boucle pour les Modeles
+    for(i=0;i<nbModel;++i)
+    {
+      getline(file, line); 
+      stringstream iss(line);
+      while(iss >> modelName >> pathModel)
+      {
+        this->models[modelName] = Model((char*)pathModel.c_str());
+      }
+    }   
+    //Boucles pour les shaders
+    for(i=0;i<nbShader;++i)
+    {
+      getline(file, line); 
+      stringstream iss(line);
+      while(iss >> shaderName >> pathShaderVs >> pathShaderFs)
+      {
+        cout << pathShaderFs << pathShaderVs << endl;
+        this->shaders[shaderName] = Shader((char*)pathShaderVs.c_str(), (char*)pathShaderFs.c_str());
+      }
+    }
+    
+    file.close();
+  }
+  else{
+    cerr << "Impossible d'ouvrir le fichier texte verifiez le chemin ou la nomenclature" << endl;
+    
+  }
 
-  glm::vec3 totemPosition[] = {
+  // this->shaders["AmbientLighting"] = Shader("template/shaders/ambiant_lighting.vs.glsl", "template/shaders/ambiant_lighting.fs.glsl");
+
+  // this->models["crysis"] = Model("assets/models/nanosuit/nanosuit.obj");
+  // this->models["house"] = Model("assets/models/house/fw43_lowpoly_n1.3ds");
+  // //this->models["landscape"] = Model("assets/models/castle/eastern ancient casttle/eastern ancient casttle.obj");
+  // this->models["landscape"] = Model("assets/models/tropical/Small Tropical Island.obj");
+
+   glm::vec3 totemPosition[] = {
     glm::vec3(-24.0f, -12.5f, 18.0f),
     glm::vec3(-27.0f, -14.0f, -10.0f),
     glm::vec3(14.0f, -4.5f, -21.0f),
@@ -140,14 +189,27 @@ void Scene::loadScene(){
     this->totemPosition[i] = totemPosition[i];
   }
 
-  position = 0;
-
   Camera camera;
   this->camera = camera;
 
   Skybox skybox;
   this->skybox = skybox;
 }
+  // this->shaders["AmbientLighting"] = Shader("template/shaders/ambiant_lighting.vs.glsl", "template/shaders/ambiant_lighting.fs.glsl");
+  // this->models["landscape"] = Model("assets/models/tropical/Small Tropical Island.obj");
+  // this->models["totem"] = Model("assets/models/column/column.obj");
+  // this->models["cage"] = Model("assets/models/cage/Portal Refraction Cube.3ds");
+  //   this->shaders["Shadow"] = Shader("template/shaders/phong.vs.glsl", "template/shaders/phong.fs.glsl");
+ 
+
+  // position = 0;
+
+  // Camera camera;
+  // this->camera = camera;
+
+  // Skybox skybox;
+  // this->skybox = skybox;
+
 
 void Scene::displaySkybox(float screenWidth, float screenHeight){
 

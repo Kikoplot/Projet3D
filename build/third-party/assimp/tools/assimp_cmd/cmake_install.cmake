@@ -1,4 +1,4 @@
-# Install script for directory: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/tools/assimp_cmd
+# Install script for directory: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/tools/assimp_cmd
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "assimp-
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/assimp"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/tools/assimp_cmd/assimp")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/tools/assimp_cmd/assimp")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/assimp" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/assimp")
     FILE(RPATH_REMOVE

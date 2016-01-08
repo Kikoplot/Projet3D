@@ -35,14 +35,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jeremie/Documents/IMAC2/Projet3D/project
+CMAKE_SOURCE_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jeremie/Documents/IMAC2/Projet3D/build
+CMAKE_BINARY_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -110,14 +107,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/glimac/CMakeFiles/progress.marks
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/glimac/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 0
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/glimac/CMakeFiles/progress.marks
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/glimac/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/glimac/clean
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/glimac/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +123,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/glimac/preinstall
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/glimac/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/glimac/preinstall
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/glimac/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 third-party/glimac/CMakeFiles/glimac.dir/rule:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/glimac/CMakeFiles/glimac.dir/rule
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/glimac/CMakeFiles/glimac.dir/rule
 .PHONY : third-party/glimac/CMakeFiles/glimac.dir/rule
 
 # Convenience name for target.
@@ -150,7 +147,7 @@ glimac: third-party/glimac/CMakeFiles/glimac.dir/rule
 
 # fast build rule for target.
 glimac/fast:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/build
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/build
 .PHONY : glimac/fast
 
 src/Cone.o: src/Cone.cpp.o
@@ -158,7 +155,7 @@ src/Cone.o: src/Cone.cpp.o
 
 # target to build an object file
 src/Cone.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Cone.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Cone.cpp.o
 .PHONY : src/Cone.cpp.o
 
 src/Cone.i: src/Cone.cpp.i
@@ -166,7 +163,7 @@ src/Cone.i: src/Cone.cpp.i
 
 # target to preprocess a source file
 src/Cone.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Cone.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Cone.cpp.i
 .PHONY : src/Cone.cpp.i
 
 src/Cone.s: src/Cone.cpp.s
@@ -174,7 +171,7 @@ src/Cone.s: src/Cone.cpp.s
 
 # target to generate assembly for a file
 src/Cone.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Cone.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Cone.cpp.s
 .PHONY : src/Cone.cpp.s
 
 src/FreeflyCamera.o: src/FreeflyCamera.cpp.o
@@ -182,7 +179,7 @@ src/FreeflyCamera.o: src/FreeflyCamera.cpp.o
 
 # target to build an object file
 src/FreeflyCamera.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/FreeflyCamera.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/FreeflyCamera.cpp.o
 .PHONY : src/FreeflyCamera.cpp.o
 
 src/FreeflyCamera.i: src/FreeflyCamera.cpp.i
@@ -190,7 +187,7 @@ src/FreeflyCamera.i: src/FreeflyCamera.cpp.i
 
 # target to preprocess a source file
 src/FreeflyCamera.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/FreeflyCamera.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/FreeflyCamera.cpp.i
 .PHONY : src/FreeflyCamera.cpp.i
 
 src/FreeflyCamera.s: src/FreeflyCamera.cpp.s
@@ -198,7 +195,7 @@ src/FreeflyCamera.s: src/FreeflyCamera.cpp.s
 
 # target to generate assembly for a file
 src/FreeflyCamera.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/FreeflyCamera.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/FreeflyCamera.cpp.s
 .PHONY : src/FreeflyCamera.cpp.s
 
 src/Geometry.o: src/Geometry.cpp.o
@@ -206,7 +203,7 @@ src/Geometry.o: src/Geometry.cpp.o
 
 # target to build an object file
 src/Geometry.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Geometry.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Geometry.cpp.o
 .PHONY : src/Geometry.cpp.o
 
 src/Geometry.i: src/Geometry.cpp.i
@@ -214,7 +211,7 @@ src/Geometry.i: src/Geometry.cpp.i
 
 # target to preprocess a source file
 src/Geometry.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Geometry.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Geometry.cpp.i
 .PHONY : src/Geometry.cpp.i
 
 src/Geometry.s: src/Geometry.cpp.s
@@ -222,7 +219,7 @@ src/Geometry.s: src/Geometry.cpp.s
 
 # target to generate assembly for a file
 src/Geometry.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Geometry.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Geometry.cpp.s
 .PHONY : src/Geometry.cpp.s
 
 src/Image.o: src/Image.cpp.o
@@ -230,7 +227,7 @@ src/Image.o: src/Image.cpp.o
 
 # target to build an object file
 src/Image.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Image.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Image.cpp.o
 .PHONY : src/Image.cpp.o
 
 src/Image.i: src/Image.cpp.i
@@ -238,7 +235,7 @@ src/Image.i: src/Image.cpp.i
 
 # target to preprocess a source file
 src/Image.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Image.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Image.cpp.i
 .PHONY : src/Image.cpp.i
 
 src/Image.s: src/Image.cpp.s
@@ -246,7 +243,7 @@ src/Image.s: src/Image.cpp.s
 
 # target to generate assembly for a file
 src/Image.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Image.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Image.cpp.s
 .PHONY : src/Image.cpp.s
 
 src/Program.o: src/Program.cpp.o
@@ -254,7 +251,7 @@ src/Program.o: src/Program.cpp.o
 
 # target to build an object file
 src/Program.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Program.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Program.cpp.o
 .PHONY : src/Program.cpp.o
 
 src/Program.i: src/Program.cpp.i
@@ -262,7 +259,7 @@ src/Program.i: src/Program.cpp.i
 
 # target to preprocess a source file
 src/Program.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Program.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Program.cpp.i
 .PHONY : src/Program.cpp.i
 
 src/Program.s: src/Program.cpp.s
@@ -270,7 +267,7 @@ src/Program.s: src/Program.cpp.s
 
 # target to generate assembly for a file
 src/Program.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Program.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Program.cpp.s
 .PHONY : src/Program.cpp.s
 
 src/SDLWindowManager.o: src/SDLWindowManager.cpp.o
@@ -278,7 +275,7 @@ src/SDLWindowManager.o: src/SDLWindowManager.cpp.o
 
 # target to build an object file
 src/SDLWindowManager.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o
 .PHONY : src/SDLWindowManager.cpp.o
 
 src/SDLWindowManager.i: src/SDLWindowManager.cpp.i
@@ -286,7 +283,7 @@ src/SDLWindowManager.i: src/SDLWindowManager.cpp.i
 
 # target to preprocess a source file
 src/SDLWindowManager.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.i
 .PHONY : src/SDLWindowManager.cpp.i
 
 src/SDLWindowManager.s: src/SDLWindowManager.cpp.s
@@ -294,7 +291,7 @@ src/SDLWindowManager.s: src/SDLWindowManager.cpp.s
 
 # target to generate assembly for a file
 src/SDLWindowManager.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.s
 .PHONY : src/SDLWindowManager.cpp.s
 
 src/Shader.o: src/Shader.cpp.o
@@ -302,7 +299,7 @@ src/Shader.o: src/Shader.cpp.o
 
 # target to build an object file
 src/Shader.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Shader.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Shader.cpp.o
 .PHONY : src/Shader.cpp.o
 
 src/Shader.i: src/Shader.cpp.i
@@ -310,7 +307,7 @@ src/Shader.i: src/Shader.cpp.i
 
 # target to preprocess a source file
 src/Shader.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Shader.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Shader.cpp.i
 .PHONY : src/Shader.cpp.i
 
 src/Shader.s: src/Shader.cpp.s
@@ -318,7 +315,7 @@ src/Shader.s: src/Shader.cpp.s
 
 # target to generate assembly for a file
 src/Shader.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Shader.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Shader.cpp.s
 .PHONY : src/Shader.cpp.s
 
 src/Sphere.o: src/Sphere.cpp.o
@@ -326,7 +323,7 @@ src/Sphere.o: src/Sphere.cpp.o
 
 # target to build an object file
 src/Sphere.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Sphere.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Sphere.cpp.o
 .PHONY : src/Sphere.cpp.o
 
 src/Sphere.i: src/Sphere.cpp.i
@@ -334,7 +331,7 @@ src/Sphere.i: src/Sphere.cpp.i
 
 # target to preprocess a source file
 src/Sphere.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Sphere.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Sphere.cpp.i
 .PHONY : src/Sphere.cpp.i
 
 src/Sphere.s: src/Sphere.cpp.s
@@ -342,7 +339,7 @@ src/Sphere.s: src/Sphere.cpp.s
 
 # target to generate assembly for a file
 src/Sphere.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Sphere.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/Sphere.cpp.s
 .PHONY : src/Sphere.cpp.s
 
 src/TrackballCamera.o: src/TrackballCamera.cpp.o
@@ -350,7 +347,7 @@ src/TrackballCamera.o: src/TrackballCamera.cpp.o
 
 # target to build an object file
 src/TrackballCamera.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/TrackballCamera.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/TrackballCamera.cpp.o
 .PHONY : src/TrackballCamera.cpp.o
 
 src/TrackballCamera.i: src/TrackballCamera.cpp.i
@@ -358,7 +355,7 @@ src/TrackballCamera.i: src/TrackballCamera.cpp.i
 
 # target to preprocess a source file
 src/TrackballCamera.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/TrackballCamera.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/TrackballCamera.cpp.i
 .PHONY : src/TrackballCamera.cpp.i
 
 src/TrackballCamera.s: src/TrackballCamera.cpp.s
@@ -366,7 +363,7 @@ src/TrackballCamera.s: src/TrackballCamera.cpp.s
 
 # target to generate assembly for a file
 src/TrackballCamera.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/TrackballCamera.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/TrackballCamera.cpp.s
 .PHONY : src/TrackballCamera.cpp.s
 
 src/tiny_obj_loader.o: src/tiny_obj_loader.cpp.o
@@ -374,7 +371,7 @@ src/tiny_obj_loader.o: src/tiny_obj_loader.cpp.o
 
 # target to build an object file
 src/tiny_obj_loader.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/tiny_obj_loader.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/tiny_obj_loader.cpp.o
 .PHONY : src/tiny_obj_loader.cpp.o
 
 src/tiny_obj_loader.i: src/tiny_obj_loader.cpp.i
@@ -382,7 +379,7 @@ src/tiny_obj_loader.i: src/tiny_obj_loader.cpp.i
 
 # target to preprocess a source file
 src/tiny_obj_loader.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/tiny_obj_loader.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/tiny_obj_loader.cpp.i
 .PHONY : src/tiny_obj_loader.cpp.i
 
 src/tiny_obj_loader.s: src/tiny_obj_loader.cpp.s
@@ -390,7 +387,7 @@ src/tiny_obj_loader.s: src/tiny_obj_loader.cpp.s
 
 # target to generate assembly for a file
 src/tiny_obj_loader.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/tiny_obj_loader.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/glimac/CMakeFiles/glimac.dir/build.make third-party/glimac/CMakeFiles/glimac.dir/src/tiny_obj_loader.cpp.s
 .PHONY : src/tiny_obj_loader.cpp.s
 
 # Help Target
@@ -447,6 +444,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

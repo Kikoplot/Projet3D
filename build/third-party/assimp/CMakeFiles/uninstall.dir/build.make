@@ -31,14 +31,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jeremie/Documents/IMAC2/Projet3D/project
+CMAKE_SOURCE_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jeremie/Documents/IMAC2/Projet3D/build
+CMAKE_BINARY_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build
 
 # Utility rule file for uninstall.
 
@@ -46,7 +43,7 @@ CMAKE_BINARY_DIR = /home/jeremie/Documents/IMAC2/Projet3D/build
 include third-party/assimp/CMakeFiles/uninstall.dir/progress.make
 
 third-party/assimp/CMakeFiles/uninstall:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp && /usr/bin/cmake -P /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/cmake_uninstall.cmake
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp && /usr/bin/cmake -P /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/cmake_uninstall.cmake
 
 uninstall: third-party/assimp/CMakeFiles/uninstall
 uninstall: third-party/assimp/CMakeFiles/uninstall.dir/build.make
@@ -57,10 +54,10 @@ third-party/assimp/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : third-party/assimp/CMakeFiles/uninstall.dir/build
 
 third-party/assimp/CMakeFiles/uninstall.dir/clean:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : third-party/assimp/CMakeFiles/uninstall.dir/clean
 
 third-party/assimp/CMakeFiles/uninstall.dir/depend:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jeremie/Documents/IMAC2/Projet3D/project /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp /home/jeremie/Documents/IMAC2/Projet3D/build /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : third-party/assimp/CMakeFiles/uninstall.dir/depend
 

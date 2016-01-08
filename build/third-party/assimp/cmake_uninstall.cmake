@@ -1,8 +1,8 @@
-IF(NOT EXISTS "/home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/install_manifest.txt")
-  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/install_manifest.txt\"")
-ENDIF(NOT EXISTS "/home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/install_manifest.txt")
+IF(NOT EXISTS "/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/install_manifest.txt")
+  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/install_manifest.txt\"")
+ENDIF(NOT EXISTS "/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/install_manifest.txt")
 
-FILE(READ "/home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/install_manifest.txt" files)
+FILE(READ "/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/install_manifest.txt" files)
 STRING(REGEX REPLACE "\n" ";" files "${files}")
 FOREACH(file ${files})
   MESSAGE(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")
