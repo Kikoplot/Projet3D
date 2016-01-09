@@ -35,14 +35,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jeremie/Documents/IMAC2/Projet3D/project
+CMAKE_SOURCE_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jeremie/Documents/IMAC2/Projet3D/build
+CMAKE_BINARY_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -110,14 +107,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/CMakeFiles/progress.marks
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 0
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/CMakeFiles/progress.marks
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/clean
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +123,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/preinstall
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/preinstall
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 third-party/assimp/CMakeFiles/uninstall.dir/rule:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/CMakeFiles/uninstall.dir/rule
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/CMakeFiles/uninstall.dir/rule
 .PHONY : third-party/assimp/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -150,7 +147,7 @@ uninstall: third-party/assimp/CMakeFiles/uninstall.dir/rule
 
 # fast build rule for target.
 uninstall/fast:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/CMakeFiles/uninstall.dir/build.make third-party/assimp/CMakeFiles/uninstall.dir/build
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/CMakeFiles/uninstall.dir/build.make third-party/assimp/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 # Help Target
@@ -177,6 +174,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -26,6 +26,11 @@ void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManage
   glUniform3fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "viewPos"), 1, &lightPos[0]);
   glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "lightSpaceMatrix"), 1, GL_FALSE, glm::value_ptr(lightSpaceMatrix));
   RenderScene(this->shaders["AmbientLighting"], windowManager, rotation);
+<<<<<<< HEAD
+=======
+  
+
+>>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
 
   lightProjection = glm::perspective(45.0f, (GLfloat)SHADOW_WIDTH / (GLfloat)SHADOW_HEIGHT, near_plane, far_plane); // Note that if you use a perspective projection matrix you'll have to change the light position as the current light position isn't enough to reflect the whole scene.
   lightView = glm::lookAt(lightPos, glm::vec3(0.0f), glm::vec3(1.0));
@@ -100,6 +105,10 @@ void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float 
 }
 
 void Scene::loadScene(string path_Txt){
+<<<<<<< HEAD
+=======
+    
+>>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
 
   shadows = true;
 
@@ -124,16 +133,26 @@ void Scene::loadScene(string path_Txt){
 
 
 int i,nbModel,nbShader;
+<<<<<<< HEAD
   string line,word,shaderName, pathShaderVs, pathShaderFs,modelName, pathModel, modelShader;
 
   ifstream file(path_Txt, ios::in);
   if(file){
 
     //Initialisation
+=======
+  string line,word,shaderName, pathShaderVs, pathShaderFs,modelName, pathModel, modelShader; 
+
+  ifstream file(path_Txt, ios::in);
+  if(file){
+    
+    //Initialisation 
+>>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
     getline(file, line);
     stringstream iss(line);
     while(iss >> word >> nbModel  >> word >> nbShader )
     {
+<<<<<<< HEAD
       cout << " Number of Models : " << nbModel << " And Number of Shaders : " << nbShader << endl;
     }
 
@@ -141,16 +160,33 @@ int i,nbModel,nbShader;
     for(i=0;i<nbModel;++i)
     {
       getline(file, line);
+=======
+      cout << " Number of Models : " << nbModel << " And Number of Shaders : " << nbShader << endl; 
+    }
+    
+    //Boucle pour les Modeles
+    for(i=0;i<nbModel;++i)
+    {
+      getline(file, line); 
+>>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
       stringstream iss(line);
       while(iss >> modelName >> pathModel)
       {
         this->models[modelName] = Model((char*)pathModel.c_str());
       }
+<<<<<<< HEAD
     }
     //Boucles pour les shaders
     for(i=0;i<nbShader;++i)
     {
       getline(file, line);
+=======
+    }   
+    //Boucles pour les shaders
+    for(i=0;i<nbShader;++i)
+    {
+      getline(file, line); 
+>>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
       stringstream iss(line);
       while(iss >> shaderName >> pathShaderVs >> pathShaderFs)
       {
@@ -158,11 +194,16 @@ int i,nbModel,nbShader;
         this->shaders[shaderName] = Shader((char*)pathShaderVs.c_str(), (char*)pathShaderFs.c_str());
       }
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
     file.close();
   }
   else{
     cerr << "Impossible d'ouvrir le fichier texte verifiez le chemin ou la nomenclature" << endl;
+<<<<<<< HEAD
 
   }
 
@@ -173,6 +214,18 @@ int i,nbModel,nbShader;
   // //this->models["landscape"] = Model("assets/models/castle/eastern ancient casttle/eastern ancient casttle.obj");
   // this->models["landscape"] = Model("assets/models/tropical/Small Tropical Island.obj");
 
+=======
+    
+  }
+
+  // this->shaders["AmbientLighting"] = Shader("template/shaders/ambiant_lighting.vs.glsl", "template/shaders/ambiant_lighting.fs.glsl");
+
+  // this->models["crysis"] = Model("assets/models/nanosuit/nanosuit.obj");
+  // this->models["house"] = Model("assets/models/house/fw43_lowpoly_n1.3ds");
+  // //this->models["landscape"] = Model("assets/models/castle/eastern ancient casttle/eastern ancient casttle.obj");
+  // this->models["landscape"] = Model("assets/models/tropical/Small Tropical Island.obj");
+
+>>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
    glm::vec3 totemPosition[] = {
     glm::vec3(-24.0f, -12.5f, 18.0f),
     glm::vec3(-27.0f, -14.0f, -10.0f),
@@ -197,7 +250,11 @@ int i,nbModel,nbShader;
   // this->models["totem"] = Model("assets/models/column/column.obj");
   // this->models["cage"] = Model("assets/models/cage/Portal Refraction Cube.3ds");
   //   this->shaders["Shadow"] = Shader("template/shaders/phong.vs.glsl", "template/shaders/phong.fs.glsl");
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
 
   // position = 0;
 

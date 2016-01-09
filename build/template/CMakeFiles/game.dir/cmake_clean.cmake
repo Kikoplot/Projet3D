@@ -1,11 +1,11 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/game.dir/src/shader.cpp.o"
-  "CMakeFiles/game.dir/src/scene.cpp.o"
-  "CMakeFiles/game.dir/src/skybox.cpp.o"
-  "CMakeFiles/game.dir/src/mesh.cpp.o"
-  "CMakeFiles/game.dir/src/camera.cpp.o"
-  "CMakeFiles/game.dir/src/model.cpp.o"
   "CMakeFiles/game.dir/game.cpp.o"
+  "CMakeFiles/game.dir/src/model.cpp.o"
+  "CMakeFiles/game.dir/src/shader.cpp.o"
+  "CMakeFiles/game.dir/src/camera.cpp.o"
+  "CMakeFiles/game.dir/src/skybox.cpp.o"
+  "CMakeFiles/game.dir/src/scene.cpp.o"
+  "CMakeFiles/game.dir/src/mesh.cpp.o"
   "game.pdb"
   "game"
 )

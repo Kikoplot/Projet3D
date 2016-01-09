@@ -6,31 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/../contrib/zlib/zlib.h
-zconf.h
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/code/../contrib/zlib/zconf.h
-
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.c
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.c
 ConvertUTF.h
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.h
 stdio.h
 -
 
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/ConvertUTF/ConvertUTF.h
 
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/./ioapi.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/../zlib/zlib.h
+zconf.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/../zlib/zconf.h
 
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/./unzip.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/./../zlib/zlib.h
+zconf.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/./../zlib/zconf.h
+
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/./ioapi.h
+
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/./unzip.h
 zlib.h
 -
 ../zlib/zlib.h
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/zlib/zlib.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/./../zlib/zlib.h
 ioapi.h
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/./ioapi.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/./ioapi.h
 
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/crypt.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/crypt.h
 
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.c
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.c
 stdio.h
 -
 stdlib.h
@@ -40,13 +44,13 @@ string.h
 zlib.h
 -
 ../zlib/zlib.h
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/zlib/zlib.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/../zlib/zlib.h
 ioapi.h
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.h
 
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/ioapi.h
 
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/unzip.c
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/unzip.c
 stdio.h
 -
 stdlib.h
@@ -54,7 +58,7 @@ stdlib.h
 string.h
 -
 ./unzip.h
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/./unzip.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/./unzip.h
 stddef.h
 -
 string.h
@@ -64,9 +68,5 @@ stdlib.h
 errno.h
 -
 crypt.h
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/unzip/crypt.h
-
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/zlib/zlib.h
-zconf.h
-/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp/contrib/zlib/zconf.h
+/home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/assimp/contrib/unzip/crypt.h
 

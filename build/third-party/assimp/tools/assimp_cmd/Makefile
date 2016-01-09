@@ -35,14 +35,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jeremie/Documents/IMAC2/Projet3D/project
+CMAKE_SOURCE_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jeremie/Documents/IMAC2/Projet3D/build
+CMAKE_BINARY_DIR = /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -110,14 +107,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles /home/jeremie/Documents/IMAC2/Projet3D/build/third-party/assimp/tools/assimp_cmd/CMakeFiles/progress.marks
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/tools/assimp_cmd/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeremie/Documents/IMAC2/Projet3D/build/CMakeFiles 0
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/third-party/assimp/tools/assimp_cmd/CMakeFiles/progress.marks
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/tools/assimp_cmd/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/tools/assimp_cmd/clean
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/tools/assimp_cmd/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +123,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/tools/assimp_cmd/preinstall
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/tools/assimp_cmd/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/tools/assimp_cmd/preinstall
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/tools/assimp_cmd/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/rule:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/rule
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f CMakeFiles/Makefile2 third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/rule
 .PHONY : third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/rule
 
 # Convenience name for target.
@@ -150,7 +147,7 @@ assimp_cmd: third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/rule
 
 # fast build rule for target.
 assimp_cmd/fast:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build
 .PHONY : assimp_cmd/fast
 
 CompareDump.o: CompareDump.cpp.o
@@ -158,7 +155,7 @@ CompareDump.o: CompareDump.cpp.o
 
 # target to build an object file
 CompareDump.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/CompareDump.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/CompareDump.cpp.o
 .PHONY : CompareDump.cpp.o
 
 CompareDump.i: CompareDump.cpp.i
@@ -166,7 +163,7 @@ CompareDump.i: CompareDump.cpp.i
 
 # target to preprocess a source file
 CompareDump.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/CompareDump.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/CompareDump.cpp.i
 .PHONY : CompareDump.cpp.i
 
 CompareDump.s: CompareDump.cpp.s
@@ -174,7 +171,7 @@ CompareDump.s: CompareDump.cpp.s
 
 # target to generate assembly for a file
 CompareDump.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/CompareDump.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/CompareDump.cpp.s
 .PHONY : CompareDump.cpp.s
 
 Export.o: Export.cpp.o
@@ -182,7 +179,7 @@ Export.o: Export.cpp.o
 
 # target to build an object file
 Export.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Export.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Export.cpp.o
 .PHONY : Export.cpp.o
 
 Export.i: Export.cpp.i
@@ -190,7 +187,7 @@ Export.i: Export.cpp.i
 
 # target to preprocess a source file
 Export.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Export.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Export.cpp.i
 .PHONY : Export.cpp.i
 
 Export.s: Export.cpp.s
@@ -198,7 +195,7 @@ Export.s: Export.cpp.s
 
 # target to generate assembly for a file
 Export.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Export.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Export.cpp.s
 .PHONY : Export.cpp.s
 
 ImageExtractor.o: ImageExtractor.cpp.o
@@ -206,7 +203,7 @@ ImageExtractor.o: ImageExtractor.cpp.o
 
 # target to build an object file
 ImageExtractor.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/ImageExtractor.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/ImageExtractor.cpp.o
 .PHONY : ImageExtractor.cpp.o
 
 ImageExtractor.i: ImageExtractor.cpp.i
@@ -214,7 +211,7 @@ ImageExtractor.i: ImageExtractor.cpp.i
 
 # target to preprocess a source file
 ImageExtractor.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/ImageExtractor.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/ImageExtractor.cpp.i
 .PHONY : ImageExtractor.cpp.i
 
 ImageExtractor.s: ImageExtractor.cpp.s
@@ -222,7 +219,7 @@ ImageExtractor.s: ImageExtractor.cpp.s
 
 # target to generate assembly for a file
 ImageExtractor.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/ImageExtractor.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/ImageExtractor.cpp.s
 .PHONY : ImageExtractor.cpp.s
 
 Info.o: Info.cpp.o
@@ -230,7 +227,7 @@ Info.o: Info.cpp.o
 
 # target to build an object file
 Info.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Info.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Info.cpp.o
 .PHONY : Info.cpp.o
 
 Info.i: Info.cpp.i
@@ -238,7 +235,7 @@ Info.i: Info.cpp.i
 
 # target to preprocess a source file
 Info.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Info.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Info.cpp.i
 .PHONY : Info.cpp.i
 
 Info.s: Info.cpp.s
@@ -246,7 +243,7 @@ Info.s: Info.cpp.s
 
 # target to generate assembly for a file
 Info.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Info.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Info.cpp.s
 .PHONY : Info.cpp.s
 
 Main.o: Main.cpp.o
@@ -254,7 +251,7 @@ Main.o: Main.cpp.o
 
 # target to build an object file
 Main.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Main.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Main.cpp.o
 .PHONY : Main.cpp.o
 
 Main.i: Main.cpp.i
@@ -262,7 +259,7 @@ Main.i: Main.cpp.i
 
 # target to preprocess a source file
 Main.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Main.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Main.cpp.i
 .PHONY : Main.cpp.i
 
 Main.s: Main.cpp.s
@@ -270,7 +267,7 @@ Main.s: Main.cpp.s
 
 # target to generate assembly for a file
 Main.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Main.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
 WriteDumb.o: WriteDumb.cpp.o
@@ -278,7 +275,7 @@ WriteDumb.o: WriteDumb.cpp.o
 
 # target to build an object file
 WriteDumb.cpp.o:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/WriteDumb.cpp.o
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/WriteDumb.cpp.o
 .PHONY : WriteDumb.cpp.o
 
 WriteDumb.i: WriteDumb.cpp.i
@@ -286,7 +283,7 @@ WriteDumb.i: WriteDumb.cpp.i
 
 # target to preprocess a source file
 WriteDumb.cpp.i:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/WriteDumb.cpp.i
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/WriteDumb.cpp.i
 .PHONY : WriteDumb.cpp.i
 
 WriteDumb.s: WriteDumb.cpp.s
@@ -294,7 +291,7 @@ WriteDumb.s: WriteDumb.cpp.s
 
 # target to generate assembly for a file
 WriteDumb.cpp.s:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/WriteDumb.cpp.s
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(MAKE) -f third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make third-party/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/WriteDumb.cpp.s
 .PHONY : WriteDumb.cpp.s
 
 # Help Target
@@ -339,6 +336,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jeremie/Documents/IMAC2/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

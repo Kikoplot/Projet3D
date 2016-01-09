@@ -1,4 +1,4 @@
-# Install script for directory: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glimac
+# Install script for directory: /home/yam/Documents/Jerome/IMAC/C++/Projet3D/Projet3D/project/third-party/glimac
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
