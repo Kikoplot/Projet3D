@@ -45,7 +45,6 @@ int main(int argc, char** argv) {
 
      Scene scene("assets/data/settings.txt");
      //scene.loadScene("template/data/settings.txt");
-<<<<<<< HEAD
 
 
      //Test audio
@@ -61,8 +60,6 @@ int main(int argc, char** argv) {
      }
      Mix_PlayMusic(music, -1);
      //Fin test
-=======
->>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
 
     // Application loop:
     bool done = false;
