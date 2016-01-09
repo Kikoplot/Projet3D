@@ -1,0 +1,5 @@
+nbModel: 3
+landscape 1 0.0f -15.0f 0.0f 0.12f 0.12f 0.12f 1.0f 1.0f 1.0f 1.0f
+totem 5 0.0f 0.0f 0.0f 0.01f 0.01f 0.01f 0.0f 1.0f 1.0f 1.0f
+cage 5 0.0f 4.0f 0.0f 0.6f 0.6f 0.6f 34.5f 1.0f 1.0f 1.0f
+# NbUtilisation, 3xTranslate, 3xScale, 1xrad, 3xRotate
