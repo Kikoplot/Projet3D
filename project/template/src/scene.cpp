@@ -26,11 +26,6 @@ void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManage
   glUniform3fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "viewPos"), 1, &lightPos[0]);
   glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "lightSpaceMatrix"), 1, GL_FALSE, glm::value_ptr(lightSpaceMatrix));
   RenderScene(this->shaders["AmbientLighting"], windowManager, rotation);
-<<<<<<< HEAD
-=======
-  
-
->>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
 
   lightProjection = glm::perspective(45.0f, (GLfloat)SHADOW_WIDTH / (GLfloat)SHADOW_HEIGHT, near_plane, far_plane); // Note that if you use a perspective projection matrix you'll have to change the light position as the current light position isn't enough to reflect the whole scene.
   lightView = glm::lookAt(lightPos, glm::vec3(0.0f), glm::vec3(1.0));
@@ -107,7 +102,7 @@ void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float 
 void Scene::loadScene(string path_Txt){
 <<<<<<< HEAD
 =======
-    
+
 >>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
 
   shadows = true;
@@ -141,12 +136,12 @@ int i,nbModel,nbShader;
 
     //Initialisation
 =======
-  string line,word,shaderName, pathShaderVs, pathShaderFs,modelName, pathModel, modelShader; 
+  string line,word,shaderName, pathShaderVs, pathShaderFs,modelName, pathModel, modelShader;
 
   ifstream file(path_Txt, ios::in);
   if(file){
-    
-    //Initialisation 
+
+    //Initialisation
 >>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
     getline(file, line);
     stringstream iss(line);
@@ -161,13 +156,13 @@ int i,nbModel,nbShader;
     {
       getline(file, line);
 =======
-      cout << " Number of Models : " << nbModel << " And Number of Shaders : " << nbShader << endl; 
+      cout << " Number of Models : " << nbModel << " And Number of Shaders : " << nbShader << endl;
     }
-    
+
     //Boucle pour les Modeles
     for(i=0;i<nbModel;++i)
     {
-      getline(file, line); 
+      getline(file, line);
 >>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
       stringstream iss(line);
       while(iss >> modelName >> pathModel)
@@ -181,11 +176,11 @@ int i,nbModel,nbShader;
     {
       getline(file, line);
 =======
-    }   
+    }
     //Boucles pour les shaders
     for(i=0;i<nbShader;++i)
     {
-      getline(file, line); 
+      getline(file, line);
 >>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
       stringstream iss(line);
       while(iss >> shaderName >> pathShaderVs >> pathShaderFs)
@@ -197,7 +192,7 @@ int i,nbModel,nbShader;
 <<<<<<< HEAD
 
 =======
-    
+
 >>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
     file.close();
   }
@@ -215,7 +210,7 @@ int i,nbModel,nbShader;
   // this->models["landscape"] = Model("assets/models/tropical/Small Tropical Island.obj");
 
 =======
-    
+
   }
 
   // this->shaders["AmbientLighting"] = Shader("template/shaders/ambiant_lighting.vs.glsl", "template/shaders/ambiant_lighting.fs.glsl");
@@ -253,7 +248,7 @@ int i,nbModel,nbShader;
 <<<<<<< HEAD
 
 =======
- 
+
 >>>>>>> eb4fbb38617c461ed458aee0844a35d07c9e33fd
 
   // position = 0;
