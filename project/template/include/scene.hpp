@@ -12,6 +12,7 @@
 #include <cstdio>
 #include <GL/glew.h>
 #include <algorithm>
+#include <SDL_mixer.h>
 
 #include <include/assimp/Importer.hpp>
 #include <include/assimp/scene.h>
@@ -25,9 +26,9 @@ using namespace glimac;
 
 class Scene {
   public:
-    Scene();
+    Scene(string path_Txt);
     void update(SDLWindowManager* windowManager, float screenWidth, float screenHeight, float rotation);
-    void loadScene();
+    void loadScene(string PathTxt);
     GLboolean shadows;
     GLuint planeVAO;
     GLuint planeVBO;
@@ -47,5 +48,5 @@ class Scene {
     void initLight(float screenWidth, float screenHeight);
     void moveCam(SDLWindowManager* windowManager);
     void RenderScene(Shader &shader,  SDLWindowManager* windowManager, float rotation);
-
+    void DrawFog();
 };

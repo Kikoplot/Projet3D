@@ -2,10 +2,10 @@
 
 #include <GL/glew.h>
 #include <iostream>
-
+#include <fstream>
 #include <include/assimp/Importer.hpp>
 #include <include/assimp/scene.h>
-
+#include <glimac/FilePath.hpp>
 #include "include/shader.hpp"
 #include "include/model.hpp"
 #include "include/camera.hpp"
@@ -33,12 +33,33 @@ int main(int argc, char** argv) {
 
     // Setup some OpenGL options
     glEnable(GL_DEPTH_TEST);
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
+    glEnable(GL_NORMALIZE);
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_COLOR_MATERIAL);
+    glEnable(GL_FOG);
 
     cout << "OpenGL Version : " << glGetString(GL_VERSION) << endl;
     cout << "GLEW Version : " << glewGetString(GLEW_VERSION) << endl;
 
-     Scene scene;
-     scene.loadScene();
+     Scene scene("assets/data/settings.txt");
+     //scene.loadScene("template/data/settings.txt");
+
+
+     //Test audio
+     Mix_OpenAudio(44100,AUDIO_S16SYS,1,20000);
+     Mix_AllocateChannels(20);
+     Mix_Volume(-1,MIX_MAX_VOLUME);
+
+     Mix_Music* music;
+     music = Mix_LoadMUS("../assets/sounds/test.wav");
+
+     if(!music) {
+       std::cout<<"Impossible charger music"<<std::endl;
+     }
+     Mix_PlayMusic(music, -1);
+     //Fin test
 
     // Application loop:
     bool done = false;
@@ -65,6 +86,10 @@ int main(int argc, char** argv) {
         // Update the display
         windowManager.swapBuffers();
     }
+
+
+    Mix_CloseAudio(); //Fermeture de l'API
+    SDL_Quit();
 
     return EXIT_SUCCESS;
 }

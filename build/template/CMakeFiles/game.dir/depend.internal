@@ -132,6 +132,20 @@ template/CMakeFiles/game.dir/game.cpp.o
  /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glm/glm/vec3.hpp
  /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glm/glm/vec4.hpp
  /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glm/glm/vector_relational.hpp
+ /usr/include/SDL2/SDL_atomic.h
+ /usr/include/SDL2/SDL_audio.h
+ /usr/include/SDL2/SDL_config.h
+ /usr/include/SDL2/SDL_endian.h
+ /usr/include/SDL2/SDL_error.h
+ /usr/include/SDL2/SDL_mixer.h
+ /usr/include/SDL2/SDL_mutex.h
+ /usr/include/SDL2/SDL_platform.h
+ /usr/include/SDL2/SDL_rwops.h
+ /usr/include/SDL2/SDL_stdinc.h
+ /usr/include/SDL2/SDL_thread.h
+ /usr/include/SDL2/SDL_version.h
+ /usr/include/SDL2/begin_code.h
+ /usr/include/SDL2/close_code.h
 template/CMakeFiles/game.dir/src/camera.cpp.o
  /home/jeremie/Documents/IMAC2/Projet3D/project/template/include/camera.hpp
  /home/jeremie/Documents/IMAC2/Projet3D/project/template/src/camera.cpp
@@ -591,6 +605,20 @@ template/CMakeFiles/game.dir/src/scene.cpp.o
  /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glm/glm/vec3.hpp
  /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glm/glm/vec4.hpp
  /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glm/glm/vector_relational.hpp
+ /usr/include/SDL2/SDL_atomic.h
+ /usr/include/SDL2/SDL_audio.h
+ /usr/include/SDL2/SDL_config.h
+ /usr/include/SDL2/SDL_endian.h
+ /usr/include/SDL2/SDL_error.h
+ /usr/include/SDL2/SDL_mixer.h
+ /usr/include/SDL2/SDL_mutex.h
+ /usr/include/SDL2/SDL_platform.h
+ /usr/include/SDL2/SDL_rwops.h
+ /usr/include/SDL2/SDL_stdinc.h
+ /usr/include/SDL2/SDL_thread.h
+ /usr/include/SDL2/SDL_version.h
+ /usr/include/SDL2/begin_code.h
+ /usr/include/SDL2/close_code.h
 template/CMakeFiles/game.dir/src/shader.cpp.o
  /home/jeremie/Documents/IMAC2/Projet3D/project/template/include/shader.hpp
  /home/jeremie/Documents/IMAC2/Projet3D/project/template/src/shader.cpp

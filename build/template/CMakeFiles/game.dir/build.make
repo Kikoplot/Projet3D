@@ -231,9 +231,10 @@ template/game: template/CMakeFiles/game.dir/src/camera.cpp.o
 template/game: template/CMakeFiles/game.dir/src/model.cpp.o
 template/game: template/CMakeFiles/game.dir/game.cpp.o
 template/game: template/CMakeFiles/game.dir/build.make
-template/game: third-party/glimac/libglimac.so
+template/game: third-party/glimac/libglimac.a
 template/game: /usr/lib/x86_64-linux-gnu/libSDL2main.a
 template/game: /usr/lib/x86_64-linux-gnu/libSDL2.so
+template/game: /usr/lib/x86_64-linux-gnu/libSDL_mixer.so
 template/game: /usr/lib/x86_64-linux-gnu/libGLU.so
 template/game: /usr/lib/x86_64-linux-gnu/libGL.so
 template/game: /usr/lib/x86_64-linux-gnu/libSM.so

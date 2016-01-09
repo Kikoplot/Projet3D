@@ -401,6 +401,15 @@ SDL2_INCLUDE_DIR:PATH=/usr/include/SDL2
 //Where the SDL2 Library can be found
 SDL2_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread
 
+//Found SDL2_Mixer library
+SDLMIXER_FOUND:BOOL=1
+
+//Path to a file.
+SDL_MIXER_INCLUDE_DIR:PATH=/usr/include/SDL
+
+//Path to a library.
+SDL_MIXER_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL_mixer.so
+
 //Path to a file.
 X11_ICE_INCLUDE_PATH:PATH=/usr/include
 
@@ -761,6 +770,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libGL.so
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.26()]
 //Details about finding SDL2
 FIND_PACKAGE_MESSAGE_DETAILS_SDL2:INTERNAL=[/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread][/usr/include/SDL2][v()]
+//Details about finding SDL_mixer
+FIND_PACKAGE_MESSAGE_DETAILS_SDL_mixer:INTERNAL=[/usr/lib/x86_64-linux-gnu/libSDL_mixer.so][/usr/include/SDL][v1.2.12()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding X11
@@ -779,7 +790,13 @@ OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
 OPENGL_xmesa_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-SDL2_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread
+SDL2_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread
+//ADVANCED property for variable: SDLMIXER_FOUND
+SDLMIXER_FOUND-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL_MIXER_INCLUDE_DIR
+SDL_MIXER_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL_MIXER_LIBRARY
+SDL_MIXER_LIBRARY-ADVANCED:INTERNAL=1
 UNZIP_CFLAGS:INTERNAL=
 UNZIP_CFLAGS_I:INTERNAL=
 UNZIP_CFLAGS_OTHER:INTERNAL=

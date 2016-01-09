@@ -23,6 +23,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/include/SDL2"
+  "/usr/include/SDL"
   "/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glimac/include"
   "/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glm"
   "/home/jeremie/Documents/IMAC2/Projet3D/project/third-party/assimp"

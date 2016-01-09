@@ -131,6 +131,20 @@ template/CMakeFiles/game.dir/game.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/
 template/CMakeFiles/game.dir/game.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glm/glm/vec3.hpp
 template/CMakeFiles/game.dir/game.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glm/glm/vec4.hpp
 template/CMakeFiles/game.dir/game.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glm/glm/vector_relational.hpp
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/SDL_atomic.h
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/SDL_audio.h
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/SDL_config.h
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/SDL_endian.h
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/SDL_error.h
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/SDL_mixer.h
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/SDL_mutex.h
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/SDL_platform.h
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/SDL_rwops.h
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/SDL_stdinc.h
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/SDL_thread.h
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/SDL_version.h
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/begin_code.h
+template/CMakeFiles/game.dir/game.cpp.o: /usr/include/SDL2/close_code.h
 
 template/CMakeFiles/game.dir/src/camera.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/template/include/camera.hpp
 template/CMakeFiles/game.dir/src/camera.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/template/src/camera.cpp
@@ -590,6 +604,20 @@ template/CMakeFiles/game.dir/src/scene.cpp.o: /home/jeremie/Documents/IMAC2/Proj
 template/CMakeFiles/game.dir/src/scene.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glm/glm/vec3.hpp
 template/CMakeFiles/game.dir/src/scene.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glm/glm/vec4.hpp
 template/CMakeFiles/game.dir/src/scene.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/third-party/glm/glm/vector_relational.hpp
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/SDL_atomic.h
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/SDL_audio.h
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/SDL_config.h
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/SDL_endian.h
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/SDL_error.h
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/SDL_mixer.h
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/SDL_mutex.h
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/SDL_platform.h
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/SDL_rwops.h
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/SDL_stdinc.h
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/SDL_thread.h
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/SDL_version.h
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/begin_code.h
+template/CMakeFiles/game.dir/src/scene.cpp.o: /usr/include/SDL2/close_code.h
 
 template/CMakeFiles/game.dir/src/shader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/template/include/shader.hpp
 template/CMakeFiles/game.dir/src/shader.cpp.o: /home/jeremie/Documents/IMAC2/Projet3D/project/template/src/shader.cpp
