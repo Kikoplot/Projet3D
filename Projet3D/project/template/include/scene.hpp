@@ -38,7 +38,7 @@ class Scene {
 
   private:
     glm::vec3 totemPosition[5];
-    glm::vec3 snowPosition[2000];
+    glm::vec3 snowPosition[1500];
     map<string, Shader> shaders;
     map<string, Model> models;
     Skybox skybox;
