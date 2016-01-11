@@ -45,7 +45,7 @@ void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float 
   string line,word,NameModel,ModelT1,ModelT2,ModelT3,ModelS1,ModelS2,ModelS3,ModelR1,ModelR2,ModelR3,Radian;
   ifstream file(path_Txt, ios::in);
   int i,nbModel,nbIt;
-  float ModelX1,ModelX2,ModelX3,RotationCage;
+  float ModelX1,ModelX2,ModelX3,RotationCage,Y=0,X=0;
   if(file){
 
     //Initialisation
@@ -73,15 +73,28 @@ void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float 
               ModelX2=atof(ModelT2.c_str());
               ModelX3=atof(ModelT3.c_str());
             }
-            if(NameModel!="cage")
+            if(NameModel=="cage" || NameModel=="snow")
             {
-              RotationCage=rotation + atof(Radian.c_str());
-              RotationCage=atof(Radian.c_str());
+              RotationCage=rotation + atof(Radian.c_str()) + rand() % 100 - 50;
             }
             else
             {
               RotationCage=rotation + atof(Radian.c_str());
+              RotationCage=atof(Radian.c_str());
             }
+
+            if(NameModel=="snow"){
+              Y=windowManager->getTime()*0.4;
+              cout << Y << endl;
+              ModelX1=snowPosition[j].x;
+              if(snowPosition[j].y-Y<-35){
+                ModelX2=snowPosition[j].y+35-Y;
+              }else{
+              ModelX2=snowPosition[j].y-Y;
+              }
+              ModelX3=snowPosition[j].z;
+            }
+
          // Draw the loaded model
             glm::mat4 matModel;
 
@@ -214,11 +227,17 @@ int i,nbModel,nbShader;
     glm::vec3(atof(p13.c_str()), atof(p14.c_str()), atof(p15.c_str())),
   };
 
+  
   // Initialisation de la scène
   for(int i=0; i<5; i++){
+
     this->totemPosition[i] = totemPosition[i];
   }
-
+  glm::vec3 snowPosition[2000]; 
+  for(int i=0; i<2000; i++){
+    snowPosition[i]= glm::vec3(rand() % 40-20,rand() % 35,rand() % 40 - 20);
+    this->snowPosition[i] = snowPosition[i];
+  }
   Camera camera;
   this->camera = camera;
 
