@@ -1,0 +1,1 @@
+assets/textures/city/right.tga assets/textures/city/left.tga assets/textures/city/up.tga assets/textures/city/down.tga assets/textures/city/back.tga assets/textures/city/front.tga

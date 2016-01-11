@@ -1,0 +1,11 @@
+nbModel: 7 nbShader: 2
+store assets/models/store/Store1.3ds
+totem assets/models/column/column.obj
+cage assets/models/cage/Portal_Refraction_Cube.3ds
+blueball assets/models/balls/blueBall.3ds
+redball assets/models/balls/redBall.3ds
+yellowball assets/models/balls/yellowBall.3ds
+greenball assets/models/balls/greenBall.3ds
+AmbientLighting template/shaders/ambiant_lighting.vs.glsl template/shaders/ambiant_lighting.fs.glsl
+Directionnal template/shaders/phong.vs.glsl template/shaders/phong.fs.glsl
+7.0f -8.0f 17.0f -19.0f -8.3f 3.0f 7.0f -1.0f -12.5f -16.0f -1.0f -12.5f -23.0f -8.0f -28.0f

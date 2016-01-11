@@ -3,9 +3,11 @@
 using namespace std;
 using namespace glimac;
 
-Scene::Scene(string path_Txt){this->loadScene(path_Txt);}
+Scene::Scene(string path_Txt, int level, int pause){
+  this->loadScene(path_Txt, level, pause);
+}
 
-void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager, float rotation){
+void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager, float rotation, int level){
   glm::vec3 lightPos(0.0f, 12.0f, -38.0f);
     // First rendering with shadow
   glm::mat4 lightProjection, lightView;
@@ -25,21 +27,18 @@ void Scene::displayModels(float screenWidth, float screenHeight, SDLWindowManage
   glUniform3fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "lightPos"), 1, &lightPos[0]);
   glUniform3fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "viewPos"), 1, &lightPos[0]);
   glUniformMatrix4fv(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "lightSpaceMatrix"), 1, GL_FALSE, glm::value_ptr(lightSpaceMatrix));
-  RenderScene(this->shaders["AmbientLighting"], windowManager, rotation,"assets/data/render1.txt");
-
-  lightProjection = glm::perspective(45.0f, (GLfloat)SHADOW_WIDTH / (GLfloat)SHADOW_HEIGHT, near_plane, far_plane); // Note that if you use a perspective projection matrix you'll have to change the light position as the current light position isn't enough to reflect the whole scene.
-  lightView = glm::lookAt(lightPos, glm::vec3(0.0f), glm::vec3(1.0));
-  lightSpaceMatrix = lightProjection * lightView;
-  this->shaders["Shadow"].Use();
-
-  glUniformMatrix4fv(glGetUniformLocation(this->shaders["Shadow"].Program, "lightSpaceMatrix"), 1, GL_FALSE, glm::value_ptr(lightSpaceMatrix));
-
-  glViewport(0, 0, SHADOW_WIDTH, SHADOW_HEIGHT);
-  glBindFramebuffer(GL_FRAMEBUFFER, depthMapFBO);
-  glClear(GL_DEPTH_BUFFER_BIT);
-  RenderScene(this->shaders["Shadow"], windowManager, rotation,"assets/data/render1.txt");
+  if(level == 1){
+    RenderScene(this->shaders["AmbientLighting"], windowManager, rotation,"assets/data/render1.txt");
+  }
+  if(level == 2){
+    RenderScene(this->shaders["AmbientLighting"], windowManager, rotation,"assets/data/render2.txt");
+  }
+  if(level == 3){
+    RenderScene(this->shaders["AmbientLighting"], windowManager, rotation,"assets/data/render3.txt");
+  }
 
   glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
 }
 
 void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float rotation,string path_Txt){
@@ -76,7 +75,8 @@ void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float 
             }
             if(NameModel!="cage")
             {
-              RotationCage=0 ;
+              RotationCage=rotation + atof(Radian.c_str());
+              RotationCage=atof(Radian.c_str());
             }
             else
             {
@@ -88,6 +88,7 @@ void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float 
             // Translate model to the center of the scene
             matModel = glm::translate(matModel, glm::vec3(ModelX1,ModelX2,ModelX3));
             matModel = glm::scale(matModel, glm::vec3(atof(ModelS1.c_str()), atof(ModelS2.c_str()), atof(ModelS3.c_str())));
+            //matModel = glm::rotate(matModel, glm::radians(34.5f+rotation), glm::vec3(1.0f, 1.0f, 1.0f));
             matModel = glm::rotate(matModel, glm::radians(RotationCage), glm::vec3(atof(ModelR1.c_str()), atof(ModelR2.c_str()), atof(ModelR3.c_str())));
             glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(matModel));
             this->models[(char*)NameModel.c_str()].Draw(shader);
@@ -103,7 +104,6 @@ void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float 
     cerr << "Impossible d'ouvrir le fichier texte verifiez le chemin ou la nomenclature" << endl;
 
   }
-
 
   if(windowManager->isKeyPressed(SDLK_w)){
     position = 0;
@@ -131,8 +131,7 @@ void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float 
   }
 }
 
-void Scene::loadScene(string path_Txt){
-
+void Scene::loadScene(string path_Txt, int level, int pause){
 
   shadows = true;
 
@@ -154,7 +153,6 @@ void Scene::loadScene(string path_Txt){
   glDrawBuffer(GL_NONE);
   glReadBuffer(GL_NONE);
   glBindFramebuffer(GL_FRAMEBUFFER, 0);
-
 
 int i,nbModel,nbShader;
   string line,word,shaderName, pathShaderVs, pathShaderFs,modelName, pathModel, modelShader;
@@ -224,12 +222,11 @@ int i,nbModel,nbShader;
   Camera camera;
   this->camera = camera;
 
-  Skybox skybox;
+  Skybox skybox(level, pause);
   this->skybox = skybox;
 }
 
 void Scene::displaySkybox(float screenWidth, float screenHeight){
-
   glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)screenWidth/(float)screenHeight, 0.1f, 100.0f);
   // Draw skybox first
   glDepthMask(GL_FALSE);// Remember to turn depth writing off
@@ -245,7 +242,7 @@ void Scene::displaySkybox(float screenWidth, float screenHeight){
   glDepthMask(GL_TRUE);
 }
 
-void Scene::initLight(float screenWidth, float screenHeight){
+void Scene::initLight(float screenWidth, float screenHeight, float ambient, float diffuse, float specular, float shininess, int level, SDLWindowManager* windowManager){
   // Use cooresponding shader when setting uniforms/drawing objects
   this->shaders["AmbientLighting"].Use();
 
@@ -264,21 +261,65 @@ void Scene::initLight(float screenWidth, float screenHeight){
   GLint lightPosLoc = glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.position");
   GLint viewPosLoc = glGetUniformLocation(this->shaders["AmbientLighting"].Program, "viewPos");
 
-  glUniform3f(lightPosLoc, 0.0f, 12.0f, -38.0f);
-  glUniform3f(viewPosLoc, 0.0f, 12.0f, -38.0f);
 
-  // Set lights properties
-  glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.ambient"),  0.3f, 0.3f, 0.3f);
-  glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.diffuse"),  0.7f, 0.7f, 0.7f);
-  glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.specular"), 2.0f, 2.0f, 2.0f);
-  // Set material properties
-  glUniform1f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.shininess"), 32.0f);
+
+  if(level == 1) {
+    glUniform3f(lightPosLoc, 0.0f, 12.0f, -38.0f);
+    glUniform3f(viewPosLoc, 0.0f, 12.0f, -38.0f);
+    // Set lights properties
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.ambient"),  ambient, ambient, ambient);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.diffuse"),  diffuse, diffuse, diffuse);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.specular"), specular, specular, specular);
+    // Set material properties
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.ambient"),   1.0f, 0.5f, 0.31f);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.diffuse"),   1.0f, 0.5f, 0.31f);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.specular"),  0.5f, 0.5f, 0.5f);
+    glUniform1f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.shininess"), shininess);
+  }
+
+  if(level == 2) {
+    glUniform3f(lightPosLoc, 20.0f, 30.0f, 25.0f);
+    glUniform3f(viewPosLoc, 20.0f, 30.0f, 25.0f);
+    glm::vec3 lightColor;
+    lightColor.x = 0.0f;
+    lightColor.y = 0.15f;
+    lightColor.z = 0.5f;
+    glm::vec3 diffuseColor = lightColor * glm::vec3(0.5f); // Influence couleur sur le rendu texture
+    glm::vec3 ambientColor = diffuseColor * glm::vec3(0.2f);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.ambient"),  ambientColor.x, ambientColor.y, ambientColor.z);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.diffuse"),  diffuseColor.x, diffuseColor.y, diffuseColor.z);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.specular"), 0.25f, 0.25f, 0.25f);
+    // Set material properties
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.ambient"),   0.1f, 0.1f, 0.1f);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.diffuse"),   0.1f, 0.1f, 0.1f);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.specular"),  0.1f, 0.1f, 0.1f); // Specular doesn't have full effect on this object's material
+    glUniform1f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.shininess"), 2.0f);
+  }
+
+  if(level == 3) {
+    glUniform3f(lightPosLoc, 10.0f, 10.0f, -23.0f);
+    glUniform3f(viewPosLoc, 10.0f, 10.0f, -23.0f);
+    glm::vec3 color;
+    color.x = sin(windowManager->getTime() * 2.0f);
+    color.y = sin(windowManager->getTime() * 0.5f);
+    color.z = sin(windowManager->getTime() * 1.3f);
+    glm::vec3 diffusered = color * glm::vec3(0.5f); // Influence couleur sur le rendu texture
+    glm::vec3 ambientred = diffusered * glm::vec3(0.2f);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.ambient"),  ambientred.x, ambientred.y, ambientred.z);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.diffuse"),  diffusered.x, diffusered.y, diffusered.z);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "light.specular"), 0.25f, 0.25f, 0.25f);
+    // Set material properties
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.ambient"),   0.1f, 0.1f, 0.1f);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.diffuse"),   0.1f, 0.1f, 0.1f);
+    glUniform3f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.specular"),  0.1f, 0.1f, 0.1f); // Specular doesn't have full effect on this object's material
+    glUniform1f(glGetUniformLocation(this->shaders["AmbientLighting"].Program, "material.shininess"), 2.0f);
+  }
 }
 
-void Scene::update(SDLWindowManager* windowManager, float screenWidth, float screenHeight, float rotation){
+void Scene::update(SDLWindowManager* windowManager, float screenWidth, float screenHeight, float rotation, float ambient, float diffuse, float specular, float shininess, int level){
   moveCam(windowManager);
-  initLight(screenWidth, screenHeight);
-  displayModels(screenWidth, screenHeight, windowManager, rotation);
+  initLight(screenWidth, screenHeight, ambient, diffuse, specular, shininess, level, windowManager);
+  displayModels(screenWidth, screenHeight, windowManager, rotation, level);
   displaySkybox(screenWidth, screenHeight);
 }
 
@@ -290,8 +331,8 @@ void Scene::moveCam(SDLWindowManager* windowManager){
 
   glm::ivec2 MousePosition = glm::ivec2(0.0, 0.0);
   MousePosition = windowManager->getMousePosition();
-  float MousePositionX = MousePosition.x/800.0f-0.5;
-  float MousePositionY = MousePosition.y/600.0f-0.5;
+  float MousePositionX = MousePosition.x/1440.0f-0.5;
+  float MousePositionY = MousePosition.y/900.0f-0.5;
 
   this->camera.rotateLeft(-1*MousePositionX);
   this->camera.rotateUp(-1*MousePositionY);

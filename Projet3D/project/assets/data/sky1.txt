@@ -1,0 +1,1 @@
+assets/textures/sahara/right.tga assets/textures/sahara/left.tga assets/textures/sahara/up.tga assets/textures/sahara/down.tga assets/textures/sahara/back.tga assets/textures/sahara/front.tga

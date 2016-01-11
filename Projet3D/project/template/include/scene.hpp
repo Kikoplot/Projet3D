@@ -26,9 +26,9 @@ using namespace glimac;
 
 class Scene {
   public:
-    Scene(string path_Txt);
-    void update(SDLWindowManager* windowManager, float screenWidth, float screenHeight, float rotation);
-    void loadScene(string PathTxt);
+    Scene(string path_Txt, int level, int pause);
+    void update(SDLWindowManager* windowManager, float screenWidth, float screenHeight, float rotation, float ambient, float diffuse, float specular, float shininess, int level);
+    void loadScene(string PathTxt, int level, int pause);
     GLboolean shadows;
     GLuint planeVAO;
     GLuint planeVBO;
@@ -43,9 +43,9 @@ class Scene {
     Skybox skybox;
     Camera camera;
     int position;
-    void displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager, float rotation);
+    void displayModels(float screenWidth, float screenHeight, SDLWindowManager* windowManager, float rotation, int level);
     void displaySkybox(float screenWidth, float screenHeight);
-    void initLight(float screenWidth, float screenHeight);
+    void initLight(float screenWidth, float screenHeight, float ambient, float diffuse, float specular, float shininess, int level, SDLWindowManager* windowManager);
     void moveCam(SDLWindowManager* windowManager);
     void RenderScene(Shader &shader,  SDLWindowManager* windowManager, float rotation,string PathTxt);
     void DrawFog();

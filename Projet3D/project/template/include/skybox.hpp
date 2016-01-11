@@ -18,6 +18,7 @@
 class Skybox {
   public:
     Skybox();
+    Skybox(int level, int pause);
     Shader skyboxShader;
     GLuint SkyboxTexture;
     GLuint skyboxVAO, skyboxVBO;

@@ -1,0 +1,2 @@
+nbModel: 0 nbShader: 1
+Light template/shaders/skybox.vs.glsl template/shaders/skybox.fs.glsl

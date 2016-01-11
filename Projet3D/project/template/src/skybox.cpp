@@ -4,7 +4,9 @@
 using namespace glimac;
 using namespace std;
 
-Skybox::Skybox(){
+Skybox::Skybox(){}
+
+Skybox::Skybox(int level, int pause){
 
   Shader skyboxShader("template/shaders/skybox.vs.glsl", "template/shaders/skybox.fs.glsl");
   this->skyboxShader = skyboxShader;
@@ -54,17 +56,53 @@ Skybox::Skybox(){
            40.0f, -40.0f,  40.0f
       };
 
-      // Cubemap (Skybox)
-      vector<const GLchar*> faces;
-      faces.push_back("assets/textures/sahara/right.tga");
-      faces.push_back("assets/textures/sahara/left.tga");
-      faces.push_back("assets/textures/sahara/up.tga");
-      faces.push_back("assets/textures/sahara/down.tga");
-      faces.push_back("assets/textures/sahara/back.tga");
-      faces.push_back("assets/textures/sahara/front.tga");
-      GLuint cubemapTexture = loadCubemap(faces);
+      if(level == 1){
+        ifstream file("assets/data/sky1.txt", ios::in);
+        string Path,Path2,Path3,Path4,Path5,Path6,line;
+        file >> Path >> Path2 >> Path3 >> Path4 >> Path5 >> Path6;
+        vector<const GLchar*> faces;
+        faces.push_back((char*)Path.c_str());
+        faces.push_back((char*)Path2.c_str());
+        faces.push_back((char*)Path3.c_str());
+        faces.push_back((char*)Path4.c_str());
+        faces.push_back((char*)Path5.c_str());
+        faces.push_back((char*)Path6.c_str());
+        GLuint cubemapTexture = loadCubemap(faces);
+        this->SkyboxTexture = loadCubemap(faces);
+        file.close();
+      }
 
-      this->SkyboxTexture = loadCubemap(faces);
+      if(level == 2){
+        ifstream file("assets/data/sky2.txt", ios::in);
+        string Path,Path2,Path3,Path4,Path5,Path6,line;
+        file >> Path >> Path2 >> Path3 >> Path4 >> Path5 >> Path6;
+        vector<const GLchar*> faces;
+        faces.push_back((char*)Path.c_str());
+        faces.push_back((char*)Path2.c_str());
+        faces.push_back((char*)Path3.c_str());
+        faces.push_back((char*)Path4.c_str());
+        faces.push_back((char*)Path5.c_str());
+        faces.push_back((char*)Path6.c_str());
+        GLuint cubemapTexture = loadCubemap(faces);
+        this->SkyboxTexture = loadCubemap(faces);
+        file.close();
+      }
+
+      if(level == 3){
+        ifstream file("assets/data/sky3.txt", ios::in);
+        string Path,Path2,Path3,Path4,Path5,Path6,line;
+        file >> Path >> Path2 >> Path3 >> Path4 >> Path5 >> Path6;
+        vector<const GLchar*> faces;
+        faces.push_back((char*)Path.c_str());
+        faces.push_back((char*)Path2.c_str());
+        faces.push_back((char*)Path3.c_str());
+        faces.push_back((char*)Path4.c_str());
+        faces.push_back((char*)Path5.c_str());
+        faces.push_back((char*)Path6.c_str());
+        GLuint cubemapTexture = loadCubemap(faces);
+        this->SkyboxTexture = loadCubemap(faces);
+        file.close();
+      }
 
       // Setup skybox VAO
       glGenVertexArrays(1, &this->skyboxVAO);
@@ -75,11 +113,9 @@ Skybox::Skybox(){
       glEnableVertexAttribArray(0);
       glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)0);
       glBindVertexArray(0);
-
 }
 
-GLuint Skybox::loadCubemap(vector<const GLchar*> faces)
-{
+GLuint Skybox::loadCubemap(vector<const GLchar*> faces){
   GLuint textureID;
   glGenTextures(1, &textureID);
   glActiveTexture(GL_TEXTURE0);

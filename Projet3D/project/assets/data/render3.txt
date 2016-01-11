@@ -1,0 +1,8 @@
+nbModel: 7
+store 1 -10.0f -15.0f -10.0f 0.4f 0.4f 0.4f -90.0f 1.0f 0.0f 0.0f
+totem 5 0.0f 0.0f 0.0f 0.01f 0.01f 0.01f 0.0f 1.0f 1.0f 1.0f
+cage 5 0.0f 4.0f 0.0f 0.6f 0.6f 0.6f 34.5f 1.0f 1.0f 1.0f
+blueball 1 10.0f 10.0f 20.0f 0.5f 0.5f 0.5f 1.0f 1.0f 1.0f 1.0f
+redball 1 10.0f 10.0f -23.0f 0.5f 0.5f 0.5f 1.0f 1.0f 1.0f 1.0f
+yellowball 1 -20.0f 10.0f 10.0f 0.5f 0.5f 0.5f 1.0f 1.0f 1.0f 1.0f
+greenball 1 -20.0f 10.0f -20.0f 0.5f 0.5f 0.5f 1.0f 1.0f 1.0f 1.0f

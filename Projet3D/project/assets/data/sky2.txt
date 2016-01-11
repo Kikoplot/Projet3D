@@ -1,0 +1,1 @@
+assets/textures/mountain/right.tga assets/textures/mountain/left.tga assets/textures/mountain/up.jpg assets/textures/mountain/down.tga assets/textures/mountain/back.tga assets/textures/mountain/front.tga

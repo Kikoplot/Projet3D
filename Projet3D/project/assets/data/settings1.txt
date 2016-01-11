@@ -1,0 +1,6 @@
+nbModel: 3 nbShader: 1
+landscape assets/models/tropical/Small_Tropical_Island.obj
+totem assets/models/column/column.obj
+cage assets/models/cage/Portal_Refraction_Cube.3ds
+AmbientLighting template/shaders/ambiant_lighting.vs.glsl template/shaders/ambiant_lighting.fs.glsl
+-24.0f -12.5f 18.0f -27.0f -14.0f -10.0f 14.0f -4.5f -21.0f 16.0f 0.8f 0.0f 14.0f -8.7f 23.5f
