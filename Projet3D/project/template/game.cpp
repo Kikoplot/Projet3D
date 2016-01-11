@@ -12,6 +12,9 @@
 #include "include/camera.hpp"
 #include "include/skybox.hpp"
 #include "include/scene.hpp"
+#include "SDL.h"
+#include "SDL_image.h"
+#include "SDL_mixer.h"
 
 using namespace glimac;
 using namespace std;
@@ -143,16 +146,19 @@ int main(int argc, char** argv) {
     vector<Scene> scenes;
     Scene scene1("assets/data/settings1.txt", level, pause);
     scenes.push_back(scene1);
+    // if( SDL_Init(SDL_INIT_AUDIO) < 0 ) exit(1);
+    //  //Test audio
+    //  if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) < 0) {
+    //             printf("SDL_Mixer Error: %s\n", Mix_GetError());
+    //         }
+    //  Mix_Volume(-1,MIX_MAX_VOLUME);
 
-     //Test audio
-     Mix_OpenAudio(44100,AUDIO_S16SYS,1,20000);
-     Mix_AllocateChannels(20);
-     Mix_Volume(-1,MIX_MAX_VOLUME);
-
-     Mix_Music* music;
-     music = Mix_LoadMUS("assets/sounds/test.wav");
-
-     Mix_PlayMusic(music, -1);
+    //  Mix_Music*music;
+    //  music = Mix_LoadMUS("assets/sounds/desert1.wav");
+    //  if (music == NULL) {
+    //             printf("Couldn't load beat.wav: %s\n", Mix_GetError());
+    //         }
+    //  Mix_PlayMusic(music, -1);
      //Fin test
 
     // Application loop:
@@ -261,7 +267,7 @@ int main(int argc, char** argv) {
     }
 
 
-    Mix_CloseAudio(); //Fermeture de l'API
+    // Mix_FreeMusic(music); //Fermeture de l'API
     SDL_Quit();
 
     return EXIT_SUCCESS;
