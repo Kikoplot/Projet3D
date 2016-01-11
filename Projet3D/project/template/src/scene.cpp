@@ -73,19 +73,23 @@ void Scene::RenderScene(Shader &shader,  SDLWindowManager* windowManager, float 
               ModelX2=atof(ModelT2.c_str());
               ModelX3=atof(ModelT3.c_str());
             }
-            if(NameModel=="cage" || NameModel=="snow")
+            if(NameModel=="cage")
             {
-              RotationCage=rotation + atof(Radian.c_str()) + rand() % 100 - 50;
+              RotationCage=rotation + atof(Radian.c_str());
             }
             else
             {
               RotationCage=rotation + atof(Radian.c_str());
               RotationCage=atof(Radian.c_str());
             }
+            if(NameModel=="snow")
+            {
+              RotationCage=rotation + atof(Radian.c_str());
+            }
 
             if(NameModel=="snow"){
               Y=windowManager->getTime()*0.4;
-              cout << Y << endl;
+              //cout << Y << endl;
               ModelX1=snowPosition[j].x;
               if(snowPosition[j].y-Y<-35){
                 ModelX2=snowPosition[j].y+35-Y;
@@ -227,14 +231,14 @@ int i,nbModel,nbShader;
     glm::vec3(atof(p13.c_str()), atof(p14.c_str()), atof(p15.c_str())),
   };
 
-  
+
   // Initialisation de la scène
   for(int i=0; i<5; i++){
 
     this->totemPosition[i] = totemPosition[i];
   }
-  glm::vec3 snowPosition[2000]; 
-  for(int i=0; i<2000; i++){
+  glm::vec3 snowPosition[1500];
+  for(int i=0; i<1500; i++){
     snowPosition[i]= glm::vec3(rand() % 40-20,rand() % 35,rand() % 40 - 20);
     this->snowPosition[i] = snowPosition[i];
   }
