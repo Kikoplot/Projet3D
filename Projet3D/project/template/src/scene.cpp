@@ -324,10 +324,10 @@ void Scene::update(SDLWindowManager* windowManager, float screenWidth, float scr
 }
 
 void Scene::moveCam(SDLWindowManager* windowManager){
-  if(windowManager->isKeyPressed(SDLK_z)) this->camera.moveFront(0.02);
-  if(windowManager->isKeyPressed(SDLK_s)) this->camera.moveFront(-0.02);
-  if(windowManager->isKeyPressed(SDLK_q)) this->camera.moveLatteral(0.02);
-  if(windowManager->isKeyPressed(SDLK_d)) this->camera.moveLatteral(-0.02);
+  //if(windowManager->isKeyPressed(SDLK_z)) this->camera.moveFront(0.02);
+  //if(windowManager->isKeyPressed(SDLK_s)) this->camera.moveFront(-0.02);
+  //if(windowManager->isKeyPressed(SDLK_q)) this->camera.moveLatteral(0.02);
+  //if(windowManager->isKeyPressed(SDLK_d)) this->camera.moveLatteral(-0.02);
 
   glm::ivec2 MousePosition = glm::ivec2(0.0, 0.0);
   MousePosition = windowManager->getMousePosition();

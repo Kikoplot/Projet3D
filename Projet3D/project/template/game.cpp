@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
     glEnable(GL_NORMALIZE);
     glEnable(GL_DEPTH_TEST);
 
-    Shader ourShader("template/shaders/phong.vs.glsl", "template/shaders/phong.fs.glsl");
+    Shader shadermenu("template/shaders/phong.vs.glsl", "template/shaders/phong.fs.glsl");
 
     // Set up vertex data (and buffer(s)) and attribute pointers
     GLfloat vertices[] = {
@@ -132,7 +132,6 @@ int main(int argc, char** argv) {
 
 
 
-
     cout << "OpenGL Version : " << glGetString(GL_VERSION) << endl;
     cout << "GLEW Version : " << glewGetString(GLEW_VERSION) << endl;
 
@@ -151,11 +150,8 @@ int main(int argc, char** argv) {
      Mix_Volume(-1,MIX_MAX_VOLUME);
 
      Mix_Music* music;
-     music = Mix_LoadMUS("../assets/sounds/test.wav");
+     music = Mix_LoadMUS("assets/sounds/test.wav");
 
-     if(!music) {
-       std::cout<<"Impossible charger music"<<std::endl;
-     }
      Mix_PlayMusic(music, -1);
      //Fin test
 
@@ -235,7 +231,7 @@ int main(int argc, char** argv) {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         if(pause == 1){
-            ourShader.Use();
+            shadermenu.Use();
             // Bind Textures using texture units
             glActiveTexture(GL_TEXTURE0);
             if(level == 1){
@@ -247,7 +243,7 @@ int main(int argc, char** argv) {
             if(level == 3){
               glBindTexture(GL_TEXTURE_2D, texture3);
             }
-            glUniform1i(glGetUniformLocation(ourShader.Program, "ourTexture1"), 0);
+            glUniform1i(glGetUniformLocation(shadermenu.Program, "ourTexture1"), 0);
             glActiveTexture(GL_TEXTURE1);
 
             // Draw container
